@@ -1,3 +1,7 @@
+The Folder structure of my Portfolio App
+The components stores all of the reusable components
+Each page folder stores all of the single use components used by that particuler page.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
