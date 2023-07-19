@@ -1,30 +1,51 @@
+import MobileMenu from './MobileMenu'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+
 function Nav({ page }) {
   return (
-    <div className='navbar absolute w-full mt-6'>
-      <div className='w-full flex items-center mx-auto justify-around'>
-        <h2 className='w-1/4 text-xl text-gray-300'>Daniel Babin</h2>
-        <ul className='w-2/3 flex flex-row gap-6 justify-end self-end'>
-          <a
-            href={page}
-            className='border-blue-400 text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline capitalize'>
-            <li>{page === '/' ? 'Home' : page}</li>
-          </a>
-          <a
-            href='#skills'
-            className='border-blue-400 text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
-            <li>Skills</li>
-          </a>
-          <a
-            href='#projects'
-            className='border-blue-400 text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
-            <li>Projects</li>
-          </a>
-          <a
-            href='#contact'
-            className='border-blue-400 text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
-            <li>Contact</li>
-          </a>
-        </ul>
+    <div className='navbar absolute w-full'>
+      <div className='w-full relative flex items-center mx-auto justify-between px-12 pt-6'>
+        <h2 className='w-full text-2xl font-bold text-orange-300'>
+          Daniel Babin
+        </h2>
+        {page === 'about' ? (
+          <div>
+            <ul className='hidden w-full flex-row gap-6 justify-end self-end sm:flex'>
+              <Link
+                to={page}
+                className='border-blue-400 text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline capitalize'>
+                <li>{page === '/' ? 'Home' : page}</li>
+              </Link>
+              <a
+                href='#skills'
+                className='border-blue-400 text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                <li>Skills</li>
+              </a>
+              <a
+                href='#projects'
+                className='border-blue-400 text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                <li>Projects</li>
+              </a>
+              <a
+                href='#contact'
+                className='border-blue-400 text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                <li>Contact</li>
+              </a>
+            </ul>
+            <MobileMenu page={page} />
+          </div>
+        ) : (
+          <div>
+            <Link to={page}>
+              <FontAwesomeIcon
+                className='text-3xl cursor-pointer p-2 text-primary duration-300 ease-in-out hover:scale-110'
+                icon={faHome}
+              />
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   )
