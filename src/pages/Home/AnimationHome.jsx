@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 function AnimationHome() {
   // const [textPosition, setTextPosition] = useState(0)
 
