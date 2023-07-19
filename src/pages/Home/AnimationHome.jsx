@@ -1,6 +1,6 @@
 import { useState } from 'react'
 function AnimationHome() {
-  const [textPosition, setTextPosition] = useState(0)
+  // const [textPosition, setTextPosition] = useState(0)
 
   let skillsList = [
     'HTML',
