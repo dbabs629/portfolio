@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function ProjectsHome() {
+function ProjectSection() {
   return (
     <section id='projects' className='bg-blue-50 h-screen flex items-center'>
       <div className='border'>
@@ -10,4 +10,4 @@ function ProjectsHome() {
     </section>
   )
 }
-export default ProjectsHome
+export default ProjectSection

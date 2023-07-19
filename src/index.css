@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,5 +24,26 @@ code {
   @font-face {
     font-family: 'Quicksand';
     src: url('assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  }
+
+  .icons-list li:hover div {
+    @apply transition-opacity opacity-100 ease-in-out duration-1000;
+  }
+}
+
+.animation-bg {
+  animation: bg-move 1s ease-in-out infinite alternate;
+}
+
+@keyframes bg-move {
+  0% {
+    @apply transition bg-gradient-to-t from-white to-60%
+      to-transparent;
+  }
+  50% {
+    @apply bg-gradient-to-t from-white to-80% to-transparent;
+  }
+  100% {
+    @apply bg-gradient-to-t from-white to-100% to-transparent;
   }
 }
