@@ -24,9 +24,9 @@ function DropDownMenu({ page, navBool, setnavBool }) {
 
   return (
     <div
-      className={`${dropDown} absolute top-0 right-0 w-1/3 flex flex-col bg-dark rounded-bl-lg sm:hidden`}>
+      className={`${dropDown} absolute top-0 right-0 w-2/5 flex flex-col bg-dark rounded-bl-lg sm:hidden`}>
       <div
-        className='cursor-pointer border w-full text-center p-4 hover:bg-red-500 active:bg-red-500 [&>*]:text-white [&>*]:hover:scale-110'
+        className='cursor-pointer border w-full text-center py-5 hover:bg-red-500 active:bg-red-500 [&>*]:text-white [&>*]:hover:scale-110'
         onClick={navMenu}>
         <FontAwesomeIcon
           className='text-3xl duration-300 ease-in-out'
@@ -37,24 +37,24 @@ function DropDownMenu({ page, navBool, setnavBool }) {
         <Link
           to={page}
           className='text-white font-semibold duration-300 hover:bg-blue-500 active:bg-blue-500
-[&>*]:hover:scale-110 capitalize border w-full text-center p-4'>
+[&>*]:hover:scale-110 capitalize border w-full text-center py-5'>
           <li>{page === '/' ? 'Home' : page}</li>
         </Link>
         <a
           className='text-white font-semibold duration-300 hover:bg-blue-500 active:bg-blue-500
-[&>*]:hover:scale-110 capitalize border w-full text-center p-4'
+[&>*]:hover:scale-110 capitalize border w-full text-center py-5'
           href='#skills'>
           <li>Skills</li>
         </a>
         <a
           className='text-white font-semibold duration-300 hover:bg-blue-500 active:bg-blue-500
-[&>*]:hover:scale-110 capitalize border w-full text-center p-4'
+[&>*]:hover:scale-110 capitalize border w-full text-center py-5'
           href='#projects'>
           <li>Projects</li>
         </a>
         <a
           className='text-white font-semibold duration-300 hover:bg-blue-500 active:bg-blue-500
-[&>*]:hover:scale-110 capitalize border w-full text-center p-4'
+[&>*]:hover:scale-110 capitalize border w-full text-center py-5'
           href='#contact'>
           <li>Contact</li>
         </a>
