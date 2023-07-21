@@ -4,8 +4,8 @@ import projectHighResImg from '../../assets/images/webdev-mocksite.PNG'
 
 function ProjectSection() {
   return (
-    <section id='projects' className='bg-blue-50 py-16'>
-      <div className='w-2/3 mx-auto flex flex-col items-center justify-center space-y-24'>
+    <section id='projects' className='bg-blue-50'>
+      <div className='w-full mx-auto flex flex-col items-center justify-center py-24 px-16'>
         <Project
           projectLowResImg={projectLowResImg}
           projectHighResImg={projectHighResImg}
@@ -25,13 +25,6 @@ function ProjectSection() {
           projectHighResImg={projectHighResImg}
           alt='project alt txt'
           title='Family Tree Web App'
-          text={`Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design. Understanding the end-users' perspectives allows me to craft intuitive interfaces that resonate with their needs and preferences. This user-centered mindset guides me in creating seamless and enjoyable interactions that enhance the overall user experience.`}
-        />
-        <Project
-          projectLowResImg={projectLowResImg}
-          projectHighResImg={projectHighResImg}
-          alt='project alt txt'
-          title='Ecommerce'
           text={`Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design. Understanding the end-users' perspectives allows me to craft intuitive interfaces that resonate with their needs and preferences. This user-centered mindset guides me in creating seamless and enjoyable interactions that enhance the overall user experience.`}
         />
       </div>
