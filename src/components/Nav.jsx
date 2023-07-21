@@ -10,7 +10,7 @@ function Nav({ page }) {
         <h2 className='w-full text-2xl font-bold text-orange-300'>
           Daniel Babin
         </h2>
-        {page === 'about' ? (
+        {page !== '/' ? (
           <div>
             <ul className='hidden w-full flex-row gap-6 justify-end self-end sm:flex'>
               <Link

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
-import skillsImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
+import LoadImg from '../../components/LoadImg'
+import skillsLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
+import skillsHighResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
 
 function SkillSection() {
   let skillsList = [
@@ -19,15 +21,16 @@ function SkillSection() {
   return (
     <section
       id='skills'
-      className='relative w-full h-screen flex items-center justify-center'>
-      <div className='w-full flex flex-col items-center space-y-4'>
+      className='relative w-full h-screen flex flex-col items-center justify-center'>
+      <div className='max-w-[600px] flex flex-col items-center space-y-4'>
         <h2 className='text-3xl text-primary'>Skills</h2>
-        <div className='flex flex-col sm:flex-row border items-center space-y-4 sm:space-y-0 sm:space-x-4'>
-          <div className='w-32 h-32 mx-auto'>
-            <img
-              className='max-w-full w-full max-h-full object-cover rounded-lg'
-              src={skillsImg}
-              alt=''
+        <div className='w-2/3 flex flex-col sm:flex-row border items-center justify-between sm:w-full'>
+          <div className='w-32 h-32'>
+            <LoadImg
+              imgLowRes={skillsLowResImg}
+              imgHighRes={skillsHighResImg}
+              addClassName='max-w-full w-full max-h-full object-cover rounded-lg'
+              alt='alt txt'
             />
           </div>
           <ul className='grid grid-cols-2 sm:grid-cols-4 gap-2'>
@@ -40,9 +43,20 @@ function SkillSection() {
             ))}
           </ul>
         </div>
-        <div className='w-full flex flex-col justify-around border'>
-          <h4 className='text-2xl text-primary'>About me</h4>
-          <p>This is a bit about me</p>
+        <div className='w-2/3 sm:w-full flex flex-col justify-around border'>
+          <h4 className='text-2xl text-primary text-center sm:text-left'>
+            About me
+          </h4>
+          <p>
+            Hello, I'm a front-end web developer with a strong drive for
+            understanding and a passion for problem-solving. I find joy in
+            crafting seamless user experiences by combining my technical
+            expertise with an empathetic approach to design. Always eager to
+            learn and adapt, I thrive on acquiring new skills and staying
+            up-to-date with the latest trends in the ever-evolving world of web
+            development. When I'm not coding, you can find me exercising,
+            cooking, reading, or watching a movie.
+          </p>
           <Link to='about'>Continue about me</Link>
         </div>
       </div>
