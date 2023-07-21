@@ -3,9 +3,9 @@ import LoadImg from './LoadImg'
 
 function Project({ title, text, projectLowResImg, projectHighResImg, alt }) {
   return (
-    <div className='w-full lg:h-screen flex items-center'>
-      <div className='max-w-[500px] lg:max-w-[1000px] w-full flex flex-col items-center mx-auto lg:flex-row my-16 lg:space-x-8 lg:space-y-0 lg'>
-        <div className='lg:hidden w-full'>
+    <article className='w-full flex items-center'>
+      <div className='w-full flex flex-col mx-auto lg:flex-row space-y-8 lg:space-x-8 lg:space-y-0'>
+        <div className='lg:hidden w-full max-w-[400px]'>
           <LoadImg
             imgLowRes={projectLowResImg}
             imgHighRes={projectHighResImg}
@@ -13,7 +13,7 @@ function Project({ title, text, projectLowResImg, projectHighResImg, alt }) {
             alt={alt}
           />
         </div>
-        <div className='w-full flex flex-col space-y-8 sm:w-full'>
+        <div className='w-full flex flex-col justify-around space-y-4 sm:w-full'>
           <h3 className='text-3xl text-primary'>{title}</h3>
           <p className='text-gray-800'>{text}</p>
           <Link
@@ -22,7 +22,7 @@ function Project({ title, text, projectLowResImg, projectHighResImg, alt }) {
             View project
           </Link>
         </div>
-        <div className='hidden w-full lg:block lg:max-w-[800px]'>
+        <div className='hidden w-full lg:block lg:max-w-[800px] lg:w-4/5'>
           <LoadImg
             imgLowRes={projectLowResImg}
             imgHighRes={projectHighResImg}
@@ -31,7 +31,7 @@ function Project({ title, text, projectLowResImg, projectHighResImg, alt }) {
           />
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 export default Project

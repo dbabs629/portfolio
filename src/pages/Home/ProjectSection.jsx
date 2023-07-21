@@ -4,8 +4,11 @@ import projectHighResImg from '../../assets/images/webdev-mocksite.PNG'
 
 function ProjectSection() {
   return (
-    <section id='projects' className='bg-blue-50'>
-      <div className='w-full mx-auto flex flex-col items-center justify-center py-24 px-16'>
+    <section id='projects' className='bg-blue-50 py-16'>
+      <div className='w-full mx-auto p-8 flex flex-col items-center justify-center space-y-40 md:max-w-[40rem] lg:max-w-[60rem] lg:px-0'>
+        <h2 className='text-3xl text-primary self-start underline decoration-orange-300 decoration-8 underline-offset-8 lg:self-center'>
+          Projects
+        </h2>
         <Project
           projectLowResImg={projectLowResImg}
           projectHighResImg={projectHighResImg}

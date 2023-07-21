@@ -11,7 +11,7 @@ import Footer from '../../components/Footer'
 
 function Home() {
   return (
-    <main className='overflow-y-hidden'>
+    <main>
       <Nav page='about' />
       <section
         id='hero'

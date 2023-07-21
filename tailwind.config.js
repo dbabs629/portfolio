@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         quicksand: 'Quicksand',
       },
+      screens: {
+        xs: '480px',
+      },
     },
   },
   plugins: [],

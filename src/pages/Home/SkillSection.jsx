@@ -21,10 +21,12 @@ function SkillSection() {
   return (
     <section
       id='skills'
-      className='relative w-full h-screen flex flex-col items-center justify-center'>
-      <div className='max-w-[600px] flex flex-col items-center space-y-4'>
-        <h2 className='text-3xl text-primary'>Skills</h2>
-        <div className='w-2/3 flex flex-col sm:flex-row border items-center justify-between sm:w-full'>
+      className='w-full h-screen flex flex-col items-center justify-center'>
+      <div className='w-full mx-auto p-8 flex flex-col justify-center sm:items-center space-y-8 lg:max-w-[60rem] lg:px-0'>
+        <h2 className='text-3xl text-primary self-start lg:self-center my-8 underline decoration-orange-300 decoration-8 underline-offset-8'>
+          Skills
+        </h2>
+        <div className='w-full flex flex-col space-y-8 xs:flex-row xs:items-start xs:space-x-4 xs:space-y-0'>
           <div className='w-32 h-32'>
             <LoadImg
               imgLowRes={skillsLowResImg}
@@ -33,20 +35,18 @@ function SkillSection() {
               alt='alt txt'
             />
           </div>
-          <ul className='grid grid-cols-2 sm:grid-cols-4 gap-2'>
+          <ul className='grid gap-1 grid-cols-2 xs:grid-cols-3 md:grid-cols-4 md:gap-2'>
             {skillsList.map((item, i) => (
               <li
                 key={i + 0.1}
-                className='w-24 py-3 text-center uppercase text-xs rounded-3xl bg-dark text-primary font-semibold shadow-md'>
+                className='w-20 py-2 text-center uppercase text-xs rounded-3xl bg-dark text-primary shadow-md sm:w-24 sm:py-3 md:font-semibold'>
                 {item}
               </li>
             ))}
           </ul>
         </div>
-        <div className='w-2/3 sm:w-full flex flex-col justify-around border'>
-          <h4 className='text-2xl text-primary text-center sm:text-left'>
-            About me
-          </h4>
+        <div className='w-full flex flex-col space-y-4'>
+          <h4 className='text-2xl text-primary'>About me</h4>
           <p>
             Hello, I'm a front-end web developer with a strong drive for
             understanding and a passion for problem-solving. I find joy in

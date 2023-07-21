@@ -5,7 +5,7 @@ function About() {
   return (
     <div>
       <Nav page='/' />
-      <main className='h-screen flex'>
+      <section className='h-screen flex'>
         <div className='self-center border'>
           <h2 className='text-3xl text-primary'>About Page</h2>
           <div>
@@ -25,7 +25,7 @@ function About() {
             </p>
           </div>
         </div>
-      </main>
+      </section>
       <Footer />
     </div>
   )
