@@ -22,12 +22,12 @@ function SkillSection() {
     <section
       id='skills'
       className='w-full h-screen flex flex-col items-center justify-center'>
-      <div className='flex flex-col'>
+      <div className='flex flex-col items-center'>
         <h2 className='text-3xl text-primary self-start lg:self-center my-8 underline decoration-orange-300 decoration-8 underline-offset-8'>
           Skills
         </h2>
-        <div className='flex flex-col space-y-8 xs:flex-row'>
-          <div className='w-44 h-44'>
+        <div className='flex flex-col items-center space-y-6 xs:flex-row xs:space-y-0 xs:space-x-8 xs:items-start xs:justify-center border'>
+          <div className='w-36'>
             <LoadImg
               imgLowRes={skillsLowResImg}
               imgHighRes={skillsHighResImg}
@@ -39,13 +39,13 @@ function SkillSection() {
             {skillsList.map((item, i) => (
               <li
                 key={i + 0.1}
-                className='w-20 py-2 text-center uppercase text-xs rounded-3xl bg-dark text-primary shadow-md sm:w-24 sm:py-3 md:font-semibold'>
+                className='w-24 p-3 text-center uppercase text-xs rounded-3xl bg-dark text-primary shadow-md md:font-semibold'>
                 {item}
               </li>
             ))}
           </ul>
         </div>
-        <div className='w-full flex flex-col space-y-4'>
+        <div className='flex flex-col space-y-4'>
           <h4 className='text-2xl text-primary'>About me</h4>
           <p>
             Hello, I'm a front-end web developer with a strong drive for

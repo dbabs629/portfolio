@@ -16,8 +16,8 @@ function Home() {
       <section
         id='hero'
         className='w-full bg-darkest h-screen flex flex-col items-center justify-center'>
-        <div className='flex flex-col sm:flex-row border'>
-          <div className='flex flex-col border'>
+        <div className='w-full flex flex-col sm:flex-row justify-center space-x-0 sm:space-x-16'>
+          <div className='flex flex-col'>
             <h1 className='text-2xl sm:text-4xl text-primary'>
               Hi I'm
               <span className='pl-2 text-3xl sm:text-5xl text-orange-300 font-semibold'>
@@ -25,11 +25,11 @@ function Home() {
               </span>
               <br /> a Front-end Developer
             </h1>
-            <span className='border-b-8 border-orange-300 border-opacity-90 rounded-xl pb-4' />
+            <span className='w-60 border-b-8 border-orange-300 border-opacity-90 rounded-xl pb-4 sm:w-full' />
             <IconsList />
           </div>
-          <div className='border'>
-            <div className='w-44 h-44'>
+          <div className='w-1/6'>
+            <div className=''>
               <LoadImg
                 imgLowRes={heroLowResImg}
                 imgHighRes={heroHighResImg}
