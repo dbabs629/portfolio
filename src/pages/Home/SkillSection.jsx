@@ -22,16 +22,16 @@ function SkillSection() {
     <section
       id='skills'
       className='w-full h-screen flex flex-col items-center justify-center'>
-      <div className='w-full mx-auto p-8 flex flex-col justify-center sm:items-center space-y-8 lg:max-w-[60rem] lg:px-0'>
+      <div className='flex flex-col'>
         <h2 className='text-3xl text-primary self-start lg:self-center my-8 underline decoration-orange-300 decoration-8 underline-offset-8'>
           Skills
         </h2>
-        <div className='w-full flex flex-col space-y-8 xs:flex-row xs:items-start xs:space-x-4 xs:space-y-0'>
-          <div className='w-32 h-32'>
+        <div className='flex flex-col space-y-8 xs:flex-row'>
+          <div className='w-44 h-44'>
             <LoadImg
               imgLowRes={skillsLowResImg}
               imgHighRes={skillsHighResImg}
-              addClassName='max-w-full w-full max-h-full object-cover rounded-lg'
+              addClassName='max-w-full object-cover rounded-lg'
               alt='alt txt'
             />
           </div>

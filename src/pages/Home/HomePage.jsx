@@ -16,21 +16,8 @@ function Home() {
       <section
         id='hero'
         className='w-full bg-darkest h-screen flex flex-col items-center justify-center'>
-        <div className='w-full h-48 flex flex-col sm:flex-row justify-center items-center text-white space-x-6'>
-          <div className='hidden sm:inline w-1/3 h-full'>
-            <LoadImg
-              imgLowRes={heroLowResImg}
-              imgHighRes={heroHighResImg}
-              addClassName='max-w-full w-full max-h-full object-cover rounded-lg'
-              alt='alt txt'
-            />
-            {/* <img
-              className='max-w-full w-full max-h-full object-cover rounded-lg'
-              src={homeImg}
-              alt=''
-            /> */}
-          </div>
-          <div className='flex flex-col'>
+        <div className='flex flex-col sm:flex-row border'>
+          <div className='flex flex-col border'>
             <h1 className='text-2xl sm:text-4xl text-primary'>
               Hi I'm
               <span className='pl-2 text-3xl sm:text-5xl text-orange-300 font-semibold'>
@@ -40,7 +27,16 @@ function Home() {
             </h1>
             <span className='border-b-8 border-orange-300 border-opacity-90 rounded-xl pb-4' />
             <IconsList />
-            {/* <p className='text-gray-300'>This is my portfolio.</p> */}
+          </div>
+          <div className='border'>
+            <div className='w-44 h-44'>
+              <LoadImg
+                imgLowRes={heroLowResImg}
+                imgHighRes={heroHighResImg}
+                addClassName='max-w-full object-cover rounded-lg'
+                alt='alt txt'
+              />
+            </div>
           </div>
         </div>
         <AnimationHome />
