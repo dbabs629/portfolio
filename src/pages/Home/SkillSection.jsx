@@ -21,12 +21,12 @@ function SkillSection() {
   return (
     <section
       id='skills'
-      className='w-full h-screen flex flex-col items-center justify-center'>
-      <div className='flex flex-col items-center'>
-        <h2 className='text-3xl text-primary self-start lg:self-center my-8 underline decoration-orange-300 decoration-8 underline-offset-8'>
+      className='w-full py-16 xs:h-screen flex flex-col items-center justify-center'>
+      <div className='max-w-[600px] w-3/4 flex flex-col items-center space-y-8'>
+        <h2 className='text-4xl font-semibold text-primary my-8 underline decoration-orange-300 decoration-8 underline-offset-8'>
           Skills
         </h2>
-        <div className='flex flex-col items-center space-y-6 xs:flex-row xs:space-y-0 xs:space-x-8 xs:items-start xs:justify-center border'>
+        <div className='w-full flex flex-col items-center space-y-6 xs:flex-row xs:space-y-0 xs:space-x-8 xs:items-start'>
           <div className='w-36'>
             <LoadImg
               imgLowRes={skillsLowResImg}
@@ -35,19 +35,19 @@ function SkillSection() {
               alt='alt txt'
             />
           </div>
-          <ul className='grid gap-1 grid-cols-2 xs:grid-cols-3 md:grid-cols-4 md:gap-2'>
+          <ul className='grid gap-1 grid-cols-3 xs:grid-cols-2 md:grid-cols-4 md:gap-2'>
             {skillsList.map((item, i) => (
               <li
                 key={i + 0.1}
-                className='w-24 p-3 text-center uppercase text-xs rounded-3xl bg-dark text-primary shadow-md md:font-semibold'>
+                className='w-20 p-2 text-center capitalize text-xs rounded-3xl bg-dark text-primary shadow-md md:font-semibold'>
                 {item}
               </li>
             ))}
           </ul>
         </div>
         <div className='flex flex-col space-y-4'>
-          <h4 className='text-2xl text-primary'>About me</h4>
-          <p>
+          <h4 className='text-3xl text-primary'>About me</h4>
+          <p className='text-justify xs:text-left'>
             Hello, I'm a front-end web developer with a strong drive for
             understanding and a passion for problem-solving. I find joy in
             crafting seamless user experiences by combining my technical
@@ -57,7 +57,11 @@ function SkillSection() {
             development. When I'm not coding, you can find me exercising,
             cooking, reading, or watching a movie.
           </p>
-          <Link to='about'>Continue about me</Link>
+          <Link className='w-40' to='about'>
+            <p className=' text-secondary font-semibold hover:text-tertdark hover:scale-105'>
+              Continue about me
+            </p>
+          </Link>
         </div>
       </div>
     </section>

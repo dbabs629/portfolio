@@ -42,7 +42,7 @@ function Form() {
         value={body}
         onChange={(e) => setBody(e.target.value)}
         placeholder='Write your message here..'></textarea>
-      <Button name='Send email' />
+      <Button>Send Email</Button>
     </form>
   )
 }

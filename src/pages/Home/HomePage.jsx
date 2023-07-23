@@ -16,11 +16,11 @@ function Home() {
       <section
         id='hero'
         className='w-full bg-darkest h-screen flex flex-col items-center justify-center'>
-        <div className='w-full flex flex-col sm:flex-row justify-center space-x-0 sm:space-x-16'>
+        <div className='w-full flex flex-col items-center justify-center space-x-0 sm:flex-row sm:space-x-16'>
           <div className='flex flex-col'>
-            <h1 className='text-2xl sm:text-4xl text-primary'>
+            <h1 className='text-5xl font-semibold sm:text-4xl text-primary'>
               Hi I'm
-              <span className='pl-2 text-3xl sm:text-5xl text-orange-300 font-semibold'>
+              <span className='pl-2 text-3xl sm:text-5xl text-secondary font-semibold'>
                 Daniel
               </span>
               <br /> a Front-end Developer

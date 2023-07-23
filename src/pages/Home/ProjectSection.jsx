@@ -6,9 +6,9 @@ function ProjectSection() {
   return (
     <section
       id='projects'
-      className='w-full flex flex-col items-center justify-center bg-blue-50'>
-      <div className='flex flex-col'>
-        <h2 className='text-3xl text-primary self-start underline decoration-orange-300 decoration-8 underline-offset-8 lg:self-center'>
+      className='w-full py-16 flex flex-col items-center justify-center bg-blue-50'>
+      <div className='max-w-[600px] w-4/5 flex flex-col justify-center items-center space-y-48 lg:max-w-full'>
+        <h2 className='text-4xl font-semibold text-primary underline decoration-orange-300 decoration-8 underline-offset-8 lg:self-center'>
           Projects
         </h2>
         <Project
