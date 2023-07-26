@@ -22,8 +22,8 @@ function SkillSection() {
     <section
       id='skills'
       className='w-full py-16 xs:h-screen flex flex-col items-center justify-center'>
-      <div className='max-w-[600px] w-3/4 flex flex-col items-center space-y-8'>
-        <h2 className='text-4xl font-semibold text-primary my-8 underline decoration-orange-300 decoration-8 underline-offset-8'>
+      <div className='max-w-[600px] w-3/4 flex flex-col items-center space-y-8 lg:max-w-[800px]'>
+        <h2 className='mb-16 text-4xl font-semibold text-primary my-8 underline decoration-orange-300 decoration-8 underline-offset-8'>
           Skills
         </h2>
         <div className='w-full flex flex-col items-center space-y-6 xs:flex-row xs:space-y-0 xs:space-x-8 xs:items-start'>
@@ -39,7 +39,7 @@ function SkillSection() {
             {skillsList.map((item, i) => (
               <li
                 key={i + 0.1}
-                className='w-20 p-2 text-center capitalize text-xs rounded-3xl bg-dark text-primary shadow-md md:font-semibold'>
+                className='w-20 lg:w-24 p-2 lg:p-3 text-center capitalize text-xs rounded-3xl bg-dark text-primary shadow-md md:font-semibold'>
                 {item}
               </li>
             ))}

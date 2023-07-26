@@ -7,10 +7,10 @@ function ProjectSection() {
     <section
       id='projects'
       className='w-full py-16 flex flex-col items-center justify-center bg-blue-50'>
-      <div className='max-w-[600px] w-4/5 flex flex-col justify-center items-center space-y-48 lg:max-w-full'>
-        <h2 className='text-4xl font-semibold text-primary underline decoration-orange-300 decoration-8 underline-offset-8 lg:self-center'>
-          Projects
-        </h2>
+      <h2 className='mb-16 text-4xl font-semibold text-primary underline decoration-orange-300 decoration-8 underline-offset-8 lg:self-center'>
+        Projects
+      </h2>
+      <div className='max-w-[600px] w-3/4 flex flex-col justify-center items-center space-y-48 lg:max-w-[900px]'>
         <Project
           projectLowResImg={projectLowResImg}
           projectHighResImg={projectHighResImg}
