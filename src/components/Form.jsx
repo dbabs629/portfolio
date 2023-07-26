@@ -24,7 +24,9 @@ function Form() {
   }, [formData])
 
   return (
-    <form onSubmit={submitEmail} className='flex flex-col space-y-2'>
+    <form
+      onSubmit={submitEmail}
+      className='flex flex-col space-y-2 text-gray-800'>
       <input
         className='p-2 rounded-lg border-2'
         value={email}
@@ -38,7 +40,7 @@ function Form() {
         placeholder='Subject'
       />
       <textarea
-        className='p-2 rounded-lg border-2'
+        className='p-2 rounded-lg border-2 pb-8'
         value={body}
         onChange={(e) => setBody(e.target.value)}
         placeholder='Write your message here..'></textarea>

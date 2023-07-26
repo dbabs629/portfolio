@@ -22,7 +22,7 @@ function SkillSection() {
     <section
       id='skills'
       className='w-full py-16 xs:h-screen flex flex-col items-center justify-center'>
-      <div className='max-w-[600px] w-3/4 flex flex-col items-center space-y-8 lg:max-w-[800px]'>
+      <div className='max-w-[650px] w-3/4 flex flex-col items-center space-y-8'>
         <h2 className='mb-16 text-4xl font-semibold text-primary my-8 underline decoration-orange-300 decoration-8 underline-offset-8'>
           Skills
         </h2>
