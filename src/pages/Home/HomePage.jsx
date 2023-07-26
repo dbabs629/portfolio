@@ -16,27 +16,28 @@ function Home() {
       <section
         id='hero'
         className='w-full bg-darkest h-screen flex flex-col items-center justify-center'>
-        <div className='w-full flex flex-col items-center justify-center space-x-0 sm:flex-row sm:space-x-16'>
+        <div className='w-2/3 flex flex-col items-center justify-center space-x-0 lg:flex-row lg:space-x-16'>
           <div className='flex flex-col'>
-            <h1 className='text-3xl font-semibold sm:text-4xl text-primary'>
+            <h1 className='text-2xl xs:text-3xl sm:text-4xl font-semibold text-primary'>
               Hi I'm
-              <h1 className='inline pl-2 text-3xl sm:text-5xl text-secondary font-semibold'>
+              <h1 className='inline pl-2 text-xl xs:text-3xl sm:text-5xl font-semibold text-secondary'>
                 Daniel
               </h1>
-              <br /> a Front-end Developer
+              <br />{' '}
+              <h1 className='text-xl xs:text-3xl sm:text-4xl font-semibold'>
+                a Front-end Developer
+              </h1>
             </h1>
-            <span className='w-80 border-b-8 border-orange-300 border-opacity-90 rounded-xl pb-4 sm:w-full' />
+            <span className='w-full border-b-8 border-orange-300 border-opacity-90 rounded-xl pb-4 sm:w-full' />
             <IconsList />
           </div>
-          <div className='w-1/6'>
-            <div className=''>
-              <LoadImg
-                imgLowRes={heroLowResImg}
-                imgHighRes={heroHighResImg}
-                addClassName='max-w-full object-cover rounded-lg'
-                alt='alt txt'
-              />
-            </div>
+          <div className='self-start w-1/4'>
+            <LoadImg
+              imgLowRes={heroLowResImg}
+              imgHighRes={heroHighResImg}
+              addClassName='hidden lg:block max-w-full object-cover rounded-lg'
+              alt='alt txt'
+            />
           </div>
         </div>
         <AnimationHome />
