@@ -4,7 +4,7 @@ import LoadImg from './LoadImg'
 
 function Project({ title, text, projectLowResImg, projectHighResImg, alt }) {
   return (
-    <article className='w-full flex flex-col lg:flex-row space-y-8 lg:gap-12 lg:items-center'>
+    <article className='w-full flex flex-col lg:flex-row lg:gap-12 lg:items-center'>
       <div className='lg:hidden'>
         <a href='/'>
           <LoadImg

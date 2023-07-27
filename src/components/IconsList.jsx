@@ -5,8 +5,8 @@ import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons'
 function IconsList() {
   return (
     <>
-      <ul className='icons-list w-1/3 h-12 flex space-x-3 text-2xl text-white my-4'>
-        <li className='relative w-8'>
+      <ul className='icons-list w-full h-12 flex space-x-4 text-white'>
+        <li className='relative text-inherit'>
           <a href='/'>
             <FontAwesomeIcon
               icon={faFile}
@@ -17,7 +17,7 @@ function IconsList() {
             Resume
           </div>
         </li>
-        <li className='relative w-8'>
+        <li className='relative text-inherit'>
           <a href='#contact'>
             <FontAwesomeIcon
               icon={faEnvelope}
@@ -28,7 +28,7 @@ function IconsList() {
             Email
           </div>
         </li>
-        <li className='relative w-8'>
+        <li className='relative text-inherit'>
           <a href='https://github.com/dbabs629/'>
             <FontAwesomeIcon
               icon={faGithub}
@@ -39,7 +39,7 @@ function IconsList() {
             Github
           </div>
         </li>
-        <li className='relative w-8'>
+        <li className='relative text-inherit'>
           <a href='https://www.linkedin.com/in/daniel-babin/'>
             <FontAwesomeIcon
               icon={faLinkedinIn}

@@ -24,7 +24,7 @@ function AnimationHome() {
 
   let risingText = skillsList.map((item, i) => {
     return (
-      <span key={i} className={`absolute w-full border border-blue-400`}>
+      <span key={i} className={`absolute w-full`}>
         {item}
       </span>
     )
@@ -32,7 +32,7 @@ function AnimationHome() {
 
   return (
     <span className='absolute bottom-0 self-end w-full h-24 transition-opacity duration-300 bg-gradient-to-t from-white to-60% to-transparent text-white'>
-      <span className='relative w-full flex text-center border border-red-400'>
+      <span className='relative w-full flex text-center'>
         {risingText}
       </span>
     </span>

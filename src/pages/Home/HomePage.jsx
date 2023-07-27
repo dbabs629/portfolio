@@ -23,13 +23,15 @@ function Home() {
               <h1 className='inline pl-2 text-xl xs:text-3xl sm:text-5xl font-semibold text-secondary'>
                 Daniel
               </h1>
-              <br />{' '}
+              <br />
               <h1 className='text-xl xs:text-3xl sm:text-4xl font-semibold'>
-                a Front-end Developer
+                I'm a Front-end Developer
               </h1>
             </h1>
             <span className='w-full border-b-8 border-orange-300 border-opacity-90 rounded-xl pb-4 sm:w-full' />
-            <IconsList />
+            <div className='text-3xl pl-2 mt-4'>
+              <IconsList />
+            </div>
           </div>
           <div className='self-start w-1/4'>
             <LoadImg

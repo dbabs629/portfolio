@@ -40,7 +40,7 @@ function Form() {
         placeholder='Subject'
       />
       <textarea
-        className='p-2 rounded-lg border-2 pb-8'
+        className='p-2 rounded-lg border-2 pb-12'
         value={body}
         onChange={(e) => setBody(e.target.value)}
         placeholder='Write your message here..'></textarea>
