@@ -26,21 +26,21 @@ function Form() {
   return (
     <form
       onSubmit={submitEmail}
-      className='flex flex-col space-y-2 text-gray-800'>
+      className='max-w-[450px] w-full mx-auto flex flex-col space-y-2 text-gray-800'>
       <input
-        className='p-2 rounded-lg border-2'
+        className='w-full p-2 rounded-lg border-2'
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder='Your Email'
       />
       <input
-        className='p-2 rounded-lg border-2'
+        className='w-full p-2 rounded-lg border-2'
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder='Subject'
       />
       <textarea
-        className='p-2 rounded-lg border-2 pb-12'
+        className='w-full p-2 rounded-lg border-2 pb-12'
         value={body}
         onChange={(e) => setBody(e.target.value)}
         placeholder='Write your message here..'></textarea>
