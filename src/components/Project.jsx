@@ -30,7 +30,7 @@ function Project({
         </Link>
       </div>
       <div className='hidden lg:w-1/2 lg:block lg:self-start'>
-        <a href='/'>
+        <a href={link}>
           <LoadImg
             imgLowRes={projectLowResImg}
             imgHighRes={projectHighResImg}
