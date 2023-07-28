@@ -2,11 +2,18 @@ import { Link } from 'react-router-dom'
 import Button from './Button'
 import LoadImg from './LoadImg'
 
-function Project({ title, text, projectLowResImg, projectHighResImg, alt }) {
+function Project({
+  title,
+  text,
+  projectLowResImg,
+  projectHighResImg,
+  alt,
+  link,
+}) {
   return (
     <article className='w-full flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:gap-12 lg:items-center'>
       <div className='max-w-[450px] self-center lg:hidden'>
-        <a href='/'>
+        <a href={link}>
           <LoadImg
             imgLowRes={projectLowResImg}
             imgHighRes={projectHighResImg}

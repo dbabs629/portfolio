@@ -16,6 +16,7 @@ function ProjectSection() {
         <Project
           projectLowResImg={projectLowResImg}
           projectHighResImg={projectHighResImg}
+          link='https://daniel-babin-mock-landing-page.netlify.app/'
           alt='project alt txt'
           title='Web Development Company Landing Page'
           text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}
