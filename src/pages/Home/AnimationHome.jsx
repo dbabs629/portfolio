@@ -31,15 +31,15 @@ function AnimationHome() {
     return (
       <span
         key={i}
-        className={`text-xs w-16 -skew-y-12 transition-all opacity-50 duration-300 ease-in-out hover:-translate-y-24`}>
+        className={`animation-move-sm w-20 h-10 cursor-pointer text-xs`}>
         {item}
       </span>
     )
   })
 
   return (
-    <span className='absolute bottom-0 self-end w-full h-24 transition-opacity duration-300 bg-gradient-to-t from-white to-60% to-transparent'>
-      <span className='relative w-full flex text-center text-white'>
+    <span className='absolute bottom-0 max-w-full w-full h-24 transition-opacity bg-gradient-to-t from-white to-60% to-transparent'>
+      <span className='relative w-5/6 mx-auto py-10 flex justify-between text-center text-white'>
         {risingText}
       </span>
     </span>

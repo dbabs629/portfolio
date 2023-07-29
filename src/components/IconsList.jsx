@@ -5,7 +5,7 @@ import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons'
 function IconsList() {
   return (
     <>
-      <ul className='icons-list w-full h-12 flex space-x-4 text-white'>
+      <ul className='icons-list w-full h-12 flex text-white justify-between'>
         <li className='relative text-inherit'>
           <a href='/'>
             <FontAwesomeIcon

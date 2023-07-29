@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import LoadImg from '../../components/LoadImg'
+import SkillList from '../../components/SkillList'
 import skillsLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
 import skillsHighResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
 import Button from '../../components/Button'
+import Heading from '../../components/Heading'
 
-function SkillSection() {
+function AboutSection() {
   let skillsList = [
     'HTML',
     'CSS',
@@ -19,15 +21,14 @@ function SkillSection() {
     'Git',
     'Figma',
   ]
+
   return (
     <section
-      id='skills'
-      className='w-full py-16 xs:h-screen flex flex-col items-center justify-center'>
+      id='about'
+      className='w-full my-16 xs:h-screen flex flex-col items-center justify-center'>
       <article className='max-w-[450px] lg:max-w-[700px] w-3/4 sm:w-2/3 flex flex-col items-center space-y-8'>
-        <h2 className='mb-16 text-4xl font-semibold text-primary my-8 underline decoration-tertiary decoration-8 underline-offset-8'>
-          Skills
-        </h2>
-        <div className='w-full flex flex-col items-center justify-between space-y-6 xs:flex-row xs:space-y-0 xs:items-start lg:justify-start lg:space-x-8 border'>
+        <Heading title='About' />
+        <div className='w-full flex flex-col items-center justify-between space-y-6 xs:flex-row xs:space-y-0 xs:items-start lg:justify-start lg:space-x-8'>
           <div className='w-48'>
             <LoadImg
               imgLowRes={skillsLowResImg}
@@ -36,15 +37,7 @@ function SkillSection() {
               alt='alt txt'
             />
           </div>
-          <ul className='max-w-[400px] grid gap-1 grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:gap-2'>
-            {skillsList.map((item, i) => (
-              <li
-                key={i + 0.1}
-                className='w-20 lg:w-24 p-2 xs:p-3 text-center capitalize text-xs rounded-3xl bg-dark text-primary shadow-md md:font-semibold'>
-                {item}
-              </li>
-            ))}
-          </ul>
+          <SkillList list={skillsList} />
         </div>
         <div className='flex flex-col space-y-4'>
           <h4 className='text-3xl text-primary'>About me</h4>
@@ -66,4 +59,4 @@ function SkillSection() {
     </section>
   )
 }
-export default SkillSection
+export default AboutSection

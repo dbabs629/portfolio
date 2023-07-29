@@ -1,5 +1,6 @@
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
+import Heading from '../../components/Heading'
 
 function About() {
   return (
@@ -7,7 +8,7 @@ function About() {
       <Nav page='/' />
       <section className='h-screen flex'>
         <div className='self-center border'>
-          <h2 className='text-3xl text-primary'>About Page</h2>
+          <Heading title='About Page' />
           <div>
             <p>
               While my primary focus is front-end development, I am also

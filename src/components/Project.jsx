@@ -9,6 +9,7 @@ function Project({
   projectHighResImg,
   alt,
   link,
+  projectLink,
 }) {
   return (
     <article className='w-full flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:gap-12 lg:items-center'>
@@ -25,7 +26,7 @@ function Project({
       <div className='flex flex-col space-y-6 lg:w-1/2'>
         <h3 className='text-3xl text-primary'>{title}</h3>
         <p className='text-gray-800 text-justify'>{text}</p>
-        <Link className='max-w-[150px]' to='project'>
+        <Link className='max-w-[150px]' to={projectLink}>
           <Button>Project details</Button>
         </Link>
       </div>

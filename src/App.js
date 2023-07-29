@@ -1,7 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import HomePage from './pages/Home/HomePage'
 import AboutPage from './pages/About/AboutPage'
-import ProjectPage from './pages/Projects/ProjectPage'
+import WebDevProjectPage from './pages/Projects/WebDevProjectPage'
+import RpsProjectPage from './pages/Projects/RpsProjectPage'
 
 function App() {
   return (
@@ -9,7 +10,11 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='about' element={<AboutPage />} />
-        <Route path='project' element={<ProjectPage />} />
+        <Route
+          path='project/webdev-project-page'
+          element={<WebDevProjectPage />}
+        />
+        <Route path='project/rps-project-page' element={<RpsProjectPage />} />
       </Routes>
     </>
   )

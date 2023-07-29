@@ -19,9 +19,9 @@ function Nav({ page }) {
                 <li>{page === '/' ? 'Home' : page}</li>
               </Link>
               <a
-                href='#skills'
+                href='#about'
                 className='border-blue-400 text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
-                <li>Skills</li>
+                <li>About</li>
               </a>
               <a
                 href='#projects'
