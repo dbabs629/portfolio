@@ -16,17 +16,15 @@ function Home() {
       <section
         id='hero'
         className='w-full bg-darkest h-screen flex flex-col items-center justify-center'>
-        <div className='w-2/3 flex flex-col items-center justify-center space-x-0 lg:flex-row lg:space-x-16'>
+        <div className='z-20 w-2/3 flex flex-col items-center justify-center space-x-0 lg:flex-row lg:space-x-16'>
           <div className='flex flex-col'>
             <h1 className='text-xl xs:text-2xl sm:text-4xl font-semibold text-primary'>
               Hi I'm
-              <h1 className='inline pl-2 text-2xl xs:text-3xl sm:text-5xl font-semibold text-tertiary'>
+              <span className='inline pl-2 text-2xl xs:text-3xl sm:text-5xl font-semibold text-tertiary'>
                 Daniel
-              </h1>
+              </span>
               <br />
-              <h1 className='text-xl xs:text-2xl sm:text-4xl font-semibold'>
-                I'm a Front-end Developer
-              </h1>
+              I'm a Front-end Developer
             </h1>
             <span className='w-full border-b-8 border-tertiary border-opacity-90 rounded-xl pb-4 sm:w-full' />
             <div className='text-3xl pl-2 mt-4'>
@@ -42,6 +40,21 @@ function Home() {
             />
           </div>
         </div>
+        <span className='animation-move-lg absolute z-0 w-16 h-16 bg-white opacity-10 rounded-2xl bottom-0 left-4' />
+        <span className='animation-move-md absolute z-0 w-10 h-10 bg-white opacity-10 rounded-md bottom-0 left-1/4' />
+        <span className='animation-move-sm absolute z-0 w-6 h-6 bg-white opacity-10 rounded-md bottom-0 left-1/3' />
+        <span className='animation-move-lg absolute z-0 w-16 h-16 bg-white opacity-10 rounded-2xl bottom-0 mx-auto' />
+        <span className='animation-move-sm absolute z-0 w-8 h-8 bg-white opacity-10 rounded-md bottom-0 left-3/4' />
+        <span className='animation-move-md absolute z-0 w-10 h-10 bg-white opacity-10 rounded-md bottom-0 left-2/3' />
+        <span className='animation-move-lg absolute z-0 w-16 h-16 bg-white opacity-10 rounded-3xl bottom-0 right-4' />
+        <span className='animation-move-lg absolute z-0 w-8 h-8 bg-white opacity-10 rounded-md bottom-0 left-4' />
+        <span className='animation-move-md absolute z-0 w-10 h-10 bg-white opacity-10 rounded-md bottom-0 left-1/4' />
+        <span className='animation-move-lg absolute z-0 w-6 h-6 bg-white opacity-10 rounded-md bottom-0 left-1/3' />
+        <span className='animation-move-sm absolute z-0 w-16 h-16 bg-white opacity-10 rounded-2xl bottom-0 mx-auto' />
+        <span className='animation-move-md absolute z-0 w-8 h-8 bg-white opacity-10 rounded-md bottom-0 left-3/4' />
+        <span className='animation-move-sm absolute z-0 w-16 h-16 bg-white opacity-10 rounded-3xl bottom-0 left-2/3' />
+        <span className='animation-move-lg absolute z-0 w-6 h-6 bg-white opacity-10 rounded-md bottom-0 right-4' />
+
         <AnimationHome />
       </section>
       <SkillSection />
