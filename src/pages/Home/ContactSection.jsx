@@ -5,7 +5,7 @@ function ContactHome() {
     <section
       id='contact'
       className='w-full h-screen flex items-center justify-center overflow-x-hidden'>
-      <div className='max-w-[650px] w-2/3 flex flex-col items-center space-y-8'>
+      <div className='max-w-[650px] w-3/4 sm:w-2/3 flex flex-col items-center space-y-8'>
         <h2 className='max-w-full mb-16 text-4xl font-semibold text-primary underline decoration-orange-300 decoration-8 underline-offset-8'>
           Contact
         </h2>

@@ -12,9 +12,9 @@ function MobileMenu({ page }) {
     !navBool ? setnavBool(true) : setnavBool(false)
   }
   return (
-    <div>
+    <>
       {page === 'about' ? (
-        <div>
+        <>
           <div
             id='mobile-menu'
             onClick={navMenu}
@@ -24,7 +24,7 @@ function MobileMenu({ page }) {
             <span className='block w-7 h-[0.2rem] rounded-full bg-white' />
           </div>
           <DropDownMenu page={page} navBool={navBool} setnavBool={setnavBool} />
-        </div>
+        </>
       ) : (
         <div>
           <Link to={page}>
@@ -35,7 +35,7 @@ function MobileMenu({ page }) {
           </Link>
         </div>
       )}
-    </div>
+    </>
   )
 }
 export default MobileMenu

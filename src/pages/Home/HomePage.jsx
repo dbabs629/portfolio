@@ -18,17 +18,17 @@ function Home() {
         className='w-full bg-darkest h-screen flex flex-col items-center justify-center'>
         <div className='w-2/3 flex flex-col items-center justify-center space-x-0 lg:flex-row lg:space-x-16'>
           <div className='flex flex-col'>
-            <h1 className='text-2xl xs:text-3xl sm:text-4xl font-semibold text-primary'>
+            <h1 className='text-xl xs:text-2xl sm:text-4xl font-semibold text-primary'>
               Hi I'm
-              <h1 className='inline pl-2 text-xl xs:text-3xl sm:text-5xl font-semibold text-secondary'>
+              <h1 className='inline pl-2 text-2xl xs:text-3xl sm:text-5xl font-semibold text-tertiary'>
                 Daniel
               </h1>
               <br />
-              <h1 className='text-xl xs:text-3xl sm:text-4xl font-semibold'>
+              <h1 className='text-xl xs:text-2xl sm:text-4xl font-semibold'>
                 I'm a Front-end Developer
               </h1>
             </h1>
-            <span className='w-full border-b-8 border-orange-300 border-opacity-90 rounded-xl pb-4 sm:w-full' />
+            <span className='w-full border-b-8 border-tertiary border-opacity-90 rounded-xl pb-4 sm:w-full' />
             <div className='text-3xl pl-2 mt-4'>
               <IconsList />
             </div>

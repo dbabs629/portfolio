@@ -26,7 +26,7 @@ function Project({
         <h3 className='text-3xl text-primary'>{title}</h3>
         <p className='text-gray-800 text-justify'>{text}</p>
         <Link className='max-w-[150px]' to='project'>
-          <Button>View project</Button>
+          <Button>Project details</Button>
         </Link>
       </div>
       <div className='hidden lg:w-1/2 lg:block lg:self-start'>

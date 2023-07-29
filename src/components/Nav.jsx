@@ -5,8 +5,8 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 function Nav({ page }) {
   return (
-    <div className='navbar absolute w-full overflow-x-hidden'>
-      <div className='relative w-full flex items-center mx-auto justify-between px-12 pt-12'>
+    <div className='navbar absolute w-full'>
+      <div className='relative w-full flex items-center mx-auto justify-between px-16 py-8'>
         <h2 className='w-full text-2xl font-bold text-orange-300'>
           Daniel Babin
         </h2>

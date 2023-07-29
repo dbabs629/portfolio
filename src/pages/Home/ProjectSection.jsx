@@ -12,7 +12,7 @@ function ProjectSection() {
       <h2 className='mb-16 text-4xl font-semibold text-primary underline decoration-orange-300 decoration-8 underline-offset-8 lg:self-center'>
         Projects
       </h2>
-      <div className='max-w-[450px] w-2/3 flex flex-col justify-center items-center space-y-48 lg:max-w-[700px]'>
+      <div className='max-w-[450px] w-3/4 sm:w-2/3 flex flex-col justify-center items-center space-y-48 lg:max-w-[700px]'>
         <Project
           projectLowResImg={projectLowResImg}
           projectHighResImg={projectHighResImg}

@@ -18,7 +18,7 @@ function DropDownMenu({ page, navBool, setnavBool }) {
     navBool === true
       ? setdropDown('transform translate-x-[0px] opacity-100 duration-700')
       : setdropDown(
-          'invisible transform translate-x-[20rem] opacity-0 duration-700'
+          'hidden transform translate-x-[20rem] opacity-0 duration-700'
         )
   }, [navBool])
 
