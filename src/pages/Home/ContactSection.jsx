@@ -20,7 +20,7 @@ function ContactHome() {
             <div className='w-full lg:block'>
               <img className='max-w-full h-auto' src={letter} alt='letter' />
             </div>
-            <p className='text-center font-semibold text-secondary'>
+            <p className='text-center font-semibold text-tertiary'>
               daniel.l.babin@gmail.com
             </p>
           </div>

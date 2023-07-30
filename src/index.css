@@ -32,11 +32,11 @@ code {
 }
 
 .animation-move-lg {
-  animation: move-lg-element 20s ease-in-out infinite;
+  animation: move-lg-element 20s linear infinite;
 }
 
 .animation-move-md {
-  animation: move-lg-element 20s ease-in-out infinite;
+  animation: move-lg-element 20s linear infinite;
 }
 
 .animation-move-sm {

@@ -7,7 +7,7 @@ function Nav({ page }) {
   return (
     <div className='navbar absolute w-full'>
       <div className='relative w-full flex items-center mx-auto justify-between px-16 py-8'>
-        <h2 className='w-full text-2xl font-bold text-orange-300'>
+        <h2 className='w-full text-2xl font-bold text-tertiary'>
           Daniel Babin
         </h2>
         {page !== '/' ? (
@@ -15,22 +15,22 @@ function Nav({ page }) {
             <ul className='hidden w-full flex-row gap-6 justify-end self-end sm:flex'>
               <Link
                 to={page}
-                className='border-blue-400 text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline capitalize'>
+                className='text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline capitalize'>
                 <li>{page === '/' ? 'Home' : page}</li>
               </Link>
               <a
                 href='#about'
-                className='border-blue-400 text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                className='text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
                 <li>About</li>
               </a>
               <a
                 href='#projects'
-                className='border-blue-400 text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                className='text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
                 <li>Projects</li>
               </a>
               <a
                 href='#contact'
-                className='border-blue-400 text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                className='text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
                 <li>Contact</li>
               </a>
             </ul>

@@ -24,7 +24,7 @@ function DropDownMenu({ page, navBool, setnavBool }) {
 
   return (
     <div
-      className={`${dropDown} absolute top-0 right-0 w-2/5 flex flex-col bg-dark rounded-bl-lg sm:hidden`}>
+      className={`${dropDown} z-20 absolute top-0 right-0 w-2/5 flex flex-col bg-dark rounded-bl-lg sm:hidden`}>
       <div
         className='cursor-pointer border w-full text-center py-5 hover:bg-red-500 active:bg-red-500 [&>*]:text-white [&>*]:hover:scale-110'
         onClick={navMenu}>
@@ -36,24 +36,24 @@ function DropDownMenu({ page, navBool, setnavBool }) {
       <ul className='drop-down relative w-full flex flex-col text-white items-center'>
         <Link
           to={page}
-          className='text-white font-semibold duration-300 hover:bg-blue-500 active:bg-blue-500
+          className='text-white font-semibold duration-300 hover:bg-secondary active:bg-secondary
 [&>*]:hover:scale-110 capitalize border w-full text-center py-5'>
           <li>{page === '/' ? 'Home' : page}</li>
         </Link>
         <a
-          className='text-white font-semibold duration-300 hover:bg-blue-500 active:bg-blue-500
+          className='text-white font-semibold duration-300 hover:bg-secondary active:bg-secondary
 [&>*]:hover:scale-110 capitalize border w-full text-center py-5'
           href='#skills'>
           <li>Skills</li>
         </a>
         <a
-          className='text-white font-semibold duration-300 hover:bg-blue-500 active:bg-blue-500
+          className='text-white font-semibold duration-300 hover:bg-secondary active:bg-secondary
 [&>*]:hover:scale-110 capitalize border w-full text-center py-5'
           href='#projects'>
           <li>Projects</li>
         </a>
         <a
-          className='text-white font-semibold duration-300 hover:bg-blue-500 active:bg-blue-500
+          className='text-white font-semibold duration-300 hover:bg-secondary active:bg-secondary
 [&>*]:hover:scale-110 capitalize border w-full text-center py-5'
           href='#contact'>
           <li>Contact</li>

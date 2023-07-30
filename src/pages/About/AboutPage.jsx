@@ -1,4 +1,4 @@
-import Nav from '../../components/Nav'
+import Nav from '../../components/nav/Nav'
 import Heading from '../../components/Heading'
 import LoadImg from '../../components/LoadImg'
 import heroLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash-lowres.jpg'
@@ -8,33 +8,29 @@ function About() {
   return (
     <div className='w-full h-screen'>
       <Nav page='/' />
-      <article className='w-full py-24 flex flex-col'>
+      <article className='w-4/5 py-24 flex flex-col mx-auto'>
         <div className='w-full text-center mx-auto'>
           <Heading title='About Page' />
         </div>
-        <div className='w-4/5 mx-auto flex flex-col space-y-8 md:space-y-0 xs:w-3/4 md:flex-row'>
-          <div className='w-full h-48'>
+        <div className='w-full flex flex-col justify-between items-center space-y-8 md:space-y-0 md:flex-row md:items-end'>
+          <div className='w-1/2 xs:w-1/3 md:w-1/4'>
             <LoadImg
               imgLowRes={heroLowResImg}
               imgHighRes={heroHighResImg}
-              addClassName='max-w-full max-h-full object-cover rounded-lg'
+              addClassName='max-w-full object-cover rounded-lg'
               alt='alt txt'
             />
           </div>
-          <div className='w-full'>
+          <div className='w-2/3 lg:self-end space-y-2'>
             <p className=''>
               While my primary focus is front-end development, I am also
               actively learning back-end technologies to create robust and
-              dynamic web applications. Currently, I am expanding my skillset in
-              back-end development to complement my expertise in front-end
-              technologies and become a proficient full-stack developer. My goal
-              is to create user-friendly interfaces and captivating digital
-              experiences that leave a lasting impact. Staying up-to-date with
-              the latest industry trends, I specialize in crafting responsive
-              websites that work seamlessly across all devices. With a constant
-              drive for excellence, I find joy in turning complex concepts into
-              elegant code and optimizing website performance in this
-              ever-evolving world of web development.
+              dynamic web applications.
+            </p>
+            <p>
+              Currently, I am expanding my skillset in back-end development to
+              complement my expertise in front-end technologies and become a
+              proficient full-stack developer.
             </p>
           </div>
         </div>
