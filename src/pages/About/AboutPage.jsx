@@ -1,15 +1,28 @@
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import Heading from '../../components/Heading'
+import LoadImg from '../../components/LoadImg'
+import heroLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash-lowres.jpg'
+import heroHighResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
 
 function About() {
   return (
     <div>
       <Nav page='/' />
-      <section className='h-screen flex'>
-        <div className='self-center border'>
+      <article className='w-full h-screen flex flex-col items-center justify-center'>
+        <div className='w-full text-center mx-auto'>
           <Heading title='About Page' />
-          <div>
+        </div>
+        <div className='max-w-[700px] lg:max-w-[900px] w-3/4 h-72 flex border'>
+          <div className='w-1/3 h-full'>
+            <LoadImg
+              imgLowRes={heroLowResImg}
+              imgHighRes={heroHighResImg}
+              addClassName='max-w-full h-full object-cover rounded-lg'
+              alt='alt txt'
+            />
+          </div>
+          <div className='w-2/3'>
             <p>
               While my primary focus is front-end development, I am also
               actively learning back-end technologies to create robust and
@@ -26,7 +39,8 @@ function About() {
             </p>
           </div>
         </div>
-      </section>
+      </article>
+
       <Footer />
     </div>
   )

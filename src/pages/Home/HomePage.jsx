@@ -15,7 +15,7 @@ function Home() {
       <Nav page='about' />
       <section
         id='hero'
-        className='w-full bg-darkest h-screen flex flex-col items-center justify-center'>
+        className='w-full h-screen bg-darkest flex flex-col items-center justify-center'>
         <div className='z-20 w-2/3 flex flex-col items-center justify-center space-x-0 lg:flex-row lg:space-x-16'>
           <div className='flex flex-col'>
             <h1 className='text-xl xs:text-2xl sm:text-4xl font-semibold text-primary'>
@@ -31,7 +31,7 @@ function Home() {
               <IconsList />
             </div>
           </div>
-          <div className='self-start w-1/4'>
+          <div className='hidden self-start w-1/4'>
             <LoadImg
               imgLowRes={heroLowResImg}
               imgHighRes={heroHighResImg}
@@ -60,6 +60,7 @@ function Home() {
 
         <AnimationHome />
       </section>
+
       <SkillSection />
       <ProjectSection />
       <ContactSection />
