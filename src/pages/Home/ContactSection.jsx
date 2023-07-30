@@ -11,7 +11,7 @@ function ContactHome() {
         <Heading title='Contact' />
         <div className='w-full flex flex-col items-center space-x-16 lg:flex-row lg:items-start'>
           <div className='w-full'>
-            <p className='text-center font-semibold text-secondary mb-4 lg:hidden'>
+            <p className='text-center font-semibold text-tertiary mb-4 lg:hidden'>
               daniel.l.babin@gmail.com
             </p>
             <Form />
