@@ -31,17 +31,15 @@ function AnimationHome() {
     return (
       <span
         key={i}
-        className={`animation-move-sm w-20 h-10 cursor-pointer text-xs`}>
+        className={`animation-move-sm max-w-xs w-2 cursor-pointer text-xs`}>
         {item}
       </span>
     )
   })
 
   return (
-    <span className='absolute bottom-0 max-w-full w-full py-10 transition-opacity bg-gradient-to-t from-white to-60% to-transparent'>
-      <span className='max-w-full w-4/5 mx-auto flex shrink justify-between text-center text-white'>
-        {risingText}
-      </span>
+    <span className='max-w-full w-4/5 flex text-center text-white'>
+      {risingText}
     </span>
   )
 }

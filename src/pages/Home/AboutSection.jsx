@@ -26,9 +26,9 @@ function AboutSection() {
     <section
       id='about'
       className='w-full my-16 xs:h-screen flex flex-col items-center justify-center'>
-      <article className='max-w-[450px] lg:max-w-[700px] w-3/4 sm:w-2/3 flex flex-col items-center space-y-8'>
+      <article className='max-w-[450px] lg:max-w-[700px] w-3/4 flex flex-col items-center space-y-8'>
         <Heading title='About' />
-        <div className='w-full flex flex-col items-center gap-2 sm:justify-between space-y-6 xs:flex-row xs:space-y-0 xs:items-start lg:justify-start lg:space-x-8'>
+        <div className='w-full flex flex-col items-center xs:gap-2 sm:justify-between space-y-4 xs:flex-row xs:space-y-0 xs:items-start lg:justify-start lg:space-x-8'>
           <div className='w-48'>
             <LoadImg
               imgLowRes={skillsLowResImg}
