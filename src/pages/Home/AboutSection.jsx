@@ -40,7 +40,7 @@ function AboutSection() {
           <SkillList list={skillsList} />
         </div>
         <div className='flex flex-col space-y-4'>
-          <h4 className='text-3xl text-primary'>About me</h4>
+          <h4 className='text-3xl text-tertiary font-semibold'>About me</h4>
           <p className='text-justify'>
             Hello, I'm a front-end web developer with a strong drive for
             understanding and a passion for problem-solving. I find joy in
