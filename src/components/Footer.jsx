@@ -7,17 +7,25 @@ function Footer() {
         <div className='max-w-[400px] w-full mx-auto flex flex-col flex-wrap items-center justify-between gap-8 text-primary xs:flex-row'>
           <div className='w-40 flex flex-col'>
             <h5 className='text-xl font-semibold py-4'>Sections</h5>
-            <ul className='w-full basis-100 shrink-0 grow-0 grid grid-cols-2 text-tertiary'>
-              <a className='' href='/'>
+            <ul className='w-full mx-auto grid grid-cols-2 text-tertiary'>
+              <a
+                className='w-full mx-auto hover:scale-105 hover:font-semibold'
+                href='/'>
                 <li>Home</li>
               </a>
-              <a className='' href='#skills'>
+              <a
+                className='w-full mx-auto hover:scale-105 hover:font-semibold'
+                href='#skills'>
                 <li>Skills</li>
               </a>
-              <a className='' href='#projects'>
+              <a
+                className='w-full mx-auto hover:scale-105 hover:font-semibold'
+                href='#projects'>
                 <li>Projects</li>
               </a>
-              <a className='' href='#contact'>
+              <a
+                className='w-full mx-auto hover:scale-105 hover:font-semibold'
+                href='#contact'>
                 <li>Contact</li>
               </a>
             </ul>
