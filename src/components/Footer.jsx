@@ -29,7 +29,7 @@ function Footer() {
             </div>
           </div>
           <div className='w-full flex flex-col justify-center text-center space-y-8'>
-            <span className='max-w-[600px] border-t-2 w-full self-center'></span>
+            <span className='max-w-[600px] border-t-2 w-full self-center md:mt-12'></span>
             <p className='font-thin'>
               @ 2023 Created by <br /> Daniel Babin
             </p>
