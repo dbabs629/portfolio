@@ -7,18 +7,26 @@ function Footer() {
         <div className='max-w-full w-3/4 mx-auto my-8 flex flex-col flex-wrap items-center justify-center space-y-8 text-primary'>
           <div className='max-w-[450px] w-full md:w-1/2 h-24 flex flex-col items-center space-y-4'>
             <h5 className='text-xl font-semibold'>Sections</h5>
-            <ul className='max-w-[250px] w-2/3 mx-auto flex justify-center text-lg space-x-6 text-tertiary'>
+            <ul className='max-w-[250px] w-2/3 mx-auto flex justify-center text-lg text-tertiary'>
               <a className='' href='/'>
-                <li>Home</li>
+                <li className='w-20 text-center hover:text-xl hover:font-semibold duration-150'>
+                  Home
+                </li>
               </a>
               <a className='' href='#skills'>
-                <li>Skills</li>
+                <li className='w-20 text-center hover:text-xl hover:font-semibold duration-150'>
+                  Skills
+                </li>
               </a>
               <a className='' href='#projects'>
-                <li>Projects</li>
+                <li className='w-20 text-center hover:text-xl hover:font-semibold duration-150'>
+                  Projects
+                </li>
               </a>
               <a className='' href='#contact'>
-                <li>Contact</li>
+                <li className='w-20 text-center hover:text-xl hover:font-semibold duration-150'>
+                  Contact
+                </li>
               </a>
             </ul>
           </div>
