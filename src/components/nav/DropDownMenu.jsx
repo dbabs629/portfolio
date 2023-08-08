@@ -34,17 +34,11 @@ function DropDownMenu({ page, navBool, setnavBool }) {
         />
       </div>
       <ul className='drop-down relative w-full flex flex-col text-white items-center'>
-        <Link
-          to={page}
-          className='text-white font-semibold duration-300 hover:bg-secondary active:bg-secondary
-[&>*]:hover:scale-110 capitalize border w-full text-center py-5'>
-          <li>{page === '/' ? 'Home' : page}</li>
-        </Link>
         <a
           className='text-white font-semibold duration-300 hover:bg-secondary active:bg-secondary
 [&>*]:hover:scale-110 capitalize border w-full text-center py-5'
-          href='#skills'>
-          <li>Skills</li>
+          href='#about'>
+          <li>About</li>
         </a>
         <a
           className='text-white font-semibold duration-300 hover:bg-secondary active:bg-secondary

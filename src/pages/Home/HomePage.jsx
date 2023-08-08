@@ -27,7 +27,7 @@ function Home() {
               I'm a Front-end Developer
             </h1>
             <span className='w-full border-b-8 border-tertiary border-opacity-90 rounded-xl pb-4 sm:w-full' />
-            <div className='w-2/3 sm:w-1/2 text-3xl pl-2 mt-6'>
+            <div className='w-3/4 sm:w-1/2 text-3xl mt-6'>
               <IconsList />
             </div>
           </div>
