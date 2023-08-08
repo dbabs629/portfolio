@@ -13,9 +13,9 @@ function Footer() {
                   Home
                 </li>
               </a>
-              <a className='' href='#skills'>
+              <a className='' href='#about'>
                 <li className='w-20 text-center hover:text-xl hover:font-semibold duration-150'>
-                  Skills
+                  About
                 </li>
               </a>
               <a className='' href='#projects'>
