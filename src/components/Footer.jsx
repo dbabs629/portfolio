@@ -8,16 +8,16 @@ function Footer() {
           <div className='max-w-[450px] w-full md:w-1/2 h-24 flex flex-col items-center space-y-4'>
             <h5 className='text-xl font-semibold'>Sections</h5>
             <ul className='max-w-[250px] w-2/3 mx-auto flex justify-center text-lg space-x-6 text-tertiary'>
-              <a className='hover:font-semibold' href='/'>
+              <a className='' href='/'>
                 <li>Home</li>
               </a>
-              <a className='hover:font-semibold' href='#skills'>
+              <a className='' href='#skills'>
                 <li>Skills</li>
               </a>
-              <a className='hover:font-semibold' href='#projects'>
+              <a className='' href='#projects'>
                 <li>Projects</li>
               </a>
-              <a className='hover:font-semibold' href='#contact'>
+              <a className='' href='#contact'>
                 <li>Contact</li>
               </a>
             </ul>

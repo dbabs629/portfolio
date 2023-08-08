@@ -16,7 +16,7 @@ function Nav({ page }) {
               <Link
                 to={page}
                 className='text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline capitalize'>
-                <li>{page === '/' ? 'Home' : page}</li>
+                <li>{page === '/' && 'Home'}</li>
               </Link>
               <a
                 href='#about'
