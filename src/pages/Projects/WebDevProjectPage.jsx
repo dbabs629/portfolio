@@ -7,8 +7,8 @@ function WebDevProjectPage() {
     'CSS',
     'JavaScript',
     'React',
-    'TailWindCSS',
-    'Npm',
+    'TailwindCSS',
+    'NPM',
     'Git',
   ]
 

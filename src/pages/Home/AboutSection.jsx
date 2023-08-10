@@ -12,7 +12,7 @@ function AboutSection() {
     'CSS',
     'JavaScript',
     'React.JS',
-    'Next.JS',
+    'TailwindCSS',
     'TypeScript',
     'Node.JS',
     'Express',
@@ -25,33 +25,24 @@ function AboutSection() {
   return (
     <section
       id='about'
-      className='w-full my-16 xs:h-screen flex flex-col items-center justify-center'>
+      className='w-full py-32 flex flex-col items-center space-y-8'>
       <Heading title='About' />
-      <article className='max-w-[450px] lg:max-w-[900px] w-3/4 flex flex-col items-center space-y-8 lg:flex-row lg:w-full'>
-        <div className='lg:hidden w-full flex flex-col items-center xs:gap-2 sm:justify-between space-y-4 xs:flex-row xs:space-y-0 xs:items-start lg:justify-start lg:space-x-8'>
-          <div className='w-48'>
-            <LoadImg
-              imgLowRes={skillsLowResImg}
-              imgHighRes={skillsHighResImg}
-              addClassName='max-w-full object-cover rounded-lg'
-              alt='alt txt'
-            />
-          </div>
-          <SkillList list={skillsList} />
-        </div>
-        <div className='hidden w-1/3 lg:block'>
+      <article className='max-w-[450px] w-3/4 flex flex-col items-center space-y-8 lg:max-w-[1050px] lg:w-4/5 lg:flex-row lg:justify-between lg:gap-4'>
+        <div className='max-w-[308px] w-full'>
           <LoadImg
             imgLowRes={skillsLowResImg}
             imgHighRes={skillsHighResImg}
-            addClassName='max-w-full object-cover rounded-lg'
+            addClassName='max-w-full w-full object-cover rounded-lg'
             alt='alt txt'
           />
         </div>
-        <div className='flex flex-col space-y-4 lg:w-1/2 lg:mx-auto'>
-          <div className='hidden lg:block'>
+        <div className='w-full flex flex-col space-y-4 max-w-[572px]'>
+          <div className='w-full flex flex-col items-center justify-center xs:gap-4 space-y-4 xs:flex-row xs:space-y-0 lg:justify-start'>
             <SkillList list={skillsList} />
           </div>
-          <h4 className='text-3xl text-tertiary font-semibold'>About me</h4>
+          <h4 className='text-3xl text-tertiary font-semibold text-center lg:text-start'>
+            About me
+          </h4>
           <p className='text-justify'>
             Hello, I'm a front-end web developer with a strong drive for
             understanding and a passion for problem-solving. I find joy in

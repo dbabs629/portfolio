@@ -23,12 +23,10 @@ function About() {
   return (
     <div className='w-full h-screen'>
       <Nav page='/' />
-      <article className='w-full mx-auto py-24 flex flex-col items-center space-y-4'>
-        <div className='w-full text-center mx-auto'>
-          <Heading title='About Page' />
-        </div>
-        <div className='w-2/3 flex space-x-6 border'>
-          <div className='max-w-[250px] w-1/2'>
+      <article className='w-full mx-auto py-24 flex flex-col items-center justify-center space-y-4'>
+        <Heading title='About Page' />
+        <div className='w-2/3 flex space-x-6'>
+          <div className='max-w-[200px] w-1/3'>
             <LoadImg
               imgLowRes={heroLowResImg}
               imgHighRes={heroHighResImg}
@@ -40,7 +38,7 @@ function About() {
             <SkillList list={skillsList} />
           </div>
         </div>
-        <div className='w-2/3 space-y-2 border'>
+        <div className='w-2/3 space-y-2'>
           <p className=''>
             While my primary focus is front-end development, I am also actively
             learning back-end technologies to create robust and dynamic web
