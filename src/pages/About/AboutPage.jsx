@@ -21,24 +21,27 @@ function About() {
     'Figma',
   ]
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full'>
       <Nav page='/' />
-      <article className='w-full mx-auto py-24 flex flex-col items-center justify-center space-y-4'>
+      <div className='w-72 pt-32 mx-auto'>
         <Heading title='About Page' />
-        <div className='w-2/3 flex space-x-6'>
-          <div className='max-w-[200px] w-1/3'>
-            <LoadImg
-              imgLowRes={heroLowResImg}
-              imgHighRes={heroHighResImg}
-              addClassName='max-w-full object-cover rounded-lg'
-              alt='alt txt'
-            />
-          </div>
-          <div className='self-end'>
+      </div>
+      <article className='max-w-[450px] w-3/4 mx-auto flex flex-col items-center space-y-8 lg:max-w-[1050px] lg:w-4/5 lg:flex-row lg:justify-between lg:gap-4'>
+        <div className='max-w-[308px] w-full'>
+          <LoadImg
+            imgLowRes={heroLowResImg}
+            imgHighRes={heroHighResImg}
+            addClassName='max-w-full w-full object-cover rounded-lg'
+            alt='alt txt'
+          />
+        </div>
+        <div className='w-full flex flex-col space-y-4 max-w-[572px]'>
+          <div className='w-full flex flex-col items-center justify-center xs:gap-4 space-y-4 xs:flex-row xs:space-y-0 lg:justify-start'>
             <SkillList list={skillsList} />
           </div>
-        </div>
-        <div className='w-2/3 space-y-2'>
+          <h4 className='text-3xl text-tertiary font-semibold text-center lg:text-start'>
+            About me
+          </h4>
           <p className=''>
             While my primary focus is front-end development, I am also actively
             learning back-end technologies to create robust and dynamic web
