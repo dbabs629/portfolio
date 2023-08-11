@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons'
 
-function DropDownMenu({ page, navBool, setnavBool }) {
+function DropDownMenu({ navBool, setnavBool }) {
   const [dropDown, setdropDown] = useState('hidden')
 
   let navMenu = (e) => {
