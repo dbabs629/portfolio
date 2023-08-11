@@ -1,4 +1,3 @@
-import Nav from '../../components/nav/Nav'
 import Heading from '../../components/Heading'
 import LoadImg from '../../components/LoadImg'
 import SkillList from '../../components/SkillList'
@@ -22,8 +21,7 @@ function About() {
   ]
   return (
     <div className='w-full'>
-      <Nav page='/' />
-      <div className='w-72 pt-12 mx-auto'>
+      <div className='w-72 pt-32 mx-auto'>
         <Heading title='About Page' />
       </div>
       <article className='max-w-[450px] w-3/4 py-12 mx-auto flex flex-col-reverse items-center space-y-8 gap-8 lg:max-w-[1050px] lg:w-4/5 lg:flex-row lg:justify-between lg:gap-4 lg:space-y-0'>

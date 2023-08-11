@@ -5,7 +5,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 import DropDownMenu from './DropDownMenu'
 
-function MobileMenu({ page }) {
+function MobileMenu() {
   const [navBool, setnavBool] = useState(false)
 
   let navMenu = (e) => {
@@ -13,8 +13,6 @@ function MobileMenu({ page }) {
   }
   return (
     <>
-      {page === 'about' ? (
-        <>
           <div
             id='mobile-menu'
             onClick={navMenu}
@@ -23,19 +21,8 @@ function MobileMenu({ page }) {
             <span className='block w-6 h-[0.2rem] rounded-full bg-white' />
             <span className='block w-7 h-[0.2rem] rounded-full bg-white' />
           </div>
-          <DropDownMenu page={page} navBool={navBool} setnavBool={setnavBool} />
+          <DropDownMenu navBool={navBool} setnavBool={setnavBool} />
         </>
-      ) : (
-        <div>
-          <Link to={page}>
-            <FontAwesomeIcon
-              className='text-3xl cursor-pointer p-2 text-primary duration-300 ease-in-out hover:scale-110'
-              icon={faHome}
-            />
-          </Link>
-        </div>
-      )}
-    </>
   )
 }
 export default MobileMenu

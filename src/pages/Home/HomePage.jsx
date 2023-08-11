@@ -1,4 +1,3 @@
-import Nav from '../../components/nav/Nav'
 import IconsList from '../../components/IconsList'
 import LoadImg from '../../components/LoadImg'
 import heroLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash-lowres.jpg'
@@ -7,12 +6,10 @@ import AnimationHome from './AnimationHome'
 import SkillSection from './AboutSection'
 import ProjectSection from './ProjectSection'
 import ContactSection from './ContactSection'
-import Footer from '../../components/Footer'
 
 function Home() {
   return (
     <main>
-      <Nav page='about' />
       <section
         id='hero'
         className='w-full h-screen bg-darkest flex flex-col items-center justify-center overflow-hidden'>
@@ -67,7 +64,6 @@ function Home() {
       <SkillSection />
       <ProjectSection />
       <ContactSection />
-      <Footer />
     </main>
   )
 }

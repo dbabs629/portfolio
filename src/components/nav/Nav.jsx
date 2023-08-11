@@ -1,23 +1,20 @@
 import MobileMenu from './MobileMenu'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 
-function Nav({ page }) {
+function Nav() {
+  const location = useLocation()
+  
   return (
     <div className='navbar absolute max-w-full w-full'>
       <div className='relative w-full flex items-center mx-auto justify-between px-8 xs:px-16 py-8'>
         <h2 className='w-full text-2xl font-bold text-tertiary'>
           Daniel Babin
         </h2>
-        {page !== '/' ? (
+        {location.pathname === '/' ? (
           <div>
             <ul className='hidden w-full flex-row gap-6 justify-end self-end sm:flex'>
-              <Link
-                to={page}
-                className='text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline capitalize'>
-                <li>{page === '/' && 'Home'}</li>
-              </Link>
               <a
                 href='#about'
                 className='text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
@@ -34,11 +31,11 @@ function Nav({ page }) {
                 <li>Contact</li>
               </a>
             </ul>
-            <MobileMenu page={page} />
+            <MobileMenu />
           </div>
         ) : (
           <div>
-            <Link to={page}>
+            <Link to='/'>
               <FontAwesomeIcon
                 className='text-3xl cursor-pointer p-2 text-primary duration-300 ease-in-out hover:scale-110'
                 icon={faHome}
