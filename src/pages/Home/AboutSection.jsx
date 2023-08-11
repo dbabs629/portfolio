@@ -27,8 +27,8 @@ function AboutSection() {
       id='about'
       className='w-full py-32 flex flex-col items-center space-y-8'>
       <Heading title='About' />
-      <article className='max-w-[450px] w-3/4 flex flex-col items-center space-y-8 lg:max-w-[1050px] lg:w-4/5 lg:flex-row lg:justify-between lg:gap-4'>
-        <div className='max-w-[308px] w-full'>
+      <article className='max-w-[450px] w-3/4 flex flex-col items-center space-y-8 lg:max-w-[1050px] lg:w-4/5 lg:flex-row lg:justify-between lg:gap-4 lg:space-y-0'>
+        <div className='max-w-[295px] w-full'>
           <LoadImg
             imgLowRes={skillsLowResImg}
             imgHighRes={skillsHighResImg}

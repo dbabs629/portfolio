@@ -9,7 +9,7 @@ function ContactHome() {
       className='w-full py-32 flex justify-center overflow-x-hidden'>
       <div className='max-w-[650px] w-3/4 sm:w-2/3 flex flex-col items-center space-y-8'>
         <Heading title='Contact' />
-        <div className='w-full flex flex-col items-center space-x-16 lg:flex-row lg:items-start'>
+        <div className='w-full flex flex-col items-center justify-between space-x-16 lg:flex-row lg:items-start'>
           <div className='w-full'>
             <p className='text-center font-semibold text-tertiary mb-4 lg:hidden'>
               daniel.l.babin@gmail.com
