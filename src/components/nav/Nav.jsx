@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 function Nav() {
-  const location = useLocation()
+  const {pathname} = useLocation()
   
   return (
     <div className='navbar absolute max-w-full w-full'>
@@ -12,7 +12,7 @@ function Nav() {
         <h2 className='w-full text-2xl font-bold text-tertiary'>
           Daniel Babin
         </h2>
-        {location.pathname === '/' ? (
+        {pathname === '/' ? (
           <div>
             <ul className='hidden w-full flex-row gap-6 justify-end self-end sm:flex'>
               <a

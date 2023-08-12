@@ -2,13 +2,13 @@ import { useLocation } from 'react-router-dom'
 import IconsList from './IconsList'
 
 function Footer() {
-  const location = useLocation()
+  const { pathname } = useLocation()
 
   return (
     <footer>
       <section className='bg-darkest py-8 flex m-auto'>
         <div className='max-w-full w-3/4 mx-auto my-8 flex flex-col flex-wrap items-center justify-center space-y-8 text-primary'>
-          {location.pathname === '/' && (
+          {pathname === '/' && (
             <div className='max-w-[450px] w-full md:w-1/2 h-24 flex flex-col items-center space-y-4'>
               <h5 className='text-xl font-semibold'>Sections</h5>
               <ul className='max-w-[250px] w-2/3 mx-auto flex justify-center text-lg text-tertiary'>
