@@ -23,7 +23,7 @@ function Project({
           />
         </a>
       </div>
-      <div className='max-w-full w-full flex flex-col space-y-6 lg:max-w-[500px] lg:w-1/2'>
+      <div className='max-w-full w-full flex flex-col space-y-8 lg:max-w-[500px] lg:w-1/2'>
         <h3 className='text-3xl text-tertiary'>{title}</h3>
         <p className='text-primary text-justify'>{text}</p>
         <Link className='max-w-[150px]' to={projectLink}>

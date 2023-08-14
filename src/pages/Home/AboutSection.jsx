@@ -25,10 +25,10 @@ function AboutSection() {
   return (
     <section
       id='about'
-      className='w-full py-32 flex flex-col items-center space-y-8'>
+      className='w-full py-40 flex flex-col items-center space-y-8'>
       <Heading title='About' />
-      <article className='max-w-[450px] w-3/4 flex flex-col items-center space-y-8 lg:max-w-[1050px] lg:w-4/5 lg:flex-row lg:justify-between lg:gap-4 lg:space-y-0'>
-        <div className='max-w-[295px] w-full'>
+      <article className='max-w-[450px] w-3/4 flex flex-col items-center space-y-8 lg:space-x-8 lg:max-w-[1050px] lg:w-4/5 lg:flex-row lg:justify-between lg:gap-4 lg:space-y-0'>
+        <div className='max-w-[315px] w-full'>
           <LoadImg
             imgLowRes={skillsLowResImg}
             imgHighRes={skillsHighResImg}
@@ -36,14 +36,11 @@ function AboutSection() {
             alt='alt txt'
           />
         </div>
-        <div className='w-full flex flex-col space-y-4 max-w-[572px]'>
+        <div className='w-full flex flex-col space-y-12 max-w-[572px]'>
           <div className='w-full flex flex-col items-center justify-center xs:gap-4 space-y-4 xs:flex-row xs:space-y-0 lg:justify-start'>
             <SkillList list={skillsList} />
           </div>
-          <h4 className='text-3xl text-tertiary font-semibold text-center lg:text-start'>
-            About me
-          </h4>
-          <p className='text-justify'>
+          <p className='text-justify text-primary'>
             Hello, I'm a front-end web developer with a strong drive for
             understanding and a passion for problem-solving. I find joy in
             crafting seamless user experiences by combining my technical

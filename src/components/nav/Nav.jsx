@@ -18,6 +18,14 @@ function Nav() {
           <div className=''>
             <ul className='hidden w-full flex-row gap-6 items-center sm:flex'>
               <a
+                href='#hero'
+                className='text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                <FontAwesomeIcon
+                  className='text-2xl cursor-pointer p-2 text-primary duration-300 ease-in-out hover:scale-110'
+                  icon={faHome}
+                />
+              </a>
+              <a
                 href='#about'
                 className='text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
                 <li>About</li>
@@ -32,7 +40,6 @@ function Nav() {
                 className='text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
                 <li>Contact</li>
               </a>
-
               <Button>Resume</Button>
             </ul>
             <MobileMenu />

@@ -1,6 +1,6 @@
 function SkillList({ list }) {
   return (
-    <ul className='max-w-[450px] grid gap-1 grid-cols-3 lg:grid-cols-4 lg:gap-2'>
+    <ul className='max-w-[450px] grid gap-2 grid-cols-3 lg:grid-cols-4 lg:gap-3 xl:gap-4'>
       {list.map((item, i) => (
         <li
           key={i + 0.1}

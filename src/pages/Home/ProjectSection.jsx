@@ -8,7 +8,7 @@ function ProjectSection() {
   return (
     <section
       id='projects'
-      className='w-full py-32 flex flex-col items-center justify-center space-y-8 bg-darkest'>
+      className='w-full py-40 flex flex-col items-center justify-center space-y-8 bg-darkest'>
       <Heading title='Projects' />
       <div className='max-w-[450px] w-3/4 flex flex-col justify-center items-center space-y-48 lg:max-w-full lg:w-4/5'>
         <Project
@@ -26,7 +26,7 @@ function ProjectSection() {
           projectLowResImg={projectLowResImg}
           projectHighResImg={projectHighResImg}
           alt='project alt txt'
-          title='Web Development Company Landing Page'
+          title='Mocksite Landing Page'
           text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}
         />
         <Project
@@ -35,7 +35,7 @@ function ProjectSection() {
           projectLowResImg={projectRpsHighResImg}
           projectHighResImg={projectRpsHighResImg}
           alt='project alt txt'
-          title='Rock Paper Scissors Lizard Spock Game'
+          title='Rock Paper Scissors Game'
           text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}
         />
       </div>
