@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import IconsList from './IconsList'
 import Button from '../Button'
+import resume from '../../assets/daniel-babin-resume-2023.pdf'
 
 function Nav() {
   const { pathname } = useLocation()
@@ -38,7 +39,9 @@ function Nav() {
                 className='font-semibold text-primary decoration-primary underline-offset-8 duration-300 hover:scale-105 hover:text-white hover:underline'>
                 <li>Contact</li>
               </a>
-              <Button>Resume</Button>
+              <a href={resume}>
+                <Button>Resume</Button>
+              </a>
             </ul>
             <MobileMenu />
             <div className='hidden sm:block'>

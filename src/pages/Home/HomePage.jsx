@@ -12,7 +12,7 @@ function Home() {
           <div className='flex flex-col'>
             <h1 className='animate-flip-down text-xl font-semibold text-primary xs:text-2xl sm:text-4xl'>
               Hi I'm
-              <span className='inline pl-2 text-2xl font-semibold text-tertiary xs:text-3xl sm:text-5xl'>
+              <span className='inline pl-2 text-2xl font-semibold text-red xs:text-3xl sm:text-5xl'>
                 Daniel
               </span>
               <br />
