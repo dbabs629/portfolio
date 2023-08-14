@@ -4,7 +4,7 @@ function SkillList({ list }) {
       {list.map((item, i) => (
         <li
           key={i + 0.1}
-          className='w-20 p-2 text-center capitalize text-xs rounded-3xl bg-darkest text-primary shadow-md xs:w-24 xs:p-3 md:font-semibold'>
+          className='w-20 p-2 text-center capitalize text-xs rounded-3xl bg-dark text-primary shadow-md xs:w-24 xs:p-3 sm:text-sm md:font-semibold'>
           {item}
         </li>
       ))}

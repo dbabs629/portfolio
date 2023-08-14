@@ -31,7 +31,7 @@ function Project({
         </Link>
       </div>
       <div className='max-w-[500px] hidden duration-300 hover:scale-105 lg:block lg:w-2/3'>
-        <a href={link}>
+        <a href={link} rel='noreferrer' target='_blank'>
           <LoadImg
             imgLowRes={projectLowResImg}
             imgHighRes={projectHighResImg}

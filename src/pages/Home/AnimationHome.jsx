@@ -31,14 +31,14 @@ function AnimationHome() {
     return (
       <span
         key={i}
-        className={`animation-move-sm max-w-xs w-2 cursor-pointer text-xs`}>
+        className={`animation-move-sm max-w-xs w-2 cursor-pointer text-xs overflow-x-hidden`}>
         {item}
       </span>
     )
   })
 
   return (
-    <span className='max-w-full w-4/5 flex text-center text-white'>
+    <span className='max-w-full w-4/5 -z-0 flex text-center text-white overflow-x-hidden'>
       {risingText}
     </span>
   )

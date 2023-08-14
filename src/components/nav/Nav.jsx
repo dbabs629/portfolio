@@ -2,19 +2,21 @@ import MobileMenu from './MobileMenu'
 import { Link, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
+import IconsList from './IconsList'
+import Button from '../Button'
 
 function Nav() {
-  const {pathname} = useLocation()
-  
+  const { pathname } = useLocation()
+
   return (
-    <div className='navbar absolute max-w-full w-full'>
-      <div className='relative w-full flex items-center mx-auto justify-between px-8 xs:px-16 py-8'>
+    <div className='z-20 navbar bg-darkest border-b-2 border-b-dark fixed max-w-full w-full'>
+      <div className='relative w-full flex items-center mx-auto justify-between p-4 xs:px-16'>
         <h2 className='w-full text-2xl font-bold text-tertiary'>
           Daniel Babin
         </h2>
         {pathname === '/' ? (
-          <div>
-            <ul className='hidden w-full flex-row gap-6 justify-end self-end sm:flex'>
+          <div className=''>
+            <ul className='hidden w-full flex-row gap-6 items-center sm:flex'>
               <a
                 href='#about'
                 className='text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
@@ -30,8 +32,13 @@ function Nav() {
                 className='text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
                 <li>Contact</li>
               </a>
+
+              <Button>Resume</Button>
             </ul>
             <MobileMenu />
+            <div className='hidden sm:block'>
+              <IconsList />
+            </div>
           </div>
         ) : (
           <div>

@@ -10,8 +10,9 @@ module.exports = {
         tertdark: '#fb923c',
         dark: '#222743',
         darker: '#1d1f37',
-        darkest: '#2b2d42',
+        darkest: '#141627',
         ogbg: '#0C121F',
+        oldbg: '#0E1937',
       },
       fontFamily: {
         quicksand: 'Quicksand',
