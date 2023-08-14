@@ -7,13 +7,13 @@ function ProjectPage({ list, title }) {
       <div className='flex justify-center pt-32'>
         <Heading title={title} />
       </div>
-      <article className='max-w-[450px] w-3/4 mx-auto flex flex-col items-center space-y-8 sm:w-2/3 lg:max-w-[700px]'>
-        <div className='w-full slide border'>Slide</div>
+      <article className='mx-auto flex w-3/4 max-w-[450px] flex-col items-center space-y-8 sm:w-2/3 lg:max-w-[700px]'>
+        <div className='slide w-full border'>Slide</div>
         <div className='self-start'>
           <SkillList list={list} />
         </div>
-        <div className='text'>
-          <p className='text-gray-800'>
+        <div>
+          <p className='text-primary lg:text-lg'>
             1 Communication is at the heart of my work. I thrive in
             collaborative environments, actively engaging with team members and
             clients to understand their needs and goals. 2 My ability to

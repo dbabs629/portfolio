@@ -21,54 +21,54 @@ function About() {
   ]
   return (
     <div className='w-full'>
-      <div className='w-72 pt-32 mx-auto'>
+      <div className='mx-auto w-72 pt-32'>
         <Heading title='About Page' />
       </div>
-      <article className='max-w-[450px] w-3/4 py-12 mx-auto flex flex-col-reverse items-center space-y-8 gap-8 lg:max-w-[1050px] lg:w-4/5 lg:flex-row lg:justify-between lg:space-y-0'>
-        <div className='w-full flex flex-col space-y-12 max-w-[572px] self-start'>
-          <div>
-            <h5 className='text-3xl text-primary font-semibold text-center lg:text-start'>
+      <article className='mx-auto flex w-3/4 max-w-[450px] flex-col-reverse items-center gap-8 space-y-8 py-12 lg:w-4/5 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:space-y-0'>
+        <div className='flex w-full max-w-[572px] flex-col space-y-24 self-start'>
+          <div className='space-y-4'>
+            <h5 className='text-center text-3xl font-semibold text-emerald lg:text-start'>
               About me 1
             </h5>
-            <p className=''>
+            <p className='text-primary lg:text-lg'>
               While my primary focus is front-end development, I am also
               actively learning back-end technologies to create robust and
               dynamic web applications.
             </p>
-            <p>
+            <p className='text-primary lg:text-lg'>
               Currently, I am expanding my skillset in back-end development to
               complement my expertise in front-end technologies and become a
               proficient full-stack developer.
             </p>
           </div>
-          <div>
-            <h5 className='text-3xl text-tertiary font-semibold text-center lg:text-start'>
+          <div className='space-y-4'>
+            <h5 className='text-center text-3xl font-semibold text-red lg:text-start'>
               About me 2
             </h5>
-            <p>
+            <p className='text-primary lg:text-lg'>
               Currently, I am expanding my skillset in back-end development to
               complement my expertise in front-end technologies and become a
               proficient full-stack developer.
             </p>
-            <p>
+            <p className='text-primary lg:text-lg'>
               Currently, I am expanding my skillset in back-end development to
               complement my expertise in front-end technologies and become a
               proficient full-stack developer.
             </p>
           </div>
-          <div>
-            <h5 className='text-3xl text-primary font-semibold text-center lg:text-start'>
+          <div className='space-y-4'>
+            <h5 className='text-center text-3xl font-semibold text-emerald lg:text-start'>
               About me 3
             </h5>
-            <p>
+            <p className='text-primary lg:text-lg'>
               Currently, I am expanding my skillset in back-end development to
               complement my expertise in front-end technologies and become a
               proficient full-stack developer.
             </p>
           </div>
         </div>
-        <div className='w-full flex flex-col gap-8 items-center lg:flex-col-reverse'>
-          <div className='max-w-[308px] lg:max-w-[395px] w-full'>
+        <div className='flex w-full flex-col items-center gap-8 lg:flex-col-reverse'>
+          <div className='w-full max-w-[308px] lg:max-w-[425px]'>
             <LoadImg
               imgLowRes={heroLowResImg}
               imgHighRes={heroHighResImg}
@@ -76,7 +76,7 @@ function About() {
               alt='alt txt'
             />
           </div>
-          <div className='w-full flex justify-center items-center'>
+          <div className='flex w-full items-center justify-center'>
             <SkillList list={skillsList} />
           </div>
         </div>

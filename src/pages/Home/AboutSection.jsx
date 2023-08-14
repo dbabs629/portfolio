@@ -25,10 +25,10 @@ function AboutSection() {
   return (
     <section
       id='about'
-      className='w-full py-40 flex flex-col items-center space-y-8'>
+      className='flex w-full flex-col items-center space-y-8 py-40'>
       <Heading title='About' />
-      <article className='max-w-[450px] w-3/4 flex flex-col items-center space-y-8 lg:space-x-8 lg:max-w-[1050px] lg:w-4/5 lg:flex-row lg:justify-between lg:gap-4 lg:space-y-0'>
-        <div className='max-w-[315px] w-full'>
+      <article className='flex w-3/4 max-w-[450px] flex-col items-center space-y-8 lg:w-4/5 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:gap-4 lg:space-x-8 lg:space-y-0'>
+        <div className='w-full max-w-[425px] lg:max-w-[400px]'>
           <LoadImg
             imgLowRes={skillsLowResImg}
             imgHighRes={skillsHighResImg}
@@ -36,11 +36,11 @@ function AboutSection() {
             alt='alt txt'
           />
         </div>
-        <div className='w-full flex flex-col space-y-12 max-w-[572px]'>
-          <div className='w-full flex flex-col items-center justify-center xs:gap-4 space-y-4 xs:flex-row xs:space-y-0 lg:justify-start'>
+        <div className='flex w-full max-w-[572px] flex-col space-y-12'>
+          <div className='flex w-full flex-col items-center justify-center space-y-4 xs:flex-row xs:gap-4 xs:space-y-0 lg:justify-start'>
             <SkillList list={skillsList} />
           </div>
-          <p className='text-justify text-primary'>
+          <p className='max-w-[450px] text-justify text-primary lg:text-lg'>
             Hello, I'm a front-end web developer with a strong drive for
             understanding and a passion for problem-solving. I find joy in
             crafting seamless user experiences by combining my technical

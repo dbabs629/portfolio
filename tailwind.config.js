@@ -6,13 +6,16 @@ module.exports = {
       colors: {
         primary: '#74C7FE',
         secondary: '#3b82f6',
-        tertiary: '#FDBA74',
+        tertiary: '#6EE7B7',
         tertdark: '#fb923c',
         dark: '#222743',
         darker: '#1d1f37',
         darkest: '#141627',
         ogbg: '#0C121F',
         oldbg: '#0E1937',
+        cyan: '#67E8F9',
+        emerald: '#6EE7B7',
+        red: '#FB7185',
       },
       fontFamily: {
         quicksand: 'Quicksand',
@@ -22,5 +25,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: ['prettier-plugin-tailwindcss'],
 }

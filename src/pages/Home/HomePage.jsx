@@ -7,18 +7,18 @@ function Home() {
     <main>
       <section
         id='hero'
-        className='max-w-full w-full h-screen bg-darkest flex flex-col items-center justify-center overflow-hidden'>
-        <div className='z-10 w-2/3 flex flex-col items-center justify-center space-x-0 lg:flex-row lg:space-x-16'>
+        className='flex h-screen w-full max-w-full flex-col items-center justify-center overflow-hidden bg-darkest'>
+        <div className='z-10 flex w-2/3 flex-col items-center justify-center space-x-0 lg:flex-row lg:space-x-16'>
           <div className='flex flex-col'>
-            <h1 className='animate-flip-down text-xl xs:text-2xl sm:text-4xl font-semibold text-primary'>
+            <h1 className='animate-flip-down text-xl font-semibold text-primary xs:text-2xl sm:text-4xl'>
               Hi I'm
-              <span className='inline pl-2 text-2xl xs:text-3xl sm:text-5xl font-semibold text-tertiary'>
+              <span className='inline pl-2 text-2xl font-semibold text-tertiary xs:text-3xl sm:text-5xl'>
                 Daniel
               </span>
               <br />
               I'm a Front-end Developer
             </h1>
-            <span className='slide-right w-full border-b-8 border-tertiary border-opacity-90 rounded-xl pb-4 sm:w-full' />
+            <span className='slide-right w-full rounded-xl border-b-8 border-tertiary border-opacity-90 pb-4 sm:w-full' />
           </div>
         </div>
         {/* <div className='max-w-full w-full overflow-x-hidden z-0'>

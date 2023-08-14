@@ -9,35 +9,33 @@ function Nav() {
   const { pathname } = useLocation()
 
   return (
-    <div className='z-20 navbar bg-darkest border-b-2 border-b-dark fixed max-w-full w-full'>
-      <div className='relative w-full flex items-center mx-auto justify-between p-4 xs:px-16'>
-        <h2 className='w-full text-2xl font-bold text-tertiary'>
-          Daniel Babin
-        </h2>
+    <div className='navbar fixed z-20 w-full max-w-full border-b-2 border-b-dark bg-darkest'>
+      <div className='relative mx-auto flex w-full items-center justify-between p-4 xs:px-16'>
+        <h2 className='w-full text-2xl font-bold text-red'>Daniel Babin</h2>
         {pathname === '/' ? (
           <div className=''>
-            <ul className='hidden w-full flex-row gap-6 items-center sm:flex'>
+            <ul className='hidden w-full flex-row items-center gap-6 sm:flex'>
               <a
                 href='#hero'
-                className='text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                className='font-semibold text-primary decoration-primary underline-offset-8 transition-transform duration-150 hover:scale-105 hover:text-white hover:underline'>
                 <FontAwesomeIcon
-                  className='text-2xl cursor-pointer p-2 text-primary duration-300 ease-in-out hover:scale-110'
+                  className='cursor-pointer p-2 text-2xl text-primary duration-300 ease-in-out hover:scale-110'
                   icon={faHome}
                 />
               </a>
               <a
                 href='#about'
-                className='text-primary font-semibold transition-transform duration-150 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                className='font-semibold text-primary decoration-primary underline-offset-8 transition-transform duration-150 hover:scale-105 hover:text-white hover:underline'>
                 <li>About</li>
               </a>
               <a
                 href='#projects'
-                className='text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                className='font-semibold text-primary decoration-primary underline-offset-8 duration-300 hover:scale-105 hover:text-white hover:underline'>
                 <li>Projects</li>
               </a>
               <a
                 href='#contact'
-                className='text-primary font-semibold duration-300 underline-offset-8 decoration-primary hover:scale-105 hover:text-white hover:underline'>
+                className='font-semibold text-primary decoration-primary underline-offset-8 duration-300 hover:scale-105 hover:text-white hover:underline'>
                 <li>Contact</li>
               </a>
               <Button>Resume</Button>
@@ -51,7 +49,7 @@ function Nav() {
           <div>
             <Link to='/'>
               <FontAwesomeIcon
-                className='text-3xl cursor-pointer p-2 text-primary duration-300 ease-in-out hover:scale-110'
+                className='cursor-pointer p-2 text-3xl text-primary duration-300 ease-in-out hover:scale-110'
                 icon={faHome}
               />
             </Link>

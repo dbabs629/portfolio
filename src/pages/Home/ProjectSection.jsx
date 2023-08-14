@@ -8,9 +8,9 @@ function ProjectSection() {
   return (
     <section
       id='projects'
-      className='w-full py-40 flex flex-col items-center justify-center space-y-8 bg-darkest'>
+      className='flex w-full flex-col items-center justify-center space-y-8 bg-darkest py-40'>
       <Heading title='Projects' />
-      <div className='max-w-[450px] w-3/4 flex flex-col justify-center items-center space-y-48 lg:max-w-full lg:w-4/5'>
+      <div className='flex w-3/4 max-w-[450px] flex-col items-center justify-center space-y-48 lg:w-4/5 lg:max-w-full'>
         <Project
           link='/'
           projectLink='/project/rps-project-page'

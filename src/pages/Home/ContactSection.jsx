@@ -6,14 +6,14 @@ function ContactHome() {
   return (
     <section
       id='contact'
-      className='w-full py-40 flex justify-center overflow-x-hidden'>
-      <div className='max-w-[1050px] w-3/4 flex flex-col items-center space-y-8 sm:w-2/3 lg:w-4/5'>
+      className='flex w-full justify-center overflow-x-hidden py-40'>
+      <div className='flex w-3/4 max-w-[1050px] flex-col items-center space-y-8 sm:w-2/3 lg:w-4/5'>
         <Heading title='Contact' />
-        <div className='w-full flex flex-col items-center justify-between space-x-16 lg:flex-row lg:items-start'>
+        <div className='flex w-full flex-col items-center justify-between space-x-16 lg:flex-row lg:items-start'>
           <Form />
-          <div className='w-full hidden lg:block'>
-            <div className='max-w-[500px] w-full lg:block'>
-              <img className='max-w-full h-auto' src={letter} alt='letter' />
+          <div className='hidden w-full lg:block'>
+            <div className='w-full max-w-[500px] lg:block'>
+              <img className='h-auto max-w-full' src={letter} alt='letter' />
             </div>
           </div>
         </div>
