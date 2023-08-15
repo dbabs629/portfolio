@@ -6,7 +6,7 @@ import Heading from '../../components/Heading'
 function ContactHome() {
   const contactRef = useRef()
   const [refVisible, setRefVisible] = useState()
-  
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -20,7 +20,7 @@ function ContactHome() {
           console.log(pos)
         })
       },
-      { threshold: 0.4 }
+      { threshold: 0.1 }
     )
     contactRef.current.querySelectorAll('.hide').forEach((content) => {
       observer.observe(content)

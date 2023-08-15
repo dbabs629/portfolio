@@ -33,11 +33,11 @@ code {
 }
 
 .flip-down {
-  animation: flip-down 500ms ease-in-out;
+  animation: flip-down 1s ease-in-out;
 }
 
 .slide-right {
-  animation: slide-in-right 500ms ease-in-out;
+  animation: slide-in-right 1s ease-in-out;
 }
 
 @keyframes flip-down {
@@ -65,10 +65,19 @@ code {
   transition: all 1s;
   transition-delay: 500ms;
 }
+
 .hide-right {
   opacity: 0;
   filter: blue(5px);
   transform: translateX(100%);
+  transition: all 1s;
+  transition-delay: 500ms;
+}
+
+.hide-down {
+  opacity: 0;
+  filter: blue(5px);
+  transform: translateY(100%);
   transition: all 1s;
   transition-delay: 500ms;
 }

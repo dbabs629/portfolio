@@ -25,7 +25,7 @@ function AboutSection() {
           console.log(pos)
         })
       },
-      { threshold: 0.4 }
+      { threshold: 0.1 }
     )
     aboutRef.current.querySelectorAll('.hide').forEach((content) => {
       observer.observe(content)
@@ -50,11 +50,12 @@ function AboutSection() {
   return (
     <section
       id='about'
-      ref={aboutRef}
-      className='flex w-full flex-col items-center space-y-8 py-40'>
+      className='flex w-full flex-col items-center space-y-8 border py-40'>
       <Heading title='About' />
-      <article className='flex w-3/4 max-w-[450px] flex-col items-center space-y-8 lg:w-4/5 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:gap-4 lg:space-x-8 lg:space-y-0'>
-        <div className='hide hide-left w-full max-w-[425px] lg:max-w-[400px]'>
+      <article
+        ref={aboutRef}
+        className='flex w-3/4 max-w-[450px] flex-col items-center space-y-8 lg:w-4/5 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:gap-4 lg:space-x-8 lg:space-y-0'>
+        <div className='hide hide-down lg:hide-left w-full max-w-[425px] lg:max-w-[400px]'>
           <LoadImg
             imgLowRes={skillsLowResImg}
             imgHighRes={skillsHighResImg}
@@ -62,7 +63,7 @@ function AboutSection() {
             alt='alt txt'
           />
         </div>
-        <div className='hide hide-right flex w-full max-w-[572px] flex-col space-y-12'>
+        <div className='hide hide-down lg:hide-right flex w-full max-w-[572px] flex-col space-y-12'>
           <div className='flex w-full flex-col items-center justify-center space-y-4 xs:flex-row xs:gap-4 xs:space-y-0 lg:justify-start'>
             <SkillList list={skillsList} />
           </div>
