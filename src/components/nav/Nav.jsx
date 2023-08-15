@@ -39,7 +39,7 @@ function Nav() {
                 className='font-semibold text-primary decoration-primary underline-offset-8 duration-300 hover:scale-105 hover:text-white hover:underline'>
                 <li>Contact</li>
               </a>
-              <a href={resume}>
+              <a href={resume} rel='noopener noreferrer' target='_blank'>
                 <Button>Resume</Button>
               </a>
             </ul>
