@@ -74,14 +74,6 @@ code {
   transition-delay: 500ms;
 }
 
-.hide-down {
-  opacity: 0;
-  filter: blue(5px);
-  transform: translateY(100%);
-  transition: all 1s;
-  transition-delay: 500ms;
-}
-
 .show {
   opacity: 1;
   filter: blue(0);

@@ -39,7 +39,7 @@ function Project({
     <article
       ref={projectRef}
       className='flex w-full flex-col space-y-8 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:space-y-0'>
-      <div className='hide hide-right w-full max-w-[450px] self-center duration-300 hover:scale-105 lg:hidden'>
+      <div className='hide hide-left w-full max-w-[450px] self-center duration-300 hover:scale-105 lg:hidden'>
         <a href={link}>
           <LoadImg
             imgLowRes={projectLowResImg}
@@ -49,7 +49,7 @@ function Project({
           />
         </a>
       </div>
-      <div className='hide hide-left flex w-full max-w-full flex-col space-y-8 lg:w-1/2 lg:max-w-[500px]'>
+      <div className='hide hide-right lg:hide-left flex w-full max-w-full flex-col space-y-8 lg:w-1/2 lg:max-w-[500px]'>
         <h3 className='text-3xl text-red'>{title}</h3>
         <p className='text-justify text-primary lg:text-lg'>{text}</p>
         <Link className='max-w-[150px]' to={projectLink}>
