@@ -20,7 +20,7 @@ function ContactHome() {
           console.log(pos)
         })
       },
-      { threshold: 0.1 }
+      { rootMargin: '100px', threshold: 0.1 }
     )
     contactRef.current.querySelectorAll('.hide').forEach((content) => {
       observer.observe(content)

@@ -25,7 +25,7 @@ function AboutSection() {
           console.log(pos)
         })
       },
-      { threshold: 0.1 }
+      { rootMargin: '100px', threshold: 0.1 }
     )
     aboutRef.current.querySelectorAll('.hide').forEach((content) => {
       observer.observe(content)
