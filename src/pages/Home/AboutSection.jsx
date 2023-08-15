@@ -50,7 +50,7 @@ function AboutSection() {
   return (
     <section
       id='about'
-      className='flex w-full flex-col items-center space-y-8 py-40'>
+      className='flex w-full flex-col items-center space-y-8 overflow-x-hidden py-40'>
       <Heading title='About' />
       <article
         ref={aboutRef}
