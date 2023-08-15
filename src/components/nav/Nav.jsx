@@ -10,7 +10,7 @@ function Nav() {
   const { pathname } = useLocation()
 
   return (
-    <div className='navbar fixed z-20 w-full max-w-full border-b-2 border-b-dark bg-darkest'>
+    <div className='navbar z-20 w-full max-w-full border-b-2 border-b-dark bg-darkest'>
       <div className='relative mx-auto flex w-full items-center justify-between p-4 xs:px-16'>
         <h2 className='w-full text-2xl font-bold text-red'>Daniel Babin</h2>
         {pathname === '/' ? (
