@@ -28,7 +28,7 @@ function Project({
           console.log(pos)
         })
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     )
     projectRef.current.querySelectorAll('.hide').forEach((content) => {
       observer.observe(content)

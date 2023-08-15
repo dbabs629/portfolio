@@ -8,7 +8,7 @@ function ProjectSection() {
   return (
     <section
       id='projects'
-      className='flex w-full flex-col items-center justify-center space-y-8 bg-darkest py-40 overflow-x-hidden'>
+      className='flex w-full flex-col items-center justify-center space-y-8 bg-darkest py-40 lg:overflow-x-hidden'>
       <Heading title='Projects' />
       <div className='flex w-3/4 max-w-[450px] flex-col items-center justify-center space-y-48 lg:w-4/5 lg:max-w-full'>
         <Project
