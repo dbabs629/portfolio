@@ -77,7 +77,7 @@ code {
   filter: blue(5px);
   transform: translateX(-100%);
   transition: all 1s;
-  transition-delay: 500ms;
+  transition-delay: 300ms;
 }
 
 .hide-right {
@@ -85,7 +85,7 @@ code {
   filter: blue(5px);
   transform: translateX(100%);
   transition: all 1s;
-  transition-delay: 500ms;
+  transition-delay: 300ms;
 }
 
 .show {
