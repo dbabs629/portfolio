@@ -32,7 +32,7 @@ code {
   }
 }
 
-.flip-down {
+.animate-flip-down {
   animation: flip-down 1s ease-in-out;
 }
 
@@ -42,19 +42,33 @@ code {
 
 @keyframes flip-down {
   0% {
-    @apply rotate-45 -skew-x-12;
+    opacity: 0;
+    blur: 5px;
+    transform: rotate(30deg);
   }
   100% {
-    @apply skew-x-0;
+    opacity: 1;
+    blur: 0;
+    transform: rotate(0deg);
   }
 }
 
 @keyframes slide-in-right {
   0% {
-    @apply -translate-x-[100%];
+    opacity: 0;
+    blur: 5px;
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   100% {
-    @apply translate-x-0;
+    opacity: 1;
+    blur: 0;
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
