@@ -38,7 +38,7 @@ function Project({
   return (
     <article
       ref={projectRef}
-      className='flex w-full flex-col space-y-8 overflow-x-hidden lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:space-y-0'>
+      className='flex w-full flex-col space-y-8 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:space-y-0'>
       <div className='hide hide-right w-full max-w-[450px] self-center duration-300 hover:scale-105 lg:hidden'>
         <a href={link}>
           <LoadImg
