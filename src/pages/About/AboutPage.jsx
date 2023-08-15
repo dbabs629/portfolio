@@ -1,8 +1,8 @@
 import Heading from '../../components/Heading'
 import LoadImg from '../../components/LoadImg'
 import SkillList from '../../components/SkillList'
-import heroLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash-lowres.jpg'
-import heroHighResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
+import aboutLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash-lowres.jpg'
+import aboutHighResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
 
 function About() {
   let skillsList = [
@@ -70,8 +70,8 @@ function About() {
         <div className='flex w-full flex-col items-center gap-8 lg:flex-col-reverse'>
           <div className='w-full max-w-[308px] lg:max-w-[425px]'>
             <LoadImg
-              imgLowRes={heroLowResImg}
-              imgHighRes={heroHighResImg}
+              imgLowRes={aboutLowResImg}
+              imgHighRes={aboutHighResImg}
               addClassName='max-w-full w-full object-cover rounded-lg'
               alt='alt txt'
             />

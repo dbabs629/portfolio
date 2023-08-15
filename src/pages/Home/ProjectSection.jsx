@@ -15,7 +15,7 @@ function ProjectSection() {
           link='/'
           projectLink='/project/rps-project-page'
           projectLowResImg={projectLowResImg}
-          projectHighResImg={projectHighResImg}
+          projectHighResImg={projectRpsHighResImg}
           alt='project alt txt'
           title='Family Tree Web App'
           text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}

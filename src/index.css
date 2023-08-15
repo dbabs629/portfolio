@@ -28,23 +28,11 @@ code {
   }
 
   .icons-list li:hover p {
-    @apply opacity-100 xs:transition-opacity xs:opacity-100 ease-in-out duration-1000;
+    @apply opacity-100 duration-1000 ease-in-out xs:opacity-100 xs:transition-opacity;
   }
 }
 
-.animation-move-lg {
-  animation: move-lg-element 20s linear infinite;
-}
-
-.animation-move-md {
-  animation: move-lg-element 20s linear infinite;
-}
-
-.animation-move-sm {
-  animation: move-sm-element 15s linear infinite;
-}
-
-.animate-flip-down {
+.flip-down {
   animation: flip-down 500ms ease-in-out;
 }
 
@@ -52,39 +40,9 @@ code {
   animation: slide-in-right 500ms ease-in-out;
 }
 
-@keyframes move-lg-element {
-  0% {
-    @apply opacity-0;
-  }
-  50% {
-    @apply opacity-20;
-  }
-  100% {
-    @apply opacity-0 -translate-y-[700px] rotate-180;
-  }
-}
-
-@keyframes move-sm-element {
-  0% {
-    @apply opacity-0 translate-y-[0px] scale-100 rotate-0;
-  }
-  25% {
-    @apply opacity-20 -translate-y-[175px] -rotate-45 scale-105;
-  }
-  50% {
-    @apply opacity-40 -translate-y-[350px] rotate-45 scale-110;
-  }
-  75% {
-    @apply opacity-20 -translate-y-[575px] -rotate-45 scale-105;
-  }
-  100% {
-    @apply opacity-0 -translate-y-[700px] rotate-45 scale-100;
-  }
-}
-
 @keyframes flip-down {
   0% {
-    @apply -skew-x-12 rotate-45;
+    @apply rotate-45 -skew-x-12;
   }
   100% {
     @apply skew-x-0;
@@ -98,4 +56,25 @@ code {
   100% {
     @apply translate-x-0;
   }
+}
+
+.hide-left {
+  opacity: 0;
+  filter: blue(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  transition-delay: 500ms;
+}
+.hide-right {
+  opacity: 0;
+  filter: blue(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+  transition-delay: 500ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blue(0);
+  transform: translateX(0);
 }
