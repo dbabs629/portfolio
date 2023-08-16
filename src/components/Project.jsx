@@ -39,12 +39,12 @@ function Project({
     <article
       ref={projectRef}
       className='flex w-full flex-col space-y-8 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:space-y-0'>
-      <div className='hide hide-right w-full max-w-[450px] self-center duration-300 hover:scale-105 lg:hidden'>
+      <div className='hide hide-right w-full max-w-[450px] self-center  lg:hidden'>
         <a href={link}>
           <LoadImg
             imgLowRes={projectLowResImg}
             imgHighRes={projectHighResImg}
-            addClassName='max-w-full object-cover rounded-lg'
+            addClassName='max-w-full object-cover rounded-lg duration-300 hover:scale-105'
             alt={alt}
           />
         </a>
@@ -56,12 +56,12 @@ function Project({
           <Button>Project details</Button>
         </Link>
       </div>
-      <div className='hide hide-right hidden max-w-[500px] duration-300 hover:scale-105 lg:block lg:w-2/3'>
+      <div className='hide hide-right hidden max-w-[500px] lg:block lg:w-2/3'>
         <a href={link} rel='noreferrer' target='_blank'>
           <LoadImg
             imgLowRes={projectLowResImg}
             imgHighRes={projectHighResImg}
-            addClassName='max-w-full max-h-[300px] h-full object-cover rounded-lg'
+            addClassName='max-w-full max-h-[300px] h-full object-cover rounded-lg duration-300 hover:scale-105'
             alt={alt}
           />
         </a>

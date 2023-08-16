@@ -11,7 +11,7 @@ module.exports = {
         dark: '#222743',
         darker: '#1d1f37',
         darkest: '#141627',
-        ogbg: '#0C121F',
+        ogbg: '#141627',
         oldbg: '#0E1937',
         cyan: '#67E8F9',
         emerald: '#6EE7B7',

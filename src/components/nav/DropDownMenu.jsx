@@ -17,7 +17,7 @@ function DropDownMenu({ navBool, setnavBool }) {
     navBool === true
       ? setdropDown('transform translate-x-[0px] opacity-100 duration-700')
       : setdropDown(
-          'hidden transform translate-x-[20rem] opacity-0 duration-700'
+          'hidden transform -translate-y-[20rem] opacity-0 duration-700'
         )
   }, [navBool])
 
@@ -26,10 +26,10 @@ function DropDownMenu({ navBool, setnavBool }) {
       className={`${dropDown} absolute right-0 top-0 z-20 flex w-full flex-col rounded-bl-lg bg-dark sm:hidden`}>
       <ul className='drop-down relative flex w-full flex-col items-center justify-center space-y-4 py-4 text-white'>
         <li
-          className='hover:bg-red-500 active:bg-red-500 w-40 cursor-pointer rounded-full bg-darker py-4 text-center'
+          className='absolute right-0 top-0 m-6 cursor-pointer rounded-full bg-darker text-center'
           onClick={navMenu}>
           <FontAwesomeIcon
-            className='text-3xl duration-300 ease-in-out'
+            className='text-3xl text-rose-500 duration-300 ease-in-out'
             icon={faCircleXmark}
           />
         </li>
