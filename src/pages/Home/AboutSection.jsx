@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import LoadImg from '../../components/LoadImg'
 import SkillList from '../../components/SkillList'
 import skillsLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
-import skillsHighResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
+import skillsHighResImg from '../../assets/images/profile-img.jpg'
 import Button from '../../components/Button'
 import Heading from '../../components/Heading'
 
@@ -54,7 +54,7 @@ function AboutSection() {
       <Heading title='About' />
       <article
         ref={aboutRef}
-        className='flex w-3/4 max-w-[450px] flex-col items-center space-y-8 lg:w-4/5 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:gap-4 lg:space-x-8 lg:space-y-0'>
+        className='flex w-4/5 max-w-[450px] flex-col items-center space-y-8 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:gap-4 lg:space-x-8 lg:space-y-0'>
         <div className='hide hide-left w-full max-w-[300px] xs:max-w-[425px] lg:max-w-[400px]'>
           <LoadImg
             imgLowRes={skillsLowResImg}

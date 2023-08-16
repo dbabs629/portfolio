@@ -32,7 +32,7 @@ function ContactHome() {
       id='contact'
       ref={contactRef}
       className='flex w-full justify-center overflow-x-hidden py-40'>
-      <div className='flex w-3/4 max-w-[1050px] flex-col items-center space-y-8 sm:w-2/3 lg:w-4/5'>
+      <div className='flex w-4/5 max-w-[1050px] flex-col items-center space-y-8'>
         <Heading title='Contact' />
         <div className='flex w-full flex-col items-center justify-between space-x-16 lg:flex-row lg:items-start'>
           <div className='hide hide-left w-full'>

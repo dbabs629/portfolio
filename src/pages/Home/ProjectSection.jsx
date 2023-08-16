@@ -10,7 +10,7 @@ function ProjectSection() {
       id='projects'
       className='flex w-full flex-col items-center justify-center space-y-8 overflow-x-hidden bg-darkest py-40'>
       <Heading title='Projects' />
-      <div className='flex w-3/4 max-w-[450px] flex-col items-center justify-center space-y-48 lg:w-4/5 lg:max-w-full'>
+      <div className='flex w-4/5 max-w-[450px] flex-col items-center justify-center space-y-48 lg:max-w-full'>
         <Project
           link='/'
           projectLink='/project/rps-project-page'

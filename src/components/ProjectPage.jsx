@@ -15,7 +15,7 @@ function ProjectPage({
       <div className='flex justify-center pt-32'>
         <Heading title={title} />
       </div>
-      <article className='mx-auto flex w-3/4 max-w-[450px] flex-col items-center space-y-8 sm:w-2/3 lg:max-w-[700px]'>
+      <article className='mx-auto flex w-4/5 max-w-[450px] flex-col items-center space-y-8 lg:max-w-[700px]'>
         <div className='w-full max-w-[450px] self-center duration-300 hover:scale-105 lg:hidden'>
           <a href={link}>
             <LoadImg

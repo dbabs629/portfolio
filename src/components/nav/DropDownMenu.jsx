@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons'
+import resume from '../../assets/daniel-babin-resume-2023.pdf'
 
 function DropDownMenu({ navBool, setnavBool }) {
   const [dropDown, setdropDown] = useState('hidden')
@@ -35,49 +36,51 @@ function DropDownMenu({ navBool, setnavBool }) {
         </li>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
-duration-300 hover:bg-secondary active:bg-secondary [&>*]:hover:scale-110'
+duration-300 hover:bg-secondary active:bg-secondary'
           href='#hero'>
           <li>Home</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
-duration-300 hover:bg-secondary active:bg-secondary [&>*]:hover:scale-110'
+duration-300 hover:bg-secondary active:bg-secondary'
           href='#about'>
           <li>About</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
-duration-300 hover:bg-secondary active:bg-secondary [&>*]:hover:scale-110'
+duration-300 hover:bg-secondary active:bg-secondary'
           href='#projects'>
           <li>Projects</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
-duration-300 hover:bg-secondary active:bg-secondary [&>*]:hover:scale-110'
+duration-300 hover:bg-secondary active:bg-secondary'
           href='#contact'>
           <li>Contact</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
-duration-300 hover:bg-secondary active:bg-secondary [&>*]:hover:scale-110'
-          href='/'>
+duration-300 hover:bg-secondary active:bg-secondary'
+          href={resume}
+          rel='noopener noreferrer'
+          target='_blank'>
           <li>View Resume</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
-duration-300 hover:bg-secondary active:bg-secondary [&>*]:hover:scale-110'
+duration-300 hover:bg-secondary active:bg-secondary'
           href='#contact'>
           <li>Email Me</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
-duration-300 hover:bg-secondary active:bg-secondary [&>*]:hover:scale-110'
+duration-300 hover:bg-secondary active:bg-secondary'
           href='https://github.com/dbabs629/'>
           <li>Github</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
-duration-300 hover:bg-secondary active:bg-secondary [&>*]:hover:scale-110'
+duration-300 hover:bg-secondary active:bg-secondary'
           href='https://www.linkedin.com/in/daniel-babin/'>
           <li>LinkedIn</li>
         </a>
