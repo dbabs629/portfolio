@@ -25,8 +25,6 @@ function Form({ setFormStatus }) {
   return (
     <form
       onSubmit={submitEmail}
-      name='contact'
-      netlify
       className='z-20 mx-auto flex w-full flex-col space-y-5 text-gray-800'>
       <input
         className='w-full rounded-lg border border-primary bg-darkest p-4 text-primary caret-pink-500 outline-none'
