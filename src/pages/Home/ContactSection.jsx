@@ -56,21 +56,6 @@ function ContactHome() {
           className='flex w-full flex-col items-center justify-between space-x-16 lg:flex-row lg:items-start'>
           <div className='hide hide-left z-10 w-full'>
             <Form setFormStatus={setFormStatus} />
-            <form name='contact' netlify>
-              <p>
-                <label>
-                  Name <input type='text' name='name' />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Email <input type='email' name='email' />
-                </label>
-              </p>
-              <p>
-                <button type='submit'>Send</button>
-              </p>
-            </form>
           </div>
           <div className='hide hide-right hidden w-full lg:block'>
             <div className='w-full lg:block'>
