@@ -1,5 +1,4 @@
 function Button({ children, type }) {
-  console.log(children, type)
   return (
     <button
       type={type}
