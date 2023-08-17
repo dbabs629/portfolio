@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from 'react'
-// import Form from '../../components/Form'
+import Form from '../../components/Form'
 import Heading from '../../components/Heading'
 
 function ContactHome() {
@@ -32,17 +32,17 @@ function ContactHome() {
   setContactImgColor('#74C7FE')
   console.log(formStatus)
 
-  // useEffect(() => {
-  //   if (!formStatus) {
-  //     setContactImgColor('#74C7FE')
-  //   } else {
-  //     setContactImgColor('#6EE7B7')
-  //     let contactImgGreen = document.getElementById('contact-img-green')
-  //     let contactImgBlue = document.getElementById('contact-img-blue')
-  //     contactImgGreen.classList.add('move-right')
-  //     contactImgBlue.classList.add('move-right')
-  //   }
-  // }, [formStatus])
+  useEffect(() => {
+    if (!formStatus) {
+      setContactImgColor('#74C7FE')
+    } else {
+      setContactImgColor('#6EE7B7')
+      let contactImgGreen = document.getElementById('contact-img-green')
+      let contactImgBlue = document.getElementById('contact-img-blue')
+      contactImgGreen.classList.add('move-right')
+      contactImgBlue.classList.add('move-right')
+    }
+  }, [formStatus])
 
   return (
     <section
@@ -55,8 +55,8 @@ function ContactHome() {
           id='form-container'
           className='flex w-full flex-col items-center justify-between space-x-16 lg:flex-row lg:items-start'>
           <div className='hide hide-left z-10 w-full'>
-            {/* <Form setFormStatus={setFormStatus} /> */}
-            {/* <form name='contact' netlify>
+            <Form setFormStatus={setFormStatus} />
+            <form name='contact' netlify>
               <p>
                 <label>
                   Name <input type='text' name='name' />
@@ -70,7 +70,7 @@ function ContactHome() {
               <p>
                 <button type='submit'>Send</button>
               </p>
-            </form> */}
+            </form>
           </div>
           <div className='hide hide-right hidden w-full lg:block'>
             <div className='w-full lg:block'>
