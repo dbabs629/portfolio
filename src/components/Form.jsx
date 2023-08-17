@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Button from './Button'
 
 function Form({ setFormStatus }) {
@@ -22,16 +22,11 @@ function Form({ setFormStatus }) {
     }
   }
 
-  useEffect(() => {
-    localStorage.setItem('formData', JSON.stringify(formData))
-    console.log(formData)
-  }, [formData])
-
   return (
     <form
       onSubmit={submitEmail}
-      method='POST'
-      data-netlify='true'
+      name='contact'
+      netlify
       className='z-20 mx-auto flex w-full flex-col space-y-5 text-gray-800'>
       <input
         className='w-full rounded-lg border border-primary bg-darkest p-4 text-primary caret-pink-500 outline-none'
@@ -60,7 +55,7 @@ function Form({ setFormStatus }) {
         onChange={(e) => setMessage(e.target.value)}
         placeholder='Write your message here..'></textarea>
       <div data-netlify-recaptcha='true'></div>
-      <Button>Send Email</Button>
+      <Button type='submit'>Send Email</Button>
     </form>
   )
 }
