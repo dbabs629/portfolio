@@ -93,3 +93,13 @@ code {
   filter: blue(0);
   transform: translateX(0);
 }
+
+.move-right {
+  transition: all 1s;
+  opacity: 1;
+  transform: translateX(105%);
+  -moz-transform: translateX(105%);
+  -ms-transform: translateX(105%);
+  -webkit-transform: translateX(105%);
+  transition-delay: 300ms;
+}

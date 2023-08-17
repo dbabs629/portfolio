@@ -16,10 +16,8 @@ function DropDownMenu({ navBool, setnavBool }) {
 
   useEffect(() => {
     navBool === true
-      ? setdropDown('transform translate-x-[0px] opacity-100 duration-700')
-      : setdropDown(
-          'hidden transform -translate-y-[20rem] opacity-0 duration-700'
-        )
+      ? setdropDown('transform translate-y-[0px] opacity-100 duration-700')
+      : setdropDown('transform -translate-y-[100%] opacity-0 duration-700')
   }, [navBool])
 
   return (

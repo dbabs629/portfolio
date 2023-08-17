@@ -34,11 +34,9 @@ function ContactHome() {
     } else {
       setContactImgColor('#6EE7B7')
       let contactImgGreen = document.getElementById('contact-img-green')
-      let formContainer = document.getElementById('form-container')
-
-      contactImgGreen.classList.add('hide-right')
-      formContainer.classList.remove('lg:flex-row')
-      formContainer.classList.add('lg:flex-col', 'lg:w-1/2')
+      let contactImgBlue = document.getElementById('contact-img-blue')
+      contactImgGreen.classList.add('move-right')
+      contactImgBlue.classList.add('move-right')
     }
   }, [formStatus])
 
@@ -52,7 +50,7 @@ function ContactHome() {
         <div
           id='form-container'
           className='flex w-full flex-col items-center justify-between space-x-16 lg:flex-row lg:items-start'>
-          <div className='hide hide-left w-full'>
+          <div className='hide hide-left z-10 w-full'>
             <Form setFormStatus={setFormStatus} />
           </div>
           <div className='hide hide-right hidden w-full lg:block'>
@@ -90,7 +88,7 @@ function ContactHome() {
                 </g>
               </svg>
               <svg
-                className='absolute left-0 top-0 -translate-x-[100%]'
+                className='absolute left-0 top-0 z-0 -translate-x-[100%] transition duration-300'
                 xmlns='http://www.w3.org/2000/svg'
                 width='100%'
                 height='100%'
