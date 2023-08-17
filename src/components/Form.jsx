@@ -30,7 +30,7 @@ function Form({ setFormStatus }) {
   return (
     <form
       onSubmit={submitEmail}
-      action='POST'
+      method='POST'
       data-netlify='true'
       className='z-20 mx-auto flex w-full flex-col space-y-5 text-gray-800'>
       <input
