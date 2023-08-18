@@ -94,12 +94,49 @@ code {
   transform: translateX(0);
 }
 
-.move-right {
-  transition: all 1s;
-  opacity: 1;
-  transform: translateX(105%);
-  -moz-transform: translateX(105%);
-  -ms-transform: translateX(105%);
-  -webkit-transform: translateX(105%);
-  transition-delay: 300ms;
+.letter-one {
+  animation: letter-animation-one 1.5s ease-in-out 2s infinite forwards;
+}
+.letter-two {
+  animation: letter-animation-two 1.5s ease-in-out 2s infinite forwards;
+}
+
+@keyframes letter-animation-one {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%) translateY(-100%) rotate(45deg);
+    -moz-transform: translateX(100%) translateY(-100%) rotate(45deg);
+    -ms-transform: translateX(100%) translateY(-100%) rotate(45deg);
+    -webkit-transform: translateX(100%) translateY(-100%) rotate(45deg);
+  }
+}
+
+@keyframes letter-animation-two {
+  0% {
+    opacity: 0;
+    transform: translateX(-110%);
+    -moz-transform: translateX(-110%);
+    -ms-transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
 }

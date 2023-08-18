@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import Button from './Button'
 
-function Form({ setFormStatus }) {
-  const formData = JSON.parse(localStorage.getItem('form'))
-  const [form, setForm] = useState(formData || [])
+function Form() {
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
@@ -12,10 +10,7 @@ function Form({ setFormStatus }) {
     e.preventDefault()
     if (!message || !name || !email) {
       alert('Please fill out all fields')
-      setFormStatus(false)
     } else {
-      setFormStatus(true)
-      setForm([...form, { email, name, message }])
       setEmail('')
       setName('')
       setMessage('')
