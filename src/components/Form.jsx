@@ -27,7 +27,7 @@ function Form() {
       <input
         className='w-full rounded-lg border border-primary bg-darkest p-4 text-primary caret-pink-500 outline-none'
         value={name}
-        type='name'
+        type='text'
         name='name'
         id='name'
         onChange={(e) => setName(e.target.value)}
@@ -45,7 +45,6 @@ function Form() {
       <textarea
         className='w-full rounded-lg border border-primary bg-darkest p-4 pb-12 text-primary caret-pink-500 outline-none'
         value={message}
-        type='message'
         name='message'
         id='message'
         onChange={(e) => setMessage(e.target.value)}
