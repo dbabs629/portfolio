@@ -4,6 +4,9 @@ import Heading from '../../components/Heading'
 
 function ContactHome() {
   const contactRef = useRef()
+  const letterOneRef = useRef()
+  const letterTwoRef = useRef()
+
   const [refVisible, setRefVisible] = useState()
 
   useEffect(() => {
@@ -15,6 +18,15 @@ function ContactHome() {
           setRefVisible(entry.isIntersecting)
           refVisible &&
             entry.target.classList.toggle('show', entry.isIntersecting)
+          letterOneRef.current.classList.toggle(
+            'letter-one',
+            entry.isIntersecting
+          )
+          letterTwoRef.current.classList.toggle(
+            'letter-two',
+            entry.isIntersecting
+          )
+
           entry.isIntersecting && observer.unobserve(entry.target)
           console.log(pos)
         })
@@ -42,6 +54,7 @@ function ContactHome() {
           <div className='hide hide-right hidden w-full lg:block'>
             <div className='w-full lg:block'>
               <svg
+                ref={letterOneRef}
                 className='letter-one'
                 xmlns='http://www.w3.org/2000/svg'
                 width='100%'
@@ -75,6 +88,7 @@ function ContactHome() {
                 </g>
               </svg>
               <svg
+                ref={letterTwoRef}
                 className='letter-two absolute left-0 top-0 z-0 -translate-x-[100%] opacity-0'
                 xmlns='http://www.w3.org/2000/svg'
                 width='100%'
