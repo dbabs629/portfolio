@@ -95,10 +95,10 @@ code {
 }
 
 .letter-one {
-  animation: letter-animation-one 1.5s ease-in-out 2s infinite forwards;
+  animation: letter-animation-one 1.5s ease 4s infinite forwards;
 }
 .letter-two {
-  animation: letter-animation-two 1.5s ease-in-out 2s infinite forwards;
+  animation: letter-animation-two 1.5s ease-in-out 4s infinite forwards;
 }
 
 @keyframes letter-animation-one {
@@ -114,20 +114,20 @@ code {
   }
   100% {
     opacity: 0;
-    transform: translateX(100%) translateY(-100%) rotate(45deg);
-    -moz-transform: translateX(100%) translateY(-100%) rotate(45deg);
-    -ms-transform: translateX(100%) translateY(-100%) rotate(45deg);
-    -webkit-transform: translateX(100%) translateY(-100%) rotate(45deg);
+    transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
   }
 }
 
 @keyframes letter-animation-two {
   0% {
     opacity: 0;
-    transform: translateX(-110%);
-    -moz-transform: translateX(-110%);
-    -ms-transform: translateX(-110%);
-    -webkit-transform: translateX(-110%);
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
   }
   50% {
     opacity: 0;

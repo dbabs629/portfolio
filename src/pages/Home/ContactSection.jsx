@@ -47,11 +47,11 @@ function ContactHome() {
         <Heading title='Contact' />
         <div
           id='form-container'
-          className='flex w-full flex-col items-center justify-between space-x-16 lg:flex-row lg:items-start'>
-          <div className='hide hide-left z-10 w-full'>
+          className='flex w-full flex-col-reverse items-center justify-between space-x-16 lg:flex-row lg:items-start'>
+          <div className='hide hide-left z-10 w-full xs:w-4/5 lg:w-full'>
             <Form />
           </div>
-          <div className='hide hide-right hidden w-full lg:block'>
+          <div className='hide hide-right w-1/2 max-w-full lg:w-full'>
             <div className='w-full lg:block'>
               <svg
                 ref={letterOneRef}
