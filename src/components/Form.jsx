@@ -19,8 +19,11 @@ function Form() {
 
   return (
     <form
+      name='contact'
+      method='post'
       onSubmit={submitEmail}
       className='z-20 mx-auto flex w-full flex-col space-y-5 text-gray-800'>
+      <input type='hidden' name='form-name' value='contact' />
       <input
         className='w-full rounded-lg border border-primary bg-darkest p-4 text-primary caret-pink-500 outline-none'
         value={name}
