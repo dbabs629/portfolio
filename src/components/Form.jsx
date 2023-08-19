@@ -23,9 +23,9 @@ function Form() {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({
           'form-name': 'contact',
-          name: name,
-          email: email,
-          message: message,
+          'name': name,
+          'email': email,
+          'message': message,
         }),
       })
         .then(() => {
