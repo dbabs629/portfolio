@@ -22,7 +22,7 @@ function Form() {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({
-          'form-name': 'contact',
+          'form-name': 'contact', message
         }),
       })
         .then(() => {
@@ -63,6 +63,7 @@ function Form() {
       <textarea
         className='w-full rounded-lg border border-primary bg-darkest p-4 pb-12 text-primary caret-pink-500 outline-none'
         value={message}
+        type='text'
         name='message'
         id='message'
         onChange={(e) => setMessage(e.target.value)}
