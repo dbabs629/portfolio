@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Button from './Button'
-import LoadImg from './LoadImg'
+import Button from '../../components/Button'
+import LoadImg from '../../components/LoadImg'
 
 function Project({
   title,
@@ -18,14 +18,11 @@ function Project({
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        let pos = 0
         entries.forEach((entry) => {
-          pos++
           setRefVisible(entry.isIntersecting)
           refVisible &&
             entry.target.classList.toggle('show', entry.isIntersecting)
           entry.isIntersecting && observer.unobserve(entry.target)
-          console.log(pos)
         })
       },
       { rootMargin: '100px', threshold: 0.1 }
@@ -39,7 +36,7 @@ function Project({
     <article
       ref={projectRef}
       className='flex w-full flex-col space-y-8 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:space-y-0'>
-      <div className='hide hide-right w-full max-w-[450px] self-center  lg:hidden'>
+      <div className='hide hide-right w-full max-w-[450px] self-center lg:hidden'>
         <a href={link}>
           <LoadImg
             imgLowRes={projectLowResImg}

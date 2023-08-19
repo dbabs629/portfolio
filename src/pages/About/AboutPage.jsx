@@ -24,12 +24,10 @@ function About() {
       <div className='mx-auto w-72 pt-32'>
         <Heading title='About Page' />
       </div>
-      <article className='mx-auto flex w-4/5 max-w-[450px] flex-col-reverse items-center gap-8 space-y-8 py-12 lg:max-w-[1100px] lg:flex-row lg:justify-between lg:space-y-0'>
-        <div className='flex w-full max-w-[572px] flex-col space-y-24'>
-          <div className='space-y-4'>
-            <h5 className='text-center text-3xl font-semibold text-emerald lg:text-start'>
-              About me 1
-            </h5>
+      <article className='mx-auto flex w-4/5 max-w-[450px] flex-col-reverse items-center gap-8 space-y-8 py-12 lg:max-w-[1000px] lg:flex-row lg:justify-between lg:space-y-0'>
+        <div className='flex w-full max-w-[475px] flex-col space-y-12'>
+          <div className='max-w-[400px] space-y-4'>
+            <h5 className='text-3xl font-semibold text-emerald'>About me 1</h5>
             <p className='text-primary lg:text-lg'>
               While my primary focus is front-end development, I am also
               actively learning back-end technologies to create robust and
@@ -41,10 +39,8 @@ function About() {
               proficient full-stack developer.
             </p>
           </div>
-          <div className='space-y-4'>
-            <h5 className='text-center text-3xl font-semibold text-red lg:text-start'>
-              About me 2
-            </h5>
+          <div className='max-w-[400px] space-y-4'>
+            <h5 className='text-3xl font-semibold text-red'>About me 2</h5>
             <p className='text-primary lg:text-lg'>
               Currently, I am expanding my skillset in back-end development to
               complement my expertise in front-end technologies and become a
@@ -56,10 +52,8 @@ function About() {
               proficient full-stack developer.
             </p>
           </div>
-          <div className='space-y-4'>
-            <h5 className='text-center text-3xl font-semibold text-emerald lg:text-start'>
-              About me 3
-            </h5>
+          <div className='max-w-[400px] space-y-4'>
+            <h5 className='text-3xl font-semibold text-emerald'>About me 3</h5>
             <p className='text-primary lg:text-lg'>
               Currently, I am expanding my skillset in back-end development to
               complement my expertise in front-end technologies and become a

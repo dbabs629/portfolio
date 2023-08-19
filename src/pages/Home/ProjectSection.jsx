@@ -1,4 +1,4 @@
-import Project from '../../components/Project'
+import Project from './Project'
 import projectLowResImg from '../../assets/images/webdev-mocksite.PNG'
 import projectHighResImg from '../../assets/images/webdev-mocksite.PNG'
 import projectRpsHighResImg from '../../assets/images/rps.png'

@@ -32,6 +32,25 @@ code {
   }
 }
 
+.slide-down {
+  animation: slide-up-down 500ms ease-in-out;
+}
+
+@keyframes slide-up-down {
+  0% {
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .animate-flip-down {
   animation: flip-down 1s ease-in-out;
 }
@@ -71,6 +90,10 @@ code {
     transform: translateX(0);
   }
 }
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .hide-left {
   opacity: 0;
@@ -95,10 +118,10 @@ code {
 }
 
 .letter-one {
-  animation: letter-animation-one 1.5s ease 4s infinite forwards;
+  animation: letter-animation-one 1.5s ease 2s infinite forwards;
 }
 .letter-two {
-  animation: letter-animation-two 1.5s ease-in-out 4s infinite forwards;
+  animation: letter-animation-two 1.5s ease-in-out 2s infinite forwards;
 }
 
 @keyframes letter-animation-one {

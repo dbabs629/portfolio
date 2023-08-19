@@ -12,9 +12,7 @@ function ContactHome() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        let pos = 0
         entries.forEach((entry) => {
-          pos++
           setRefVisible(entry.isIntersecting)
           refVisible &&
             entry.target.classList.toggle('show', entry.isIntersecting)
@@ -26,9 +24,7 @@ function ContactHome() {
             'letter-two',
             entry.isIntersecting
           )
-
           entry.isIntersecting && observer.unobserve(entry.target)
-          console.log(pos)
         })
       },
       { rootMargin: '100px', threshold: 0.1 }
@@ -47,7 +43,7 @@ function ContactHome() {
         <Heading title='Contact' />
         <div
           id='form-container'
-          className='flex w-full flex-col-reverse items-center justify-between space-x-16 lg:flex-row lg:items-start'>
+          className='flex w-full flex-col-reverse items-center justify-between lg:flex-row lg:items-start lg:space-x-16'>
           <div className='hide hide-left z-10 w-full xs:w-4/5 lg:w-full'>
             <Form />
           </div>

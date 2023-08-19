@@ -15,14 +15,11 @@ function AboutSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        let pos = 0
         entries.forEach((entry) => {
-          pos++
           setRefVisible(entry.isIntersecting)
           refVisible &&
             entry.target.classList.toggle('show', entry.isIntersecting)
           entry.isIntersecting && observer.unobserve(entry.target)
-          console.log(pos)
         })
       },
       { rootMargin: '100px', threshold: 0.1 }
