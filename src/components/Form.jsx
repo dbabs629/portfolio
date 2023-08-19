@@ -14,6 +14,7 @@ function Form() {
       .join('&')
   }
   const submitEmail = (e) => {
+    let formData = { name, email, message }
     e.preventDefault()
     if (!message || !name || !email) {
       alert('Please fill out all fields')
@@ -22,7 +23,8 @@ function Form() {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({
-          'form-name': 'contact', message
+          'form-name': 'contact',
+          ...formData,
         }),
       })
         .then(() => {
