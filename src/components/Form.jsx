@@ -6,15 +6,30 @@ function Form() {
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&')
+  }
   const submitEmail = (e) => {
     e.preventDefault()
     if (!message || !name || !email) {
       alert('Please fill out all fields')
     } else {
-      setEmail('')
-      setName('')
-      setMessage('')
-      
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', name, email, message }),
+      })
+        .then(() => {
+          alert('Success!')
+          setEmail('')
+          setName('')
+          setMessage('')
+        })
+        .catch((error) => alert(error))
     }
   }
 
