@@ -14,6 +14,7 @@ function Form() {
       setEmail('')
       setName('')
       setMessage('')
+      
     }
   }
 
