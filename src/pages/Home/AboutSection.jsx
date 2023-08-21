@@ -9,7 +9,6 @@ import Heading from '../../components/Heading'
 
 function AboutSection() {
   const aboutRef = useRef()
-
   const [refVisible, setRefVisible] = useState()
 
   useEffect(() => {
@@ -47,11 +46,11 @@ function AboutSection() {
   return (
     <section
       id='about'
-      className='flex w-full flex-col items-center space-y-8 overflow-x-hidden py-40'>
+      className='z-20 flex w-full flex-col items-center space-y-8 overflow-x-hidden py-40'>
       <Heading title='About' />
       <article
         ref={aboutRef}
-        className='flex w-4/5 max-w-[450px] flex-col items-center space-y-8 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:gap-4 lg:space-x-8 lg:space-y-0'>
+        className='z-20 flex w-4/5 max-w-[450px] flex-col items-center space-y-8 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:gap-4 lg:space-x-8 lg:space-y-0'>
         <div className='hide hide-left w-full max-w-[300px] xs:max-w-[425px] lg:max-w-[400px]'>
           <LoadImg
             imgLowRes={skillsLowResImg}

@@ -1,11 +1,11 @@
 import ProjectPage from './ProjectPage'
-import lowResProjectImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash-lowres.jpg'
-import highResProjectImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
+import lowResProjectImg from '../../assets/images/rps.png'
+import projectRpsHighResImg from '../../assets/images/rps.png'
 
 function RpsProjectPage() {
   let skillList = ['HTML', 'CSS', 'JavaScript', 'Git']
   let altImgList = ['alt 1', 'alt 2', 'alt 3']
-  let projectImgs = [lowResProjectImg, highResProjectImg]
+  let projectImgs = [lowResProjectImg, projectRpsHighResImg]
 
   return (
     <div>

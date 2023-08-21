@@ -1,8 +1,8 @@
 import ProjectPage from './ProjectPage'
-import projectLowResImg from '../../assets/images/webdev-mocksite.PNG'
-import projectHighResImg from '../../assets/images/webdev-mocksite.PNG'
+import projectPorfolioLowResImg from '../../assets/images/portfolio-img.PNG'
+import projectPorfolioHighResImg from '../../assets/images/portfolio-img.PNG'
 
-function WebDevProjectPage() {
+function PortfolioProjectPage() {
   let skillList = [
     'HTML',
     'CSS',
@@ -13,7 +13,7 @@ function WebDevProjectPage() {
     'Git',
   ]
   let altImgList = ['alt 1', 'alt 2', 'alt 3']
-  let projectImgs = [projectLowResImg, projectHighResImg]
+  let projectImgs = [projectPorfolioLowResImg, projectPorfolioHighResImg]
 
   return (
     <div>
@@ -27,4 +27,4 @@ function WebDevProjectPage() {
     </div>
   )
 }
-export default WebDevProjectPage
+export default PortfolioProjectPage

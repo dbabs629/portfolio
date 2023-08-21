@@ -2,13 +2,14 @@ import Project from './Project'
 import projectLowResImg from '../../assets/images/webdev-mocksite.PNG'
 import projectHighResImg from '../../assets/images/webdev-mocksite.PNG'
 import projectRpsHighResImg from '../../assets/images/rps.png'
+import projectPortfolioHighResImg from '../../assets/images/portfolio-img.PNG'
 import Heading from '../../components/Heading'
 
 function ProjectSection() {
   return (
     <section
       id='projects'
-      className='flex w-full flex-col items-center justify-center space-y-8 overflow-x-hidden bg-darkest py-40'>
+      className='flex w-full flex-col items-center justify-center space-y-8 overflow-x-hidden py-40'>
       <Heading title='Projects' />
       <div className='flex w-4/5 max-w-[450px] flex-col items-center justify-center space-y-48 lg:max-w-full'>
         <Project
@@ -30,12 +31,12 @@ function ProjectSection() {
           text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}
         />
         <Project
-          link='https://daniel-babin-rps-game.netlify.app/'
-          projectLink='/project/rps-project-page'
-          projectLowResImg={projectRpsHighResImg}
-          projectHighResImg={projectRpsHighResImg}
+          link='https://daniel-babin-portfolio.netlify.app'
+          projectLink='/project/portfolio-project-page'
+          projectLowResImg={projectPortfolioHighResImg}
+          projectHighResImg={projectPortfolioHighResImg}
           alt='project alt txt'
-          title='Rock Paper Scissors Game'
+          title='Portfolio'
           text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}
         />
       </div>

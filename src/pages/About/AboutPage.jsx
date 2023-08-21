@@ -1,3 +1,4 @@
+import { useRef, useEffect, useState } from 'react'
 import Heading from '../../components/Heading'
 import LoadImg from '../../components/LoadImg'
 import SkillList from '../../components/SkillList'
@@ -5,6 +6,9 @@ import aboutLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-uns
 import aboutHighResImg from '../../assets/images/profile-img.jpg'
 
 function About() {
+  const aboutRef = useRef()
+  const [refVisible, setRefVisible] = useState()
+
   let skillsList = [
     'HTML',
     'CSS',
@@ -19,13 +23,33 @@ function About() {
     'Git',
     'Figma',
   ]
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setRefVisible(entry.isIntersecting)
+          refVisible &&
+            entry.target.classList.toggle('show', entry.isIntersecting)
+          entry.isIntersecting && observer.unobserve(entry.target)
+        })
+      },
+      { rootMargin: '100px', threshold: 0.1 }
+    )
+    aboutRef.current.querySelectorAll('.hide').forEach((content) => {
+      observer.observe(content)
+    })
+  }, [refVisible])
+
   return (
     <div className='w-full'>
       <div className='mx-auto w-72 pt-32'>
         <Heading title='About Page' />
       </div>
-      <article className='mx-auto flex w-4/5 max-w-[450px] flex-col-reverse items-center gap-8 space-y-8 py-12 lg:max-w-[1000px] lg:flex-row lg:justify-between lg:space-y-0'>
-        <div className='flex w-full max-w-[475px] flex-col space-y-12'>
+      <article
+        ref={aboutRef}
+        className='mx-auto flex w-4/5 max-w-[450px] flex-col-reverse items-center gap-8 space-y-8 py-12 lg:max-w-[1000px] lg:flex-row lg:justify-between lg:space-y-0'>
+        <div className='hide hide-left flex w-full max-w-[475px] flex-col space-y-12'>
           <div className='max-w-[400px] space-y-4'>
             <h5 className='text-3xl font-semibold text-emerald'>About me 1</h5>
             <p className='text-primary lg:text-lg'>
@@ -61,7 +85,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className='flex w-full flex-col items-center gap-8 lg:flex-col-reverse'>
+        <div className='hide hide-right flex w-full flex-col items-center gap-8 lg:flex-col-reverse'>
           <div className='w-full max-w-[308px] lg:max-w-[425px]'>
             <LoadImg
               imgLowRes={aboutLowResImg}

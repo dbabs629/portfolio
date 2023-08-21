@@ -35,25 +35,15 @@ function Project({
   return (
     <article
       ref={projectRef}
-      className='flex w-full flex-col space-y-8 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:space-y-0'>
-      <div className='hide hide-right w-full max-w-[450px] self-center lg:hidden'>
-        <a href={link}>
-          <LoadImg
-            imgLowRes={projectLowResImg}
-            imgHighRes={projectHighResImg}
-            addClassName='max-w-full object-cover rounded-lg duration-300 hover:scale-105'
-            alt={alt}
-          />
-        </a>
-      </div>
-      <div className='hide hide-left flex w-full max-w-full flex-col space-y-8 lg:w-1/2 lg:max-w-[500px]'>
+      className='flex w-full flex-col-reverse space-y-8 lg:flex-row lg:items-center lg:justify-center lg:gap-12 lg:space-y-0'>
+      <div className='hide hide-left mt-12 flex w-full max-w-full flex-col space-y-8 lg:mt-0 lg:w-1/2 lg:max-w-[500px]'>
         <h3 className='text-3xl text-red'>{title}</h3>
         <p className='text-justify text-primary lg:text-lg'>{text}</p>
         <Link className='max-w-[150px]' to={projectLink}>
           <Button>Project details</Button>
         </Link>
       </div>
-      <div className='hide hide-right hidden max-w-[500px] lg:block lg:w-2/3'>
+      <div className='hide hide-right w-full max-w-[450px] self-center rounded-lg shadow-sm shadow-white lg:block lg:w-2/3 lg:max-w-[500px]'>
         <a href={link} rel='noreferrer' target='_blank'>
           <LoadImg
             imgLowRes={projectLowResImg}

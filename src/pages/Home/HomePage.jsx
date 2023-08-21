@@ -7,7 +7,7 @@ function Home() {
     <main>
       <section
         id='hero'
-        className='flex h-96 w-full max-w-full flex-col items-center justify-center overflow-x-hidden bg-darkest xs:h-screen xs:py-0'>
+        className='z-20 flex h-screen w-full max-w-full flex-col items-center justify-center overflow-x-hidden bg-darkest xs:py-0'>
         <div className='z-10 flex w-4/5 flex-col items-center justify-center space-x-0 lg:flex-row lg:space-x-16'>
           <div className='flex flex-col'>
             <h1 className='animate-flip-down w-full text-3xl font-semibold text-red xs:text-5xl md:text-7xl'>

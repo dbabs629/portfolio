@@ -6,7 +6,6 @@ function ContactHome() {
   const contactRef = useRef()
   const letterOneRef = useRef()
   const letterTwoRef = useRef()
-
   const [refVisible, setRefVisible] = useState()
 
   useEffect(() => {
