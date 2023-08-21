@@ -157,13 +157,13 @@ code {
   }
 }
 .animate-1 {
-  animation: circle-1 30s linear 0s infinite forwards;
+  animation: circle-1 20s linear 0s infinite forwards;
 }
 .animate-2 {
-  animation: circle-2 25s linear 0s infinite forwards;
+  animation: circle-2 15s linear 0s infinite forwards;
 }
 .animate-3 {
-  animation: circle-3 20s linear 0s infinite forwards;
+  animation: circle-3 10s linear 0s infinite forwards;
 }
 
 @keyframes circle-1 {
@@ -173,23 +173,11 @@ code {
     -ms-transform: translateX(0%) translateY(0%);
     -webkit-transform: translateX(0%) translateY(0%);
   }
-  25% {
-    transform: translateX(-75%) translateY(-25%);
-    -moz-transform: translateX(-75%) translateY(-25%);
-    -ms-transform: translateX(-75%) translateY(-25%);
-    -webkit-transform: translateX(-75%) translateY(-25%);
-  }
   50% {
-    transform: translateX(-125%) translateY(100%);
-    -moz-transform: translateX(-125%) translateY(100%);
-    -ms-transform: translateX(-125%) translateY(100%);
-    -webkit-transform: translateX(-125%) translateY(100%);
-  }
-  75% {
-    transform: translateX(-25%) translateY(-25%);
-    -moz-transform: translateX(-25%) translateY(-25%);
-    -ms-transform: translateX(-25%) translateY(-25%);
-    -webkit-transform: translateX(-25%) translateY(-25%);
+    transform: translateX(-10%) translateY(-15%);
+    -moz-transform: translateX(-10%) translateY(-15%);
+    -ms-transform: translateX(-10%) translateY(-15%);
+    -webkit-transform: translateX(-10%) translateY(-15%);
   }
   100% {
     transform: translateX(0%) translateY(0%);
@@ -205,23 +193,11 @@ code {
     -ms-transform: translateX(0%) translateY(0%);
     -webkit-transform: translateX(0%) translateY(0%);
   }
-  25% {
-    transform: translateX(-75%) translateY(150%);
-    -moz-transform: translateX(-75%) translateY(150%);
-    -ms-transform: translateX(-75%) translateY(150%);
-    -webkit-transform: translateX(-75%) translateY(150%);
-  }
   50% {
-    transform: translateX(-125%) translateY(-150%);
-    -moz-transform: translateX(-125%) translateY(-150%);
-    -ms-transform: translateX(-125%) translateY(-150%);
-    -webkit-transform: translateX(-125%) translateY(-150%);
-  }
-  75% {
-    transform: translateX(-25%) translateY(50%);
-    -moz-transform: translateX(-25%) translateY(50%);
-    -ms-transform: translateX(-25%) translateY(50%);
-    -webkit-transform: translateX(-25%) translateY(50%);
+    transform: translateX(-15%) translateY(-15%);
+    -moz-transform: translateX(-15%) translateY(-15%);
+    -ms-transform: translateX(-15%) translateY(-15%);
+    -webkit-transform: translateX(-15%) translateY(-15%);
   }
   100% {
     transform: translateX(0%) translateY(0%);
@@ -237,23 +213,11 @@ code {
     -ms-transform: translateX(0%) translateY(0%);
     -webkit-transform: translateX(0%) translateY(0%);
   }
-  25% {
-    transform: translateX(-75%) translateY(25%);
-    -moz-transform: translateX(-75%) translateY(25%);
-    -ms-transform: translateX(-75%) translateY(25%);
-    -webkit-transform: translateX(-75%) translateY(25%);
-  }
   50% {
-    transform: translateX(-125%) translateY(100%);
-    -moz-transform: translateX(-125%) translateY(100%);
-    -ms-transform: translateX(-125%) translateY(100%);
-    -webkit-transform: translateX(-125%) translateY(100%);
-  }
-  75% {
-    transform: translateX(-75%) translateY(25%);
-    -moz-transform: translateX(-75%) translateY(25%);
-    -ms-transform: translateX(-75%) translateY(25%);
-    -webkit-transform: translateX(-75%) translateY(25%);
+    transform: translateX(-5%) translateY(10%);
+    -moz-transform: translateX(-5%) translateY(10%);
+    -ms-transform: translateX(-5%) translateY(10%);
+    -webkit-transform: translateX(-5%) translateY(10%);
   }
   100% {
     transform: translateX(0%) translateY(0%);
