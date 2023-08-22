@@ -1,8 +1,10 @@
 import Project from './Project'
-import projectLowResImg from '../../assets/images/webdev-mocksite.PNG'
-import projectHighResImg from '../../assets/images/webdev-mocksite.PNG'
-import projectRpsHighResImg from '../../assets/images/rps.png'
-import projectPortfolioHighResImg from '../../assets/images/portfolio-img.PNG'
+import projectWebdevLowResImg from '../../assets/images/webdev-mocksite-low.jpg'
+import projectWebdevHighResImg from '../../assets/images/webdev-mocksite-high.png'
+import projectRpsLowResImg from '../../assets/images/rps-low.jpg'
+import projectRpsHighResImg from '../../assets/images/rps-high.png'
+import projectPorfolioLowResImg from '../../assets/images/portfolio-low.jpg'
+import projectPorfolioHighResImg from '../../assets/images/portfolio-high.PNG'
 import Heading from '../../components/Heading'
 
 function ProjectSection() {
@@ -15,8 +17,8 @@ function ProjectSection() {
         <Project
           link='/'
           projectLink='/project/rps-project-page'
-          projectLowResImg={projectLowResImg}
-          projectHighResImg={projectRpsHighResImg}
+          projectLowResImg={projectWebdevLowResImg}
+          projectHighResImg={projectWebdevHighResImg}
           alt='project alt txt'
           title='Family Tree Web App'
           text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}
@@ -24,8 +26,8 @@ function ProjectSection() {
         <Project
           link='https://daniel-babin-mock-landing-page.netlify.app/'
           projectLink='/project/webdev-project-page'
-          projectLowResImg={projectLowResImg}
-          projectHighResImg={projectHighResImg}
+          projectLowResImg={projectRpsLowResImg}
+          projectHighResImg={projectRpsHighResImg}
           alt='project alt txt'
           title='Mocksite Landing Page'
           text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}
@@ -33,8 +35,8 @@ function ProjectSection() {
         <Project
           link='https://daniel-babin-portfolio.netlify.app'
           projectLink='/project/portfolio-project-page'
-          projectLowResImg={projectPortfolioHighResImg}
-          projectHighResImg={projectPortfolioHighResImg}
+          projectLowResImg={projectPorfolioLowResImg}
+          projectHighResImg={projectPorfolioHighResImg}
           alt='project alt txt'
           title='Portfolio'
           text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}

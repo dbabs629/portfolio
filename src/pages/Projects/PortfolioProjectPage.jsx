@@ -1,6 +1,6 @@
 import ProjectPage from './ProjectPage'
-import projectPorfolioLowResImg from '../../assets/images/portfolio-img.PNG'
-import projectPorfolioHighResImg from '../../assets/images/portfolio-img.PNG'
+import projectPorfolioLowResImg from '../../assets/images/portfolio-low.jpg'
+import projectPorfolioHighResImg from '../../assets/images/portfolio-high.PNG'
 
 function PortfolioProjectPage() {
   let skillList = [

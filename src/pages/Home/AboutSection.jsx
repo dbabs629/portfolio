@@ -2,8 +2,8 @@ import { useRef, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import LoadImg from '../../components/LoadImg'
 import SkillList from '../../components/SkillList'
-import skillsLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash.jpg'
-import skillsHighResImg from '../../assets/images/profile-img.jpg'
+import aboutLowResImg from '../../assets/images/profile-low.jpg'
+import aboutHighResImg from '../../assets/images/profile-high.png'
 import Button from '../../components/Button'
 import Heading from '../../components/Heading'
 
@@ -53,8 +53,8 @@ function AboutSection() {
         className='z-20 flex w-4/5 max-w-[450px] flex-col items-center space-y-8 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:gap-4 lg:space-x-8 lg:space-y-0'>
         <div className='hide hide-left w-full max-w-[300px] xs:max-w-[325px] lg:max-w-[400px]'>
           <LoadImg
-            imgLowRes={skillsLowResImg}
-            imgHighRes={skillsHighResImg}
+            imgLowRes={aboutLowResImg}
+            imgHighRes={aboutHighResImg}
             addClassName='max-w-full w-full object-cover rounded-lg'
             alt='alt txt'
           />

@@ -2,8 +2,8 @@ import { useRef, useEffect, useState } from 'react'
 import Heading from '../../components/Heading'
 import LoadImg from '../../components/LoadImg'
 import SkillList from '../../components/SkillList'
-import aboutLowResImg from '../../assets/images/ryunosuke-kikuno-Okf1gMEj9To-unsplash-lowres.jpg'
-import aboutHighResImg from '../../assets/images/profile-img.jpg'
+import aboutLowResImg from '../../assets/images/profile-low.jpg'
+import aboutHighResImg from '../../assets/images/profile-high.png'
 
 function About() {
   const aboutRef = useRef()
