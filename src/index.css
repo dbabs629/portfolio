@@ -157,13 +157,13 @@ code {
   }
 }
 .animate-1 {
-  animation: circle-1 20s linear 0s infinite forwards;
+  animation: circle-1 10s linear 0s infinite alternate;
 }
 .animate-2 {
-  animation: circle-2 15s linear 0s infinite forwards;
+  animation: circle-2 7s linear 0s infinite alternate;
 }
 .animate-3 {
-  animation: circle-3 10s linear 0s infinite forwards;
+  animation: circle-3 5s linear 0s infinite alternate;
 }
 
 @keyframes circle-1 {
@@ -174,10 +174,10 @@ code {
     -webkit-transform: translateX(0%) translateY(0%);
   }
   50% {
-    transform: translateX(-10%) translateY(-15%);
-    -moz-transform: translateX(-10%) translateY(-15%);
-    -ms-transform: translateX(-10%) translateY(-15%);
-    -webkit-transform: translateX(-10%) translateY(-15%);
+    transform: translateX(-15%) translateY(-35%);
+    -moz-transform: translateX(-15%) translateY(-35%);
+    -ms-transform: translateX(-15%) translateY(-35%);
+    -webkit-transform: translateX(-15%) translateY(-35%);
   }
   100% {
     transform: translateX(0%) translateY(0%);
@@ -194,10 +194,10 @@ code {
     -webkit-transform: translateX(0%) translateY(0%);
   }
   50% {
-    transform: translateX(-15%) translateY(-15%);
-    -moz-transform: translateX(-15%) translateY(-15%);
-    -ms-transform: translateX(-15%) translateY(-15%);
-    -webkit-transform: translateX(-15%) translateY(-15%);
+    transform: translateX(-60%) translateY(-35%);
+    -moz-transform: translateX(-60%) translateY(-35%);
+    -ms-transform: translateX(-60%) translateY(-35%);
+    -webkit-transform: translateX(-60%) translateY(-35%);
   }
   100% {
     transform: translateX(0%) translateY(0%);
@@ -214,10 +214,10 @@ code {
     -webkit-transform: translateX(0%) translateY(0%);
   }
   50% {
-    transform: translateX(-5%) translateY(10%);
-    -moz-transform: translateX(-5%) translateY(10%);
-    -ms-transform: translateX(-5%) translateY(10%);
-    -webkit-transform: translateX(-5%) translateY(10%);
+    transform: translateX(-15%) translateY(35%);
+    -moz-transform: translateX(-15%) translateY(35%);
+    -ms-transform: translateX(-15%) translateY(35%);
+    -webkit-transform: translateX(-15%) translateY(35%);
   }
   100% {
     transform: translateX(0%) translateY(0%);
