@@ -1,4 +1,4 @@
-function Button({ children, type }) {
+export default function Button({ children, type }) {
   return (
     <button
       type={type}
@@ -7,4 +7,3 @@ function Button({ children, type }) {
     </button>
   )
 }
-export default Button

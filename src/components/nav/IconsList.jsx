@@ -5,7 +5,7 @@ import resume from '../../assets/daniel-babin-resume-2023.pdf'
 
 function IconsList() {
   return (
-    <div className='w-full overflow-x-hidden text-2xl sm:fixed sm:bottom-0 sm:right-0 sm:max-w-[100px] sm:pb-12 sm:pt-2 sm:text-3xl'>
+    <div className='z-10 w-full overflow-x-hidden text-2xl sm:fixed sm:bottom-0 sm:right-0 sm:max-w-[100px] sm:pb-12 sm:pt-2 sm:text-3xl'>
       <ul className='icons-list flex max-w-full text-white sm:flex-col sm:space-y-10'>
         <li className='flex w-full flex-col items-center space-y-8 text-emerald duration-300 hover:-translate-y-1 hover:text-white sm:space-y-10'>
           <a href={resume} download>

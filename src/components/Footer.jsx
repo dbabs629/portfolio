@@ -1,4 +1,4 @@
-function Footer() {
+export default function Footer() {
   return (
     <footer>
       <section className='m-auto flex overflow-x-hidden bg-darkest'>
@@ -15,4 +15,3 @@ function Footer() {
     </footer>
   )
 }
-export default Footer

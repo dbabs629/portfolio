@@ -1,4 +1,4 @@
-function SkillList({ list }) {
+export default function SkillList({ list }) {
   return (
     <ul className='grid max-w-[475px] grid-cols-3 gap-4 sm:grid-cols-4'>
       {list.map((item, i) => (
@@ -11,4 +11,3 @@ function SkillList({ list }) {
     </ul>
   )
 }
-export default SkillList

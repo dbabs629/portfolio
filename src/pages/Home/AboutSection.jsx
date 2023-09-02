@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react'
+import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import LoadImg from '../../components/LoadImg'
 import SkillList from '../../components/SkillList'
@@ -6,28 +6,9 @@ import aboutLowResImg from '../../assets/images/profile-low.jpg'
 import aboutHighResImg from '../../assets/images/profile-high.png'
 import Button from '../../components/Button'
 import Heading from '../../components/Heading'
+import useObserver from '../../components/useObserver'
 
 function AboutSection() {
-  const aboutRef = useRef()
-  const [refVisible, setRefVisible] = useState()
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setRefVisible(entry.isIntersecting)
-          refVisible &&
-            entry.target.classList.toggle('show', entry.isIntersecting)
-          entry.isIntersecting && observer.unobserve(entry.target)
-        })
-      },
-      { rootMargin: '100px', threshold: 0.1 }
-    )
-    aboutRef.current.querySelectorAll('.hide').forEach((content) => {
-      observer.observe(content)
-    })
-  }, [refVisible])
-
   let skillsList = [
     'HTML',
     'CSS',
@@ -43,14 +24,17 @@ function AboutSection() {
     'Figma',
   ]
 
+  const aboutRef = useRef()
+  useObserver(aboutRef)
+
   return (
     <section
       id='about'
-      className='z-20 flex w-full flex-col items-center space-y-8 overflow-x-hidden py-40'>
+      className='z-10 flex w-full flex-col items-center space-y-8 overflow-x-hidden py-40'>
       <Heading title='About' />
       <article
         ref={aboutRef}
-        className='z-20 flex w-4/5 max-w-[450px] flex-col items-center space-y-8 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:gap-4 lg:space-x-8 lg:space-y-0'>
+        className='flex w-4/5 max-w-[450px] flex-col items-center space-y-8 lg:max-w-[1050px] lg:flex-row lg:justify-between lg:gap-4 lg:space-x-8 lg:space-y-0'>
         <div className='hide hide-left w-full max-w-[300px] xs:max-w-[325px] lg:max-w-[400px]'>
           <LoadImg
             imgLowRes={aboutLowResImg}
@@ -68,10 +52,9 @@ function AboutSection() {
             understanding and a passion for problem-solving. I find joy in
             crafting seamless user experiences by combining my technical
             expertise with an empathetic approach to design. Always eager to
-            learn and adapt, I thrive on acquiring new skills and staying
-            up-to-date with the latest trends in the ever-evolving world of web
-            development. When I'm not coding, you can find me exercising,
-            cooking, reading, or watching a movie.
+            learn, adapt, and explore the latest trends in the ever-evolving
+            world of web development. When I'm not coding, you can find me
+            exercising, cooking, reading, or watching a movie.
           </p>
           <Link className='w-40' to='about'>
             <Button>Continue reading</Button>

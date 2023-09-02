@@ -1,13 +1,16 @@
-import { useRef, useEffect, useState } from 'react'
+import { useRef } from 'react'
 import Heading from '../../components/Heading'
 import LoadImg from '../../components/LoadImg'
 import SkillList from '../../components/SkillList'
 import aboutLowResImg from '../../assets/images/profile-low.jpg'
 import aboutHighResImg from '../../assets/images/profile-high.png'
+import useObserver from '../../components/useObserver'
 
 function About() {
+  // const aboutRef = forwardRef()
+
   const aboutRef = useRef()
-  const [refVisible, setRefVisible] = useState()
+  // const [refVisible, setRefVisible] = useState()
 
   let skillsList = [
     'HTML',
@@ -24,22 +27,24 @@ function About() {
     'Figma',
   ]
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setRefVisible(entry.isIntersecting)
-          refVisible &&
-            entry.target.classList.toggle('show', entry.isIntersecting)
-          entry.isIntersecting && observer.unobserve(entry.target)
-        })
-      },
-      { rootMargin: '100px', threshold: 0.1 }
-    )
-    aboutRef.current.querySelectorAll('.hide').forEach((content) => {
-      observer.observe(content)
-    })
-  }, [refVisible])
+  useObserver(aboutRef)
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         setRefVisible(entry.isIntersecting)
+  //         refVisible &&
+  //           entry.target.classList.toggle('show', entry.isIntersecting)
+  //         entry.isIntersecting && observer.unobserve(entry.target)
+  //       })
+  //     },
+  //     { rootMargin: '100px', threshold: 0.1 }
+  //   )
+  //   aboutRef.current.querySelectorAll('.hide').forEach((content) => {
+  //     observer.observe(content)
+  //   })
+  // }, [refVisible])
 
   return (
     <div className='w-full'>
@@ -53,9 +58,11 @@ function About() {
           <div className='max-w-[400px] space-y-4'>
             <h5 className='text-3xl font-semibold text-emerald'>About me 1</h5>
             <p className='text-primary lg:text-lg'>
-              While my primary focus is front-end development, I am also
-              actively learning back-end technologies to create robust and
-              dynamic web applications.
+              I am a Front-end Developer with knowledge of opening a server and
+              passing data to and from databases. My current knowledge is in
+              HTML, CSS, JavaScript, TypeScript, React, TailwindCSS, Node,
+              MongoDB, Firebase, MySQL, Git. I am always learning new
+              technologies and improving my current skill stack.
             </p>
             <p className='text-primary lg:text-lg'>
               Currently, I am expanding my skillset in back-end development to
@@ -66,9 +73,9 @@ function About() {
           <div className='max-w-[400px] space-y-4'>
             <h5 className='text-3xl font-semibold text-red'>About me 2</h5>
             <p className='text-primary lg:text-lg'>
-              Currently, I am expanding my skillset in back-end development to
-              complement my expertise in front-end technologies and become a
-              proficient full-stack developer.
+              While my primary focus is front-end development, I am also
+              actively learning back-end technologies to create robust and
+              dynamic web applications.
             </p>
             <p className='text-primary lg:text-lg'>
               Currently, I am expanding my skillset in back-end development to

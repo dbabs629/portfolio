@@ -1,8 +1,7 @@
 import { useState } from 'react'
 
-function LoadImg({ imgHighRes, imgLowRes, addClassName, alt }) {
+export default function LoadImg({ imgHighRes, imgLowRes, addClassName, alt }) {
   const [imgFile, setImgFile] = useState(imgLowRes)
-
   return (
     <>
       <img
@@ -14,4 +13,3 @@ function LoadImg({ imgHighRes, imgLowRes, addClassName, alt }) {
     </>
   )
 }
-export default LoadImg

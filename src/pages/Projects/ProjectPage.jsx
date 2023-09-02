@@ -1,28 +1,12 @@
-import { useRef, useEffect, useState } from 'react'
+import { useRef } from 'react'
 import SkillList from '../../components/SkillList'
 import Heading from '../../components/Heading'
 import Slider from '../../components/Slider'
+import useObserver from '../../components/useObserver'
 
 function ProjectPage({ list, title, alt, imgList, link }) {
   const projectRef = useRef()
-  const [refVisible, setRefVisible] = useState()
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setRefVisible(entry.isIntersecting)
-          refVisible &&
-            entry.target.classList.toggle('show', entry.isIntersecting)
-          entry.isIntersecting && observer.unobserve(entry.target)
-        })
-      },
-      { rootMargin: '100px', threshold: 0.1 }
-    )
-    projectRef.current.querySelectorAll('.hide').forEach((content) => {
-      observer.observe(content)
-    })
-  }, [refVisible])
+  useObserver(projectRef)
 
   return (
     <div className='w-full'>
