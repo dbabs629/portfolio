@@ -26,6 +26,7 @@ function AboutSection() {
 
   const aboutRef = useRef()
   useObserver(aboutRef)
+  console.log(aboutRef)
 
   return (
     <section
