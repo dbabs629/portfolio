@@ -7,10 +7,8 @@ import aboutHighResImg from '../../assets/images/profile-high.png'
 import useObserver from '../../components/useObserver'
 
 function About() {
-  // const aboutRef = forwardRef()
-
   const aboutRef = useRef()
-  // const [refVisible, setRefVisible] = useState()
+  useObserver(aboutRef)
 
   let skillsList = [
     'HTML',
@@ -26,25 +24,6 @@ function About() {
     'Git',
     'Figma',
   ]
-
-  useObserver(aboutRef)
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         setRefVisible(entry.isIntersecting)
-  //         refVisible &&
-  //           entry.target.classList.toggle('show', entry.isIntersecting)
-  //         entry.isIntersecting && observer.unobserve(entry.target)
-  //       })
-  //     },
-  //     { rootMargin: '100px', threshold: 0.1 }
-  //   )
-  //   aboutRef.current.querySelectorAll('.hide').forEach((content) => {
-  //     observer.observe(content)
-  //   })
-  // }, [refVisible])
 
   return (
     <div className='w-full'>

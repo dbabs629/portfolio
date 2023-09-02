@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-function useObserver(ref) {
+export default function useObserver(ref) {
   const [refVisible, setRefVisible] = useState()
   console.log(ref)
 
@@ -21,4 +21,3 @@ function useObserver(ref) {
     })
   }, [refVisible, ref])
 }
-export default useObserver
