@@ -9,23 +9,21 @@ import Heading from '../../components/Heading'
 import useObserver from '../../components/useObserver'
 
 function AboutSection() {
+  const aboutRef = useRef()
+  useObserver(aboutRef)
+
   let skillsList = [
     'HTML',
     'CSS',
     'JavaScript',
     'React.JS',
     'TailwindCSS',
-    'TypeScript',
     'Node.JS',
     'Express',
     'Firebase',
-    'Mongodb',
     'Git',
     'Figma',
   ]
-
-  const aboutRef = useRef()
-  useObserver(aboutRef)
 
   return (
     <section

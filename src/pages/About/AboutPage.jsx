@@ -15,12 +15,9 @@ function About() {
     'CSS',
     'JavaScript',
     'React.JS',
-    'Next.JS',
-    'TypeScript',
     'Node.JS',
     'Express',
     'Firebase',
-    'Mongodb',
     'Git',
     'Figma',
   ]
@@ -39,9 +36,9 @@ function About() {
             <p className='text-primary lg:text-lg'>
               I am a Front-end Developer with knowledge of opening a server and
               passing data to and from databases. My current knowledge is in
-              HTML, CSS, JavaScript, TypeScript, React, TailwindCSS, Node,
-              MongoDB, Firebase, MySQL, Git. I am always learning new
-              technologies and improving my current skill stack.
+              HTML, CSS, JavaScript, React, TailwindCSS, Node, Firebase, MySQL,
+              Git. I am always learning new technologies and improving my
+              current skill stack.
             </p>
             <p className='text-primary lg:text-lg'>
               Currently, I am expanding my skillset in back-end development to

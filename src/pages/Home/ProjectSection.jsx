@@ -15,22 +15,13 @@ function ProjectSection() {
       <Heading title='Projects' />
       <div className='flex w-4/5 max-w-[450px] flex-col items-center justify-center space-y-48 lg:max-w-full'>
         <Project
-          link='/'
-          projectLink='/project/webdev-project-page'
-          projectLowResImg={projectWebdevLowResImg}
-          projectHighResImg={projectWebdevHighResImg}
-          alt='project alt txt'
-          title='Mocksite Landing Page'
-          text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}
-        />
-        <Project
           link='https://daniel-babin-mock-landing-page.netlify.app/'
           projectLink='/project/rps-project-page'
           projectLowResImg={projectRpsLowResImg}
           projectHighResImg={projectRpsHighResImg}
           alt='project alt txt'
           title='Rock Paper Scissors Game'
-          text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}
+          text={`My Rock Paper Scissors Lizard Spock game was designed by Front-end Mentor as a coding challenge and I developed it from scratch. The user clicks an option and the computer chooses an option at random and if the user wins, the score increases and if they lose, the score decreases. If they tie or the score reaches zero, the score does not change. Click the project image to see the live demo or click the project details button to learn more.`}
         />
         <Project
           link='https://daniel-babin-portfolio.netlify.app'
@@ -39,7 +30,16 @@ function ProjectSection() {
           projectHighResImg={projectPorfolioHighResImg}
           alt='project alt txt'
           title='Portfolio Website'
-          text={`1 Communication is at the heart of my work. I thrive in collaborative environments, actively engaging with team members and clients to understand their needs and goals. 2 My ability to translate complex technical jargon into clear, accessible language fosters effective communication throughout the development process. Empathy plays a significant role in my approach to design.`}
+          text={`I designed and developed my portfolio myself. I built it to showcase some of my work and knowledge of Front-end technologies. Click the project details button to learn more.`}
+        />
+        <Project
+          link='/'
+          projectLink='/project/webdev-project-page'
+          projectLowResImg={projectWebdevLowResImg}
+          projectHighResImg={projectWebdevHighResImg}
+          alt='project alt txt'
+          title='Mocksite Landing Page'
+          text={`I designed and developed this web development company landing page. It's a mocksite to showcase different layouts and I built a slider for a group of images the user can click through. Click the project image to see the live demo or click the project details button to learn more.`}
         />
       </div>
     </section>
