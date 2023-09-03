@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 
 export default function useObserver(ref) {
   const [refVisible, setRefVisible] = useState()
-  console.log(ref)
 
   useEffect(() => {
     const observer = new IntersectionObserver(

@@ -156,6 +156,7 @@ code {
     -webkit-transform: translateX(0%);
   }
 }
+
 .animate-1 {
   animation: circle-1 10s linear 0s infinite alternate;
 }
@@ -164,6 +165,17 @@ code {
 }
 .animate-3 {
   animation: circle-3 5s linear 0s infinite alternate;
+}
+.circle-1-left {
+  @apply left-[-20%] top-[10%] md:left-[5%] md:top-[12%];
+}
+
+.circle-2-left {
+  @apply left-[-3%] top-[20%] md:left-[3%] md:top-[20%] md:max-h-[200px] md:max-w-[200px];
+}
+
+.circle-3-left {
+  @apply left-[-10%] top-[25%] md:left-[4%] md:top-[30%];
 }
 
 @keyframes circle-1 {
