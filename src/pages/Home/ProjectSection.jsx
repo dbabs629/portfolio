@@ -15,7 +15,7 @@ function ProjectSection() {
       <Heading title='Projects' />
       <div className='flex w-4/5 max-w-[450px] flex-col items-center justify-center space-y-48 lg:max-w-full'>
         <Project
-          link='https://daniel-babin-mock-landing-page.netlify.app/'
+          link='https://daniel-babin-rps-game.netlify.app/'
           projectLink='/project/rps-project-page'
           projectLowResImg={projectRpsLowResImg}
           projectHighResImg={projectRpsHighResImg}
@@ -33,7 +33,7 @@ function ProjectSection() {
           text={`I designed and developed my portfolio myself. I built it to showcase some of my work and knowledge of Front-end technologies. Click the project details button to learn more.`}
         />
         <Project
-          link='/'
+          link='https://daniel-babin-mock-landing-page.netlify.app/'
           projectLink='/project/webdev-project-page'
           projectLowResImg={projectWebdevLowResImg}
           projectHighResImg={projectWebdevHighResImg}
