@@ -167,7 +167,7 @@ code {
   animation: circle-3 5s linear 0s infinite alternate;
 }
 .circle-1-left {
-  @apply left-[-20%] top-[10%] md:left-[5%] md:top-[12%];
+  @apply left-[-15%] top-[10%] md:left-[5%] md:top-[12%];
 }
 
 .circle-2-left {
@@ -226,10 +226,10 @@ code {
     -webkit-transform: translateX(0%) translateY(0%);
   }
   50% {
-    transform: translateX(-15%) translateY(35%);
-    -moz-transform: translateX(-15%) translateY(35%);
-    -ms-transform: translateX(-15%) translateY(35%);
-    -webkit-transform: translateX(-15%) translateY(35%);
+    transform: translateX(-15%) translateY(30%);
+    -moz-transform: translateX(-15%) translateY(30%);
+    -ms-transform: translateX(-15%) translateY(30%);
+    -webkit-transform: translateX(-15%) translateY(30%);
   }
   100% {
     transform: translateX(0%) translateY(0%);

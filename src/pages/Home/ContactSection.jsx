@@ -42,11 +42,11 @@ function ContactHome() {
         <Heading title='Contact' />
         <div
           id='form-container'
-          className='flex w-3/4 flex-col-reverse items-center justify-between lg:flex-row lg:space-x-16'>
+          className='flex w-4/5 flex-col-reverse items-center justify-between lg:flex-row lg:w-full space-x-16'>
           <div className='hide hide-left z-10 w-full xs:w-4/5 lg:w-full'>
             <Form />
           </div>
-          <div className='hide hide-right w-1/2 max-w-full lg:w-1/2'>
+          <div className='hidden lg:block hide hide-right w-2/3 max-w-full lg:w-2/3 lg:mt-10'>
             <div className='w-full lg:block'>
               <svg
                 ref={letterOneRef}
@@ -54,7 +54,7 @@ function ContactHome() {
                 xmlns='http://www.w3.org/2000/svg'
                 width='100%'
                 height='100%'
-                viewBox='0 0 100 70'
+                viewBox='0 0 100 100'
                 fill='none'>
                 <g id='contact-img-green'>
                   <rect
@@ -88,7 +88,7 @@ function ContactHome() {
                 xmlns='http://www.w3.org/2000/svg'
                 width='100%'
                 height='100%'
-                viewBox='0 0 100 70'
+                viewBox='0 0 100 100'
                 fill='none'>
                 <g id='contact-img-blue'>
                   <rect
