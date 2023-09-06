@@ -13,12 +13,16 @@ function About() {
   let skillsList = [
     'HTML',
     'CSS',
+    'TailwindCSS',
+    'Bootstrap',
     'JavaScript',
     'React.JS',
+    'Next.JS',
     'Node.JS',
     'Express',
     'Firebase',
     'Git',
+    'NPM',
     'Figma',
   ]
 

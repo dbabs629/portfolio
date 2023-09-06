@@ -15,13 +15,16 @@ function AboutSection() {
   let skillsList = [
     'HTML',
     'CSS',
+    'TailwindCSS',
+    'Bootstrap',
     'JavaScript',
     'React.JS',
-    'TailwindCSS',
+    'Next.JS',
     'Node.JS',
     'Express',
     'Firebase',
     'Git',
+    'NPM',
     'Figma',
   ]
 
@@ -46,13 +49,13 @@ function AboutSection() {
             <SkillList list={skillsList} />
           </div>
           <p className='max-w-[450px] text-justify text-primary lg:text-lg'>
-            Hello, I'm a front-end web developer with a strong drive for
-            understanding and a passion for problem-solving. I find joy in
-            crafting seamless user experiences by combining my technical
-            expertise with an empathetic approach to design. Always eager to
-            learn, adapt, and explore the latest trends in the ever-evolving
-            world of web development. When I'm not coding, you can find me
-            exercising, cooking, reading, or watching a movie.
+            I'm a front-end web developer with a strong drive for understanding
+            and a passion for problem-solving. I find joy in crafting seamless
+            user experiences by combining my technical expertise with an
+            empathetic approach to design. Always eager to learn, adapt, and
+            explore the latest trends in the ever-evolving world of web
+            development. When I'm not coding, you can find me exercising,
+            cooking, reading, or watching a movie.
           </p>
           <Link className='w-40' to='about'>
             <Button>Continue reading</Button>
