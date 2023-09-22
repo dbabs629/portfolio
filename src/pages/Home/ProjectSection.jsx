@@ -1,10 +1,10 @@
 import Project from './Project'
-import projectWebdevLowResImg from '../../assets/images/webdev-mocksite-low.jpg'
-import projectWebdevHighResImg from '../../assets/images/webdev-mocksite-high.png'
-import projectRpsLowResImg from '../../assets/images/rps-low.jpg'
-import projectRpsHighResImg from '../../assets/images/rps-high.png'
-import projectPorfolioLowResImg from '../../assets/images/portfolio-low.jpg'
-import projectPorfolioHighResImg from '../../assets/images/portfolio-high.PNG'
+import projectWebdevLowResImg from '../../assets/images/webdev-mocksite-low-1.jpg'
+import projectWebdevHighResImg from '../../assets/images/webdev-mocksite-high-2.png'
+import projectRpsLowResImg from '../../assets/images/rps-low-1.jpg'
+import projectRpsHighResImg from '../../assets/images/rps-high-2.png'
+import projectPorfolioLowResImg from '../../assets/images/portfolio-low-1.jpg'
+import projectPorfolioHighResImg from '../../assets/images/portfolio-high-2.PNG'
 import Heading from '../../components/Heading'
 
 function ProjectSection() {

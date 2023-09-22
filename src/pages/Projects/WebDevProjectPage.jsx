@@ -1,6 +1,6 @@
 import ProjectPage from './ProjectPage'
-import projectWebdevLowResImg from '../../assets/images/webdev-mocksite-low.jpg'
-import projectWebdevHighResImg from '../../assets/images/webdev-mocksite-high.png'
+import projectWebdevLowResImg from '../../assets/images/webdev-mocksite-low-1.jpg'
+import projectWebdevHighResImg from '../../assets/images/webdev-mocksite-high-2.png'
 
 function WebDevProjectPage() {
   let skillList = [
@@ -18,7 +18,7 @@ function WebDevProjectPage() {
   return (
     <div>
       <ProjectPage
-        title='Rock Paper Scissors Lizard Spock Game'
+        title='Webdev Mocksite Landing Page'
         list={skillList}
         alt={altImgList}
         imgList={projectImgs}

@@ -1,6 +1,6 @@
 import ProjectPage from './ProjectPage'
-import projectPorfolioLowResImg from '../../assets/images/portfolio-low.jpg'
-import projectPorfolioHighResImg from '../../assets/images/portfolio-high.PNG'
+import projectPorfolioLowResImg from '../../assets/images/portfolio-low-1.jpg'
+import projectPorfolioHighResImg from '../../assets/images/portfolio-high-2.PNG'
 
 function PortfolioProjectPage() {
   let skillList = [
@@ -13,16 +13,20 @@ function PortfolioProjectPage() {
     'Git',
   ]
   let altImgList = ['alt 1', 'alt 2', 'alt 3']
-  let projectImgs = [projectPorfolioLowResImg, projectPorfolioHighResImg]
+  let textList = ['Text 1', 'Text 2', 'Text 3', 'Text 4', 'Text 5', 'Text 6']
+  let projectLowResImgs = [projectPorfolioLowResImg]
+  let projectHighResImgs = [projectPorfolioHighResImg]
 
   return (
     <div>
       <ProjectPage
-        title='Rock Paper Scissors Lizard Spock Game'
+        title='Portfolio Website'
         list={skillList}
         alt={altImgList}
-        imgList={projectImgs}
-        link='https://daniel-babin-mock-landing-page.netlify.app/'
+        lowResImgList={projectLowResImgs}
+        highResImgList={projectHighResImgs}
+        link='https://daniel-babin-portfolio.netlify.app/'
+        textList={textList}
       />
     </div>
   )

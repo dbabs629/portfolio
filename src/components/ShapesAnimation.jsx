@@ -4,8 +4,6 @@ export default function ShapesAnimation() {
     let circleGreen = document.getElementById('circle-green')
     let circleRed = document.getElementById('circle-red')
 
-    console.log(window.scrollY)
-
     if (
       (window.scrollY > 800 && window.scrollY < 1900) ||
       window.scrollY > 3800
