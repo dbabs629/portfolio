@@ -37,16 +37,16 @@ function ContactHome() {
     <section
       id='contact'
       ref={contactRef}
-      className='flex w-full justify-center overflow-hidden py-40'>
+      className='my-40 flex w-full justify-center overflow-hidden'>
       <div className='flex w-4/5 max-w-[1050px] flex-col items-center space-y-8'>
         <Heading title='Contact' />
         <div
           id='form-container'
-          className='flex w-4/5 flex-col-reverse items-center justify-between lg:flex-row lg:w-full space-x-16'>
+          className='flex w-4/5 flex-col-reverse items-center justify-between space-x-16 lg:w-full lg:flex-row'>
           <div className='hide hide-left z-10 w-full xs:w-4/5 lg:w-full'>
             <Form />
           </div>
-          <div className='hidden lg:block hide hide-right w-2/3 max-w-full lg:w-2/3 lg:mt-10'>
+          <div className='hide hide-right hidden w-2/3 max-w-full lg:mt-10 lg:block lg:w-2/3'>
             <div className='w-full lg:block'>
               <svg
                 ref={letterOneRef}

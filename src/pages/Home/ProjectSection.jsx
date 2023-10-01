@@ -11,7 +11,7 @@ function ProjectSection() {
   return (
     <section
       id='projects'
-      className='z-10 flex w-full flex-col items-center justify-center space-y-8 overflow-x-hidden py-40'>
+      className='z-10 my-40 flex w-full flex-col items-center justify-center space-y-8 overflow-x-hidden'>
       <Heading title='Projects' />
       <div className='flex w-4/5 max-w-[450px] flex-col items-center justify-center space-y-48 lg:max-w-full'>
         <Project
