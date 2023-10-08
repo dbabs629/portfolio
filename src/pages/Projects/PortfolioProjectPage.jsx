@@ -1,8 +1,11 @@
 import ProjectPage from './ProjectPage'
-import projectLowResImg from '../../assets/images/portfolio-low-1.jpg'
-import projectHighResImg from '../../assets/images/portfolio-high-2.PNG'
+import projectLowResImg from '../../assets/images/portfolio-01.PNG'
+import projectHighResImg from '../../assets/images/portfolio-01.PNG'
 
 function PortfolioProjectPage() {
+  let projectLowResImgs = [projectLowResImg]
+  let projectHighResImgs = [projectHighResImg]
+  let altImgList = ['alt 1', 'alt 2', 'alt 3']
   let skillList = [
     'HTML',
     'CSS',
@@ -12,19 +15,16 @@ function PortfolioProjectPage() {
     'NPM',
     'Git',
   ]
-  let altImgList = ['alt 1', 'alt 2', 'alt 3']
   let textList = ['Text 1', 'Text 2', 'Text 3', 'Text 4', 'Text 5', 'Text 6']
-  let projectLowResImgs = [projectLowResImg]
-  let projectHighResImgs = [projectHighResImg]
 
   return (
     <ProjectPage
       link='https://daniel-babin-portfolio.netlify.app/'
       title='Portfolio Website'
-      altImgList={altImgList}
       projectHighResImgs={projectHighResImgs}
-      projectImgs={projectHighResImgs}
       projectLowResImgs={projectLowResImgs}
+      projectImgs={projectHighResImgs}
+      altImgList={altImgList}
       skillList={skillList}
       textList={textList}
     />

@@ -2,8 +2,8 @@ import { useRef } from 'react'
 import Heading from '../../components/Heading'
 import LoadImg from '../../components/LoadImg'
 import SkillList from '../../components/SkillList'
-import aboutLowResImg from '../../assets/images/profile-low.jpg'
-import aboutHighResImg from '../../assets/images/profile-high.png'
+import aboutLowResImg from '../../assets/images/profile-img.jpg'
+import aboutHighResImg from '../../assets/images/profile-img.jpg'
 import useObserver from '../../components/useObserver'
 
 function About() {

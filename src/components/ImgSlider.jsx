@@ -27,13 +27,13 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
       <div className='mb-2 flex h-full w-full items-center'>
         <button
           onClick={prevImg}
-          className='ease z-10 mx-auto hidden h-16 w-16 rounded-full  border-4 border-primary duration-150 hover:scale-105 hover:p-5 active:scale-95 md:block lg:h-20 lg:w-20'>
+          className='ease z-10 mx-auto hidden h-16 w-16 rounded-full  border-4 border-primary shadow-inner shadow-primary duration-150 hover:scale-105 active:scale-95 md:block lg:h-20 lg:w-20'>
           <FontAwesomeIcon
             icon={faChevronLeft}
             className='text-2xl text-primary'
           />
         </button>
-        <div className='flex h-full w-full overflow-hidden md:max-w-[75%]'>
+        <div className='flex h-full w-full overflow-hidden border border-primary border-opacity-30 md:max-w-[75%]'>
           {imgList.map((img) => {
             return (
               <a
@@ -54,14 +54,14 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
         </div>
         <button
           onClick={nextImg}
-          className='ease z-10 mx-auto hidden h-16 w-16 rounded-full  border-4 border-primary duration-150 hover:scale-105 hover:p-5 active:scale-95 md:block lg:h-20 lg:w-20'>
+          className='ease z-10 mx-auto hidden h-16 w-16 rounded-full  border-4 border-primary shadow-inner shadow-primary duration-150 hover:scale-105 active:scale-95 md:block lg:h-20 lg:w-20'>
           <FontAwesomeIcon
             icon={faChevronRight}
             className='text-2xl text-primary'
           />
         </button>
       </div>
-      <div className='hide hide-left mx-auto flex w-4/5 flex-row items-center justify-around py-2'>
+      <div className='mx-auto flex w-4/5 flex-row items-center justify-around py-2'>
         {imgList.map((item, i) => {
           return i === sliderIndex ? (
             <img
@@ -69,7 +69,7 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
               src={item}
               alt=''
               onClick={() => setSliderIndex(i)}
-              className='z-20 max-w-[15%] cursor-pointer rounded-sm border border-primary'
+              className='z-10 max-w-[15%] cursor-pointer rounded-sm border border-primary'
             />
           ) : (
             <img
@@ -77,12 +77,12 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
               src={item}
               alt=''
               onClick={() => setSliderIndex(i)}
-              className='z-20 max-w-[15%] cursor-pointer rounded-sm border border-darker hover:border-b hover:border-b-primary'
+              className='z-10 max-w-[15%] cursor-pointer rounded-sm border border-darker hover:border-b hover:border-b-primary'
             />
           )
         })}
       </div>
-      <div className='hide hide-left text-center text-sm text-primary'>
+      <div className='w-full text-center text-sm text-primary'>
         {sliderIndex + 1} / {imgList.length}
       </div>
     </section>

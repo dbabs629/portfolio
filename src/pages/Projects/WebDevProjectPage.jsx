@@ -1,8 +1,11 @@
 import ProjectPage from './ProjectPage'
-import projectWebdevLowResImg from '../../assets/images/webdev-mocksite-low-1.jpg'
-import projectWebdevHighResImg from '../../assets/images/webdev-mocksite-high-2.png'
+import projectWebdevLowResImg from '../../assets/images/webdev-mocksite-small-01.png'
+import projectWebdevHighResImg from '../../assets/images/webdev-mocksite-01.PNG'
 
 function WebDevProjectPage() {
+  let projectLowResImgs = [projectWebdevLowResImg]
+  let projectHighResImgs = [projectWebdevHighResImg]
+  let altImgList = ['alt 1', 'alt 2', 'alt 3']
   let skillList = [
     'HTML',
     'CSS',
@@ -12,9 +15,6 @@ function WebDevProjectPage() {
     'NPM',
     'Git',
   ]
-  let altImgList = ['alt 1', 'alt 2', 'alt 3']
-  let projectLowResImgs = [projectWebdevLowResImg]
-  let projectHighResImgs = [projectWebdevHighResImg]
   let textList = [
     'text 1',
     'text 2',
@@ -31,9 +31,9 @@ function WebDevProjectPage() {
       <ProjectPage
         link='https://daniel-babin-mock-landing-page.netlify.app/'
         title='Rock Paper Scissors Game'
-        altImgList={altImgList}
         projectHighResImgs={projectHighResImgs}
         projectLowResImgs={projectLowResImgs}
+        altImgList={altImgList}
         skillList={skillList}
         textList={textList}
       />
