@@ -46,8 +46,8 @@ function ContactHome() {
           <div className='hide hide-left z-10 w-full xs:w-4/5 lg:w-full'>
             <Form />
           </div>
-          <div className='hide hide-right hidden w-2/3 max-w-full lg:mt-10 lg:block lg:w-2/3'>
-            <div className='w-full lg:block'>
+          <div className='hide hide-right -z-10 hidden w-2/3 max-w-full lg:mt-10 lg:block lg:w-2/3'>
+            <div className=' w-full lg:block'>
               <svg
                 ref={letterOneRef}
                 className='letter-one'

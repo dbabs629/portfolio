@@ -1,7 +1,3 @@
-import { useRef } from 'react'
-import Heading from '../../components/Heading'
-import SkillList from '../../components/SkillList'
-import Slider from '../../components/Slider'
 import rpsLowResImg from '../../assets/images/rps-low-1.jpg'
 import rpsHighResImg from '../../assets/images/rps-high-2.png'
 import rpsWinImg from '../../assets/images/rps-win-3.PNG'
@@ -9,7 +5,7 @@ import rpsLoseImg from '../../assets/images/rps-lose-4.PNG'
 import rpsTieImg from '../../assets/images/rps-tie-5.PNG'
 import rpsRulesImg from '../../assets/images/rps-rules-6.PNG'
 import rpsVideoImg from '../../assets/images/rps-rules-video-7.PNG'
-import useObserver from '../../components/useObserver'
+import ProjectPage from './ProjectPage'
 
 function RpsProjectPage() {
   let skillList = ['HTML', 'CSS', 'JavaScript', 'Git']
@@ -38,33 +34,18 @@ function RpsProjectPage() {
     rpsVideoImg,
   ]
 
-  const projectRef = useRef()
-  useObserver(projectRef)
-
   return (
-    <article
-      ref={projectRef}
-      className='mx-auto flex w-4/5 max-w-full flex-col items-center space-y-8 lg:w-4/5 lg:max-w-[1050px]'>
-      <div className='mx-auto w-full pt-32'>
-        <Heading title='Rock Paper Scissors Game' />
-      </div>
-      <div className='w-full'>
-        <Slider
-          imgHighResList={projectHighResImgs}
-          imgLowResList={projectLowResImgs}
-          alt={altImgList}
-          link='https://daniel-babin-rps-game.netlify.app/'
-        />
-      </div>
-      <div className='hide hide-left mx-auto sm:w-4/5'>
-        <SkillList list={skillList} />
-      </div>
-      {/* <div className='hide hide-right w-4/5 space-y-6 text-sm text-primary lg:text-lg'>
-        {textList.map((item) => (
-          <p>{item}</p>
-        ))}
-      </div> */}
-    </article>
+    <>
+      <ProjectPage
+        link='https://daniel-babin-rps-game.netlify.app/'
+        title='Rock Paper Scissors Game'
+        altImgList={altImgList}
+        projectHighResImgs={projectHighResImgs}
+        projectLowResImgs={projectLowResImgs}
+        skillList={skillList}
+        textList={textList}
+      />
+    </>
   )
 }
 export default RpsProjectPage
