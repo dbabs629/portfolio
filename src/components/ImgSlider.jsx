@@ -61,15 +61,13 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
           />
         </button>
       </div>
-      <div className='mx-auto flex w-4/5 flex-row items-center justify-around py-2'>
+      <div className='mx-auto flex w-3/4 snap-x snap-mandatory snap-always flex-row space-x-2 overflow-x-scroll scroll-smooth py-2'>
         {imgList.map((item, i) => {
           return i === sliderIndex ? (
             <img
-              key={i}
               src={item}
               alt=''
-              onClick={() => setSliderIndex(i)}
-              className='z-10 max-w-[15%] cursor-pointer rounded-sm border border-primary'
+              className={`block max-w-[15%] shrink-0 grow-0 snap-center rounded-sm border border-primary object-cover transition-all duration-300 ease-in-out`}
             />
           ) : (
             <img
@@ -77,7 +75,7 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
               src={item}
               alt=''
               onClick={() => setSliderIndex(i)}
-              className='z-10 max-w-[15%] cursor-pointer rounded-sm border border-darker hover:border-b hover:border-b-primary'
+              className='z-10 max-w-[15%] shrink-0 grow-0 cursor-pointer rounded-sm border border-darker hover:border-b hover:border-b-primary'
             />
           )
         })}

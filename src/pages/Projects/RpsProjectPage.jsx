@@ -1,29 +1,22 @@
-import rpsLowResImg from '../../assets/images/rps-01.png'
-import rpsHighResImg from '../../assets/images/rps-01.png'
-import rpsWinImg from '../../assets/images/rps-02.PNG'
-import rpsTieImg from '../../assets/images/rps-03.PNG'
-import rpsLoseImg from '../../assets/images/rps-04.PNG'
-import rpsRulesImg from '../../assets/images/rps-05.PNG'
-import rpsVideoImg from '../../assets/images/rps-06.PNG'
+import rps_small_01 from '../../assets/images/rps-01.png'
+import rps_01 from '../../assets/images/rps-01.png'
+import rps_02 from '../../assets/images/rps-02.PNG'
+import rps_03 from '../../assets/images/rps-03.PNG'
+import rps_04 from '../../assets/images/rps-04.PNG'
+import rps_05 from '../../assets/images/rps-05.PNG'
+import rps_06 from '../../assets/images/rps-06.PNG'
 import ProjectPage from './ProjectPage'
 
 function RpsProjectPage() {
   let projectLowResImgs = [
-    rpsLowResImg,
-    rpsLowResImg,
-    rpsLowResImg,
-    rpsLowResImg,
-    rpsLowResImg,
-    rpsLowResImg,
+    rps_small_01,
+    rps_small_01,
+    rps_small_01,
+    rps_small_01,
+    rps_small_01,
+    rps_small_01,
   ]
-  let projectHighResImgs = [
-    rpsHighResImg,
-    rpsWinImg,
-    rpsLoseImg,
-    rpsTieImg,
-    rpsRulesImg,
-    rpsVideoImg,
-  ]
+  let projectHighResImgs = [rps_01, rps_02, rps_03, rps_04, rps_05, rps_06]
   let altImgList = ['alt 1', 'alt 2', 'alt 3', 'alt 4', 'alt 5', 'alt 6']
   let skillList = ['HTML', 'CSS', 'JavaScript', 'Git']
   let textList = [

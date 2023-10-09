@@ -1,10 +1,28 @@
 import ProjectPage from './ProjectPage'
-import projectLowResImg from '../../assets/images/portfolio-01.PNG'
-import projectHighResImg from '../../assets/images/portfolio-01.PNG'
+import portfolio_small_01 from '../../assets/images/portfolio-01.PNG'
+import portfolio_01 from '../../assets/images/portfolio-01.PNG'
+import portfolio_02 from '../../assets/images/portfolio-02.PNG'
+import portfolio_03 from '../../assets/images/portfolio-03.PNG'
+import portfolio_04 from '../../assets/images/portfolio-04.PNG'
+import portfolio_05 from '../../assets/images/portfolio-05.PNG'
+import portfolio_06 from '../../assets/images/portfolio-06.PNG'
+import portfolio_07 from '../../assets/images/portfolio-07.PNG'
+import portfolio_08 from '../../assets/images/portfolio-08.PNG'
+import portfolio_09 from '../../assets/images/portfolio-09.PNG'
 
 function PortfolioProjectPage() {
-  let projectLowResImgs = [projectLowResImg]
-  let projectHighResImgs = [projectHighResImg]
+  let projectLowResImgs = [portfolio_small_01]
+  let projectHighResImgs = [
+    portfolio_01,
+    portfolio_02,
+    portfolio_03,
+    portfolio_04,
+    portfolio_05,
+    portfolio_06,
+    portfolio_07,
+    portfolio_08,
+    portfolio_09,
+  ]
   let altImgList = ['alt 1', 'alt 2', 'alt 3']
   let skillList = [
     'HTML',
