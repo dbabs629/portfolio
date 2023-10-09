@@ -1,17 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons'
-import resume from '../../assets/daniel-babin-resume-2023.pdf'
+import resume from '../assets/daniel-babin-resume-2023.pdf'
 
 function IconsList() {
   return (
-    <div className='z-10 w-full overflow-x-hidden text-2xl sm:fixed sm:bottom-0 sm:right-0 sm:max-w-[100px] sm:pb-12 sm:pt-2 sm:text-3xl'>
-      <ul className='icons-list flex max-w-full text-white sm:flex-col sm:space-y-10'>
+    <div className='fixed bottom-0 right-0 z-10 w-full max-w-[10%] pb-10 pt-2 text-2xl sm:text-3xl'>
+      <ul className='icons-list flex max-w-full flex-col space-y-6 text-white sm:space-y-10'>
         <li className='flex w-full flex-col items-center space-y-8 text-emerald duration-300 hover:-translate-y-1 hover:text-white sm:space-y-10'>
           <a href={resume} download>
             <FontAwesomeIcon icon={faDownload} />
           </a>
-          <p className='icon-text absolute mx-auto rounded-lg bg-darker p-1 text-xs text-white sm:p-2 sm:opacity-0'>
+          <p className='icon-text absolute mx-auto rounded-lg bg-darker p-1 text-xs text-white opacity-0 sm:p-2'>
             Resume
           </p>
         </li>
@@ -19,7 +19,7 @@ function IconsList() {
           <a href='mailto:daniel.l.babin@gmail.com'>
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-          <p className='icon-text absolute mx-auto rounded-lg bg-darker p-1 text-xs text-white sm:p-2 sm:opacity-0'>
+          <p className='icon-text absolute mx-auto rounded-lg bg-darker p-1 text-xs text-white opacity-0 sm:p-2'>
             Email
           </p>
         </li>
@@ -27,7 +27,7 @@ function IconsList() {
           <a href='https://github.com/dbabs629/'>
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <p className='icon-text absolute mx-auto rounded-lg bg-darker p-1 text-xs text-white sm:p-2 sm:opacity-0'>
+          <p className='icon-text absolute mx-auto rounded-lg bg-darker p-1 text-xs text-white opacity-0 sm:p-2'>
             Github
           </p>
         </li>
@@ -35,7 +35,7 @@ function IconsList() {
           <a href='https://www.linkedin.com/in/daniel-babin/'>
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
-          <p className='icon-text absolute mx-auto rounded-lg bg-darker p-1 text-xs text-white sm:p-2 sm:opacity-0'>
+          <p className='icon-text absolute mx-auto rounded-lg bg-darker p-1 text-xs text-white opacity-0 sm:p-2'>
             LinkedIn
           </p>
         </li>

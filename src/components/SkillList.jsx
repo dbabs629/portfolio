@@ -1,6 +1,6 @@
 export default function SkillList({ list }) {
   return (
-    <ul className='flex flex-wrap max-w-[475px] gap-2'>
+    <ul className='flex flex-wrap w-full gap-2'>
       {list.map((item, i) => (
         <li
           key={i + 0.1}

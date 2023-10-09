@@ -72,7 +72,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className='hide hide-right flex w-full flex-col items-center gap-8 lg:flex-col-reverse'>
+        <div className='hide hide-right flex w-full flex-col gap-8 lg:flex-col-reverse'>
           <div className='w-full max-w-[308px] lg:max-w-[425px]'>
             <LoadImg
               imgLowRes={aboutLowResImg}

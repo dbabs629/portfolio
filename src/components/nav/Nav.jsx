@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import MobileMenu from './MobileMenu'
-import IconsList from './IconsList'
 import Button from '../Button'
 import resume from '../../assets/daniel-babin-resume-2023.pdf'
 
@@ -79,9 +78,6 @@ function Nav() {
           )}
         </div>
       </nav>
-      <div className='hidden overflow-x-hidden sm:block'>
-        <IconsList />
-      </div>
     </>
   )
 }

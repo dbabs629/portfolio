@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import Nav from '../src/components/nav/Nav'
+import IconsList from './components/IconsList'
 import Footer from '../src/components/Footer'
 import ShapesAnimation from './components/ShapesAnimation'
 import HomePage from './pages/Home/HomePage'
@@ -13,6 +14,7 @@ function App() {
     <>
       <Nav />
       <ShapesAnimation />
+      <IconsList />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='about' element={<AboutPage />} />

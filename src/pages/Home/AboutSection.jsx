@@ -45,7 +45,7 @@ function AboutSection() {
           />
         </div>
         <div className='hide hide-right flex w-full max-w-[572px] flex-col space-y-12'>
-          <div className='flex w-full flex-col items-center justify-center space-y-4 xs:flex-row xs:gap-4 xs:space-y-0 lg:justify-start'>
+          <div className='flex w-full max-w-[450px] flex-col items-center justify-center space-y-4 xs:flex-row xs:gap-4 xs:space-y-0 lg:justify-start'>
             <SkillList list={skillsList} />
           </div>
           <p className='max-w-[450px] text-justify text-primary lg:text-lg'>

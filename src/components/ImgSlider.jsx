@@ -61,13 +61,13 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
           />
         </button>
       </div>
-      <div className='mx-auto flex w-3/4 snap-x snap-mandatory snap-always flex-row space-x-2 overflow-x-scroll scroll-smooth py-2'>
+      <div className='scroll-bar w-full md:w-3/4 mx-auto flex snap-x snap-mandatory snap-always flex-row space-x-2 overflow-x-scroll scroll-smooth py-2'>
         {imgList.map((item, i) => {
           return i === sliderIndex ? (
             <img
               src={item}
               alt=''
-              className={`block max-w-[15%] shrink-0 grow-0 snap-center rounded-sm border border-primary object-cover transition-all duration-300 ease-in-out`}
+              className={`block max-w-[15%] shrink-0 grow-0 snap-center rounded-sm border-2 border-tertiary object-cover transition-all duration-300 ease-in-out`}
             />
           ) : (
             <img
@@ -75,12 +75,12 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
               src={item}
               alt=''
               onClick={() => setSliderIndex(i)}
-              className='z-10 max-w-[15%] shrink-0 grow-0 cursor-pointer rounded-sm border border-darker hover:border-b hover:border-b-primary'
+              className='z-10 max-w-[15%] shrink-0 grow-0 cursor-pointer rounded-sm border-2 border-darker hover:border-b hover:border-b-tertiary'
             />
           )
         })}
       </div>
-      <div className='w-full text-center text-sm text-primary'>
+      <div className='w-full text-center text-sm text-primary mt-2'>
         {sliderIndex + 1} / {imgList.length}
       </div>
     </section>

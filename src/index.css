@@ -21,6 +21,24 @@ code {
     monospace;
 }
 
+.scroll-bar::-webkit-scrollbar {
+  height: 5px;
+}
+.scroll-bar::-ms-thumb {
+  width: 5px;
+  height: 5px;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+  @apply rounded-lg bg-dark;
+  width: 25px;
+  height: 25px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  @apply rounded-lg bg-primary;
+}
+
 @layer base {
   @font-face {
     font-family: 'Quicksand';
