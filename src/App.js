@@ -27,7 +27,7 @@ function App() {
           path='project/portfolio-project-page'
           element={<PortfolioProjectPage />}
         />
-        <Route path='*' element={<HomePage />} />
+        <Route path='/*' element={<HomePage />} />
       </Routes>
       <Footer />
     </>

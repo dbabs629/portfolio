@@ -1,0 +1,3 @@
+# Redirect to the index.html home when user refreshes the page and the location is not the index.html
+
+/\* /
