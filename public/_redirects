@@ -1,3 +1,6 @@
 # Redirect to the index.html home when user refreshes the page and the location is not the index.html
 
-/\* /
+/about /
+/project/rps-project-page /
+/project/portfolio-project-page /
+/project/webdev-project-page /
