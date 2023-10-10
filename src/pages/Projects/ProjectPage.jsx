@@ -14,7 +14,6 @@ function ProjectPage({
   textList,
 }) {
   const [showText, setShowText] = useState(false)
-
   const projectRef = useRef()
   useObserver(projectRef)
 

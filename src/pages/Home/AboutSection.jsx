@@ -16,7 +16,6 @@ function AboutSection() {
     'HTML',
     'CSS',
     'TailwindCSS',
-    'Bootstrap',
     'JavaScript',
     'React.JS',
     'Next.JS',
