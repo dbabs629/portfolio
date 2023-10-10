@@ -1,4 +1,10 @@
-import rps_small_01 from '../../assets/images/rps-01.png'
+import rps_small_01 from '../../assets/images/rps-small-01.png'
+import rps_small_02 from '../../assets/images/rps-small-02.png'
+import rps_small_03 from '../../assets/images/rps-small-03.png'
+import rps_small_04 from '../../assets/images/rps-small-04.png'
+import rps_small_05 from '../../assets/images/rps-small-05.png'
+import rps_small_06 from '../../assets/images/rps-small-06.png'
+
 import rps_01 from '../../assets/images/rps-01.png'
 import rps_02 from '../../assets/images/rps-02.PNG'
 import rps_03 from '../../assets/images/rps-03.PNG'
@@ -10,11 +16,11 @@ import ProjectPage from './ProjectPage'
 function RpsProjectPage() {
   let projectLowResImgs = [
     rps_small_01,
-    rps_small_01,
-    rps_small_01,
-    rps_small_01,
-    rps_small_01,
-    rps_small_01,
+    rps_small_02,
+    rps_small_03,
+    rps_small_04,
+    rps_small_05,
+    rps_small_06,
   ]
   let projectHighResImgs = [rps_01, rps_02, rps_03, rps_04, rps_05, rps_06]
   let altImgList = ['alt 1', 'alt 2', 'alt 3', 'alt 4', 'alt 5', 'alt 6']

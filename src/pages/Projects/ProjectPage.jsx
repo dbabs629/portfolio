@@ -31,7 +31,6 @@ function ProjectPage({
       </div>
       <div className='w-full'>
         <ImgSlider
-          imgList={projectHighResImgs}
           imgHighResList={projectHighResImgs}
           imgLowResList={projectLowResImgs}
           alt={altImgList}

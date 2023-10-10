@@ -13,6 +13,7 @@ export default function LoadImg({ imgHighRes, imgLowRes, addClassName, alt }) {
         src={imgFile}
         alt={alt}
         className={`${addClassName}`}
+        loading='lazy'
         onLoad={() => setImgFile(imgHighRes)}
       />
     </>

@@ -5,25 +5,30 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 
-function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
+function ImgSlider({ imgHighResList, imgLowResList, alt, link }) {
   const [sliderIndex, setSliderIndex] = useState(0)
 
   function nextImg() {
     setSliderIndex((index) => {
-      if (index === imgList.length - 1) return 0
+      if (index === imgLowResList.length - 1) return 0
       return index + 1
     })
   }
 
   function prevImg() {
     setSliderIndex((index) => {
-      if (index === 0) return imgList.length - 1
+      if (index === 0) return imgLowResList.length - 1
       return index - 1
     })
   }
 
+  let loaded = (e) => {
+    let index = e.target.dataset.indexNumber
+    e.target.src = imgHighResList[index]
+  }
+
   return (
-    <section aria-label='Image Slider' className='h-full w-full'>
+    <section className='h-full w-full'>
       <div className='mb-2 flex h-full w-full items-center'>
         <button
           onClick={prevImg}
@@ -34,7 +39,7 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
           />
         </button>
         <div className='flex h-full w-full overflow-hidden border border-primary border-opacity-30 md:max-w-[75%]'>
-          {imgList.map((img) => {
+          {imgLowResList.map((img, i) => {
             return (
               <a
                 key={img}
@@ -43,10 +48,13 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
                 target='_blank'
                 className='h-full w-full shrink-0 grow-0'>
                 <img
-                  src={img}
+                  src={imgLowResList[i]}
                   alt=''
                   className={`block h-full w-full rounded-sm object-cover transition-all duration-300 ease-in-out`}
                   style={{ translate: `${-100 * sliderIndex}%` }}
+                  data-index-number={i}
+                  loading='lazy'
+                  onLoad={loaded}
                 />
               </a>
             )
@@ -61,27 +69,34 @@ function ImgSlider({ imgHighResList, imgLowResList, imgList, alt, link }) {
           />
         </button>
       </div>
-      <div className='scroll-bar w-full md:w-3/4 mx-auto flex snap-x snap-mandatory snap-always flex-row space-x-2 overflow-x-scroll scroll-smooth py-2'>
-        {imgList.map((item, i) => {
+      <div className='scroll-bar mx-auto flex w-full snap-x snap-mandatory snap-always flex-row space-x-2 overflow-x-scroll scroll-smooth py-2 md:w-3/4'>
+        {imgLowResList.map((item, i) => {
           return i === sliderIndex ? (
             <img
-              src={item}
+              key={item}
+              src={imgLowResList[i]}
               alt=''
+              data-index-number={i}
               className={`block max-w-[15%] shrink-0 grow-0 snap-center rounded-sm border-2 border-tertiary object-cover transition-all duration-300 ease-in-out`}
+              onLoad={loaded}
+              loading='lazy'
             />
           ) : (
             <img
-              key={i}
-              src={item}
+              key={item}
+              src={imgLowResList[i]}
               alt=''
+              data-index-number={i}
               onClick={() => setSliderIndex(i)}
               className='z-10 max-w-[15%] shrink-0 grow-0 cursor-pointer rounded-sm border-2 border-darker hover:border-b hover:border-b-tertiary'
+              onLoad={loaded}
+              loading='lazy'
             />
           )
         })}
       </div>
-      <div className='w-full text-center text-sm text-primary mt-2'>
-        {sliderIndex + 1} / {imgList.length}
+      <div className='mt-2 w-full text-center text-sm text-primary'>
+        {sliderIndex + 1} / {imgHighResList.length}
       </div>
     </section>
   )

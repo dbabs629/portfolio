@@ -21,11 +21,11 @@ code {
     monospace;
 }
 
-.scroll-bar::-webkit-scrollbar {
-  height: 5px;
+.scroll-bar {
+  scrollbar-color: #222743 #222743;
 }
-.scroll-bar::-ms-thumb {
-  width: 5px;
+
+.scroll-bar::-webkit-scrollbar {
   height: 5px;
 }
 

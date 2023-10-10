@@ -1,7 +1,20 @@
 import ProjectPage from './ProjectPage'
 import webdev_small_01 from '../../assets/images/webdev-mocksite-small-01.png'
-import webdev_02 from '../../assets/images/webdev-mocksite-02.PNG'
+import webdev_small_02 from '../../assets/images/webdev-mocksite-small-02.png'
+import webdev_small_03 from '../../assets/images/webdev-mocksite-small-03.png'
+import webdev_small_04 from '../../assets/images/webdev-mocksite-small-04.png'
+import webdev_small_05 from '../../assets/images/webdev-mocksite-small-05.png'
+import webdev_small_06 from '../../assets/images/webdev-mocksite-small-06.png'
+import webdev_small_07 from '../../assets/images/webdev-mocksite-small-07.png'
+import webdev_small_08 from '../../assets/images/webdev-mocksite-small-08.png'
+import webdev_small_09 from '../../assets/images/webdev-mocksite-small-09.png'
+import webdev_small_10 from '../../assets/images/webdev-mocksite-small-10.png'
+import webdev_small_11 from '../../assets/images/webdev-mocksite-small-11.png'
+import webdev_small_12 from '../../assets/images/webdev-mocksite-small-12.png'
+import webdev_small_13 from '../../assets/images/webdev-mocksite-small-13.png'
+
 import webdev_01 from '../../assets/images/webdev-mocksite-01.PNG'
+import webdev_02 from '../../assets/images/webdev-mocksite-02.PNG'
 import webdev_03 from '../../assets/images/webdev-mocksite-03.PNG'
 import webdev_04 from '../../assets/images/webdev-mocksite-04.PNG'
 import webdev_05 from '../../assets/images/webdev-mocksite-05.PNG'
@@ -15,7 +28,21 @@ import webdev_12 from '../../assets/images/webdev-mocksite-12.PNG'
 import webdev_13 from '../../assets/images/webdev-mocksite-13.PNG'
 
 function WebDevProjectPage() {
-  let projectLowResImgs = [webdev_small_01]
+  let projectLowResImgs = [
+    webdev_small_01,
+    webdev_small_02,
+    webdev_small_03,
+    webdev_small_04,
+    webdev_small_05,
+    webdev_small_06,
+    webdev_small_07,
+    webdev_small_08,
+    webdev_small_09,
+    webdev_small_10,
+    webdev_small_11,
+    webdev_small_12,
+    webdev_small_13,
+  ]
   let projectHighResImgs = [
     webdev_01,
     webdev_02,
