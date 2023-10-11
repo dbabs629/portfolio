@@ -1,13 +1,14 @@
+import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Nav from '../src/components/nav/Nav'
-import IconsList from './components/IconsList'
-import Footer from '../src/components/Footer'
-import ShapesAnimation from './components/ShapesAnimation'
 import HomePage from './pages/Home/HomePage'
-import AboutPage from './pages/About/AboutPage'
-import WebDevProjectPage from './pages/Projects/WebDevProjectPage'
-import RpsProjectPage from './pages/Projects/RpsProjectPage'
-import PortfolioProjectPage from './pages/Projects/PortfolioProjectPage'
+import Footer from '../src/components/Footer'
+const IconsList = lazy(() => import('./components/IconsList'))
+const Nav = lazy(() => import('../src/components/nav/Nav'))
+const ShapesAnimation = lazy(() => import('./components/ShapesAnimation'))
+const AboutPage = lazy(() => import('./pages/About/AboutPage'))
+const WebDevPage = lazy(() => import('./pages/Projects/WebDevPage'))
+const RpsPage = lazy(() => import('./pages/Projects/RpsPage'))
+const PortfolioPage = lazy(() => import('./pages/Projects/PortfolioPage'))
 
 function App() {
   return (
@@ -15,20 +16,19 @@ function App() {
       <Nav />
       <ShapesAnimation />
       <IconsList />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='about' element={<AboutPage />} />
-        <Route
-          path='project/webdev-project-page'
-          element={<WebDevProjectPage />}
-        />
-        <Route path='project/rps-project-page' element={<RpsProjectPage />} />
-        <Route
-          path='project/portfolio-project-page'
-          element={<PortfolioProjectPage />}
-        />
-        <Route path='/*' element={<HomePage />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='about' element={<AboutPage />} />
+          <Route path='project/webdev-project-page' element={<WebDevPage />} />
+          <Route path='project/rps-project-page' element={<RpsPage />} />
+          <Route
+            path='project/portfolio-project-page'
+            element={<PortfolioPage />}
+          />
+          <Route path='/*' element={<HomePage />} />
+        </Routes>
+      </Suspense>
       <Footer />
     </>
   )

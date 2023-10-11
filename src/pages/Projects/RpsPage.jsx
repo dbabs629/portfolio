@@ -13,7 +13,7 @@ import rps_05 from '../../assets/images/rps-05.PNG'
 import rps_06 from '../../assets/images/rps-06.PNG'
 import ProjectPage from './ProjectPage'
 
-function RpsProjectPage() {
+export default function RpsPage() {
   let projectLowResImgs = [
     rps_small_01,
     rps_small_02,
@@ -47,4 +47,3 @@ function RpsProjectPage() {
     </>
   )
 }
-export default RpsProjectPage

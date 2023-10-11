@@ -27,7 +27,7 @@ import webdev_11 from '../../assets/images/webdev-mocksite-11.PNG'
 import webdev_12 from '../../assets/images/webdev-mocksite-12.PNG'
 import webdev_13 from '../../assets/images/webdev-mocksite-13.PNG'
 
-function WebDevProjectPage() {
+export default function WebDevPage() {
   let projectLowResImgs = [
     webdev_small_01,
     webdev_small_02,
@@ -93,4 +93,3 @@ function WebDevProjectPage() {
     </>
   )
 }
-export default WebDevProjectPage

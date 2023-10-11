@@ -18,7 +18,7 @@ import portfolio_07 from '../../assets/images/portfolio-07.PNG'
 import portfolio_08 from '../../assets/images/portfolio-08.PNG'
 import portfolio_09 from '../../assets/images/portfolio-09.PNG'
 
-function PortfolioProjectPage() {
+export default function PortfolioPage() {
   let projectLowResImgs = [
     portfolio_small_01,
     portfolio_small_02,
@@ -66,4 +66,3 @@ function PortfolioProjectPage() {
     />
   )
 }
-export default PortfolioProjectPage
