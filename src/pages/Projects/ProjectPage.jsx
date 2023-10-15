@@ -24,11 +24,11 @@ function ProjectPage({
   return (
     <article
       ref={projectRef}
-      className='mx-auto flex w-4/5 max-w-full flex-col items-center justify-center space-y-8 overflow-hidden lg:w-4/5 lg:max-w-[1050px]'>
+      className='mx-auto flex w-full flex-col items-center justify-center space-y-8 overflow-x-hidden lg:w-4/5 lg:max-w-[1050px]'>
       <div className='mx-auto w-full pt-32'>
         <Heading title={title} />
       </div>
-      <div className='w-full'>
+      <div className='w-5/6'>
         <ImgSlider
           imgHighResList={projectHighResImgs}
           imgLowResList={projectLowResImgs}
@@ -36,13 +36,13 @@ function ProjectPage({
           link={link}
         />
       </div>
-      <div className='hide hide-right w-full space-y-4 md:w-3/4'>
+      <div className='hide hide-right w-5/6 space-y-4 md:w-3/5'>
         <SkillList list={skillList} />
-        <div className='w-full space-y-4 text-primary lg:text-lg'>
+        <div className='space-y-4 text-justify text-primary lg:text-lg'>
           {!showText ? textList[0] : textList.map((item) => <p>{item}</p>)}
         </div>
         <button
-          className='mt-4 cursor-pointer self-start rounded-lg border border-tertiary px-4 py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker'
+          className='mt-4 w-32 cursor-pointer self-start rounded-lg border border-tertiary px-4 py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker'
           onClick={handleClick}>
           Read more
         </button>
