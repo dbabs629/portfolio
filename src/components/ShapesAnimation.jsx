@@ -3,10 +3,9 @@ export default function ShapesAnimation() {
     let circleBlue = document.getElementById('circle-blue')
     let circleGreen = document.getElementById('circle-green')
     let circleRed = document.getElementById('circle-red')
-
     if (
-      (window.scrollY > 800 && window.scrollY < 1900) ||
-      window.scrollY > 3800
+      (window.scrollY > 700 && window.scrollY < 1500) ||
+      window.scrollY > 3200
     ) {
       circleBlue.classList.add('circle-1-left')
       circleGreen.classList.add('circle-2-left')
