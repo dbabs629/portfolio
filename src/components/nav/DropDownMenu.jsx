@@ -10,8 +10,8 @@ function DropDownMenu({ navBool, setnavBool }) {
     !navBool ? setnavBool(true) : setnavBool(false)
   }
 
-  window.addEventListener('scroll', (e) => {
-    if (window.scrollY > 150) setnavBool(false)
+  window.addEventListener('scroll', async (e) => {
+    if (window.scrollY > 150) await setnavBool(false)
   })
 
   useEffect(() => {
