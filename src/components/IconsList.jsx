@@ -16,7 +16,7 @@ function IconsList() {
           </p>
         </li>
         <li className='flex w-full flex-col items-center space-y-8 text-red duration-300 hover:-translate-y-1 hover:text-white sm:space-y-10'>
-          <a href='mailto:daniel.l.babin@gmail.com'>
+          <a href='#contact'>
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
           <p className='icon-text absolute mx-auto rounded-lg bg-darker p-1 text-xs text-white opacity-0 sm:p-2'>

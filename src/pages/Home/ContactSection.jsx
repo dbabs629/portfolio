@@ -38,11 +38,11 @@ function ContactHome() {
       id='contact'
       ref={contactRef}
       className='my-40 flex w-full justify-center overflow-hidden'>
-      <div className='flex w-4/5 max-w-[1050px] flex-col items-center space-y-8'>
-        <Heading title='Contact' />
+      <div className='flex w-4/5 max-w-[800px] flex-col items-center space-y-8'>
+        <Heading title='Contact Me' />
         <div
           id='form-container'
-          className='flex w-4/5 flex-col-reverse items-center justify-between space-x-16 lg:w-full lg:flex-row'>
+          className='flex w-4/5 flex-col items-center lg:w-full lg:flex-row lg:items-start lg:space-x-16'>
           <div className='hide hide-left z-10 w-full xs:w-4/5 lg:w-full'>
             <Form />
           </div>

@@ -38,7 +38,7 @@ function ProjectPage({
       </div>
       <div className='hide hide-right w-full space-y-4 md:w-3/4'>
         <SkillList list={skillList} />
-        <div className='w-full space-y-4 text-sm text-primary lg:text-lg'>
+        <div className='w-full space-y-4 text-primary lg:text-lg'>
           {!showText ? textList[0] : textList.map((item) => <p>{item}</p>)}
         </div>
         <button
