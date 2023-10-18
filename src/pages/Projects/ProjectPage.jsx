@@ -45,7 +45,7 @@ function ProjectPage({
           {!showText ? textList[0] : textList.map((item) => <p>{item}</p>)}
         </div>
         <button
-          className='mt-4 w-32 cursor-pointer self-start rounded-lg border border-tertiary px-4 py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker'
+          className='mt-4 w-24 md:w-32 cursor-pointer self-start rounded-lg border border-tertiary py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker'
           onClick={handleClick}>
           Read more
         </button>
