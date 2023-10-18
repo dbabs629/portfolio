@@ -55,7 +55,8 @@ export default function PortfolioPage() {
 
   return (
     <ProjectPage
-      link='https://daniel-babin-portfolio.netlify.app/'
+      demoLink='https://daniel-babin-portfolio.netlify.app/'
+      codeLink='https://github.com/dbabs629/portfolio'
       title='Portfolio Website'
       projectHighResImgs={projectHighResImgs}
       projectLowResImgs={projectLowResImgs}

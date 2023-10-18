@@ -5,7 +5,8 @@ import ImgSlider from '../../components/ImgSlider'
 import useObserver from '../../components/useObserver'
 
 function ProjectPage({
-  link,
+  demoLink,
+  codeLink,
   title,
   altImgList,
   projectHighResImgs,
@@ -33,10 +34,12 @@ function ProjectPage({
           imgHighResList={projectHighResImgs}
           imgLowResList={projectLowResImgs}
           alt={altImgList}
-          link={link}
+          demoLink={demoLink}
+          codeLink={codeLink}
         />
       </div>
-      <div className='hide hide-right w-5/6 space-y-4 md:w-3/5'>
+
+      <div className='hide hide-right w-5/6 space-y-4 md:w-[63%]'>
         <SkillList list={skillList} />
         <div className='space-y-4 text-justify text-primary lg:text-lg'>
           {!showText ? textList[0] : textList.map((item) => <p>{item}</p>)}

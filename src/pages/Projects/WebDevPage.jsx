@@ -82,7 +82,8 @@ export default function WebDevPage() {
   return (
     <>
       <ProjectPage
-        link='https://daniel-babin-mock-landing-page.netlify.app/'
+        demoLink='https://daniel-babin-mock-landing-page.netlify.app/'
+        codeLink='https://github.com/dbabs629/webdev-mocksite-spa'
         title='Rock Paper Scissors Game'
         projectHighResImgs={projectHighResImgs}
         projectLowResImgs={projectLowResImgs}

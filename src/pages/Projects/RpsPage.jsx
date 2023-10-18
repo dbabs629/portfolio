@@ -36,7 +36,8 @@ export default function RpsPage() {
   return (
     <>
       <ProjectPage
-        link='https://daniel-babin-rps-game.netlify.app/'
+        demoLink='https://daniel-babin-rps-game.netlify.app/'
+        codeLink='https://github.com/dbabs629/rock-paper-scissors-lizard-spock'
         title='Rock Paper Scissors Game'
         projectHighResImgs={projectHighResImgs}
         projectLowResImgs={projectLowResImgs}

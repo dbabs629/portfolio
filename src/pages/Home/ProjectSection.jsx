@@ -21,7 +21,7 @@ function ProjectSection() {
           projectHighResImg={projectRpsHighResImg}
           alt='project alt txt'
           title='Rock Paper Scissors Game'
-          text={`My Rock Paper Scissors Lizard Spock game was designed by Front-end Mentor as a coding challenge and I developed it from scratch. The user clicks an option and the computer chooses an option at random and if the user wins, the score increases and if they lose, the score decreases. If they tie or the score reaches zero, the score does not change. Click the project image to see the live demo or click the project details button to learn more.`}
+          text='The Rock Paper Scissors Lizard Spock game is a coding challenge designed by Front-end Mentor available on their website and I built this project from scratch. The rules are similar to Rock Paper Scissors but with two extra options: Lizard and Spock. I chose this project because I want to show my vanilla JavaScript and CSS knowledge. Click the project image to see the live demo or click the project details button to learn more.'
         />
         <Project
           link='https://daniel-babin-portfolio.netlify.app'
@@ -30,7 +30,7 @@ function ProjectSection() {
           projectHighResImg={projectPorfolioHighResImg}
           alt='project alt txt'
           title='Portfolio Website'
-          text={`I designed and developed my portfolio myself. I built it to showcase some of my work and knowledge of Front-end technologies. Click the project details button to learn more.`}
+          text='My portfolio site showcases my current projects, you can download or view my resume and email me directly by filling out the contact form below. This project help me to practice using React, Tailwindcss, responsive design and it is deployed to & hosted by Netlify. I am currently working on a Family Tree app with React, Node.js, Typescript and Firebase. Click the project image to see the live demo or click the project details button to learn more.'
         />
         <Project
           link='https://daniel-babin-mock-landing-page.netlify.app/'
@@ -39,7 +39,7 @@ function ProjectSection() {
           projectHighResImg={projectWebdevHighResImg}
           alt='project alt txt'
           title='Mocksite Landing Page'
-          text={`I designed and developed this web development company landing page. It's a mocksite to showcase different layouts and I built a slider for a group of images the user can click through. Click the project image to see the live demo or click the project details button to learn more.`}
+          text='This is a landing page for a mock web development company that provides web design and development services. I used the Discord Midjourney AI to generate all of the image assets in this project. I created this project to practice using Figma for designing my projects, practice building responsive layouts and to learn Tailwindcss. Click the project image to see the live demo or click the project details button to learn more.'
         />
       </div>
     </section>

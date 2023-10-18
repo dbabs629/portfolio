@@ -5,7 +5,7 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 
-function ImgSlider({ imgHighResList, imgLowResList, alt, link }) {
+function ImgSlider({ imgHighResList, imgLowResList, alt, demoLink, codeLink }) {
   const [sliderIndex, setSliderIndex] = useState(0)
 
   function nextImg() {
@@ -43,7 +43,7 @@ function ImgSlider({ imgHighResList, imgLowResList, alt, link }) {
             return (
               <a
                 key={img}
-                href={link}
+                href={demoLink}
                 rel='noopener noreferrer'
                 target='_blank'
                 className='h-full w-full shrink-0 grow-0'>
@@ -95,8 +95,20 @@ function ImgSlider({ imgHighResList, imgLowResList, alt, link }) {
           )
         })}
       </div>
-      <div className='mt-2 w-full text-center text-sm text-primary'>
-        {sliderIndex + 1} / {imgHighResList.length}
+      <div className='my-2 flex w-full items-center justify-center gap-8 text-center text-sm text-primary'>
+        <a href={demoLink} rel='noreferrer' target='_blank' className='z-10'>
+          <button className='w-32 cursor-pointer self-start rounded-lg border border-tertiary px-4 py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker'>
+            View Demo
+          </button>
+        </a>
+        <p>
+          {sliderIndex + 1} / {imgHighResList.length}
+        </p>
+        <a href={codeLink} rel='noreferrer' target='_blank' className='z-10'>
+          <button className='w-32 cursor-pointer self-start rounded-lg border border-tertiary px-4 py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker'>
+            View Code
+          </button>
+        </a>
       </div>
     </section>
   )
