@@ -11,7 +11,9 @@ export default function AboutSection() {
     'HTML',
     'CSS',
     'TailwindCSS',
+    'Sass',
     'JavaScript',
+    'TypeScript',
     'React.JS',
     'Next.JS',
     'Node.JS',
@@ -39,18 +41,18 @@ export default function AboutSection() {
           <p>
             I am a Full-stack Developer, I create web apps using design,
             front-end and back-end technologies. I went to Humber College for
-            web design and development where I was taught Design, User
-            Experience, Front-end and Back-end technologies. I designed, built &
-            deployed web & mobile apps that I connected to databases. I am
-            always expanding my knowledge of software development by using the
-            LinkedIn Learning and Udemy learning platforms. I attend Meetups
-            with other software developers to network and learn as much as I
-            can.
+            web design and development. I was taught Design, User Experience,
+            Front-end and Back-end technologies. I designed, built & deployed
+            web & mobile apps were connected to a database. I continue to expand
+            my knowledge of software development by using the LinkedIn Learning
+            and Udemy learning platforms. My main focus has been in Front-end
+            tech using JavaScript, React and Tailwindcss
           </p>
           <p>
-            I'm currently looking to work with a team to learn more about
-            developing for production and to participate in all levels of
-            development.
+            I attend Meetups with other software developers to make connections
+            and gain a better insight into the industry. I'm currently looking
+            to work with a team to learn more about developing for production
+            and to participate in all levels of development.
           </p>
         </div>
       </article>
