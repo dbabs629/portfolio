@@ -4,7 +4,7 @@ import SkillList from '../../components/SkillList'
 import ImgSlider from '../../components/ImgSlider'
 import useObserver from '../../components/useObserver'
 
-function ProjectPage({
+export default function ProjectPage({
   demoLink,
   codeLink,
   title,
@@ -45,7 +45,7 @@ function ProjectPage({
           {!showText ? textList[0] : textList.map((item) => <p>{item}</p>)}
         </div>
         <button
-          className='mt-4 w-24 md:w-32 cursor-pointer self-start rounded-lg border border-tertiary py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker'
+          className='mt-4 w-24 cursor-pointer self-start rounded-lg border border-tertiary py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker md:w-32'
           onClick={handleClick}>
           Read more
         </button>
@@ -53,4 +53,3 @@ function ProjectPage({
     </article>
   )
 }
-export default ProjectPage

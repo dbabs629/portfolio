@@ -2,7 +2,7 @@ import SkillSection from './AboutSection'
 import ProjectSection from './ProjectSection'
 import ContactSection from './ContactSection'
 
-function Home() {
+export default function Home() {
   return (
     <main>
       <section
@@ -14,7 +14,7 @@ function Home() {
               DANIEL BABIN
             </h1>
             <p className='animate-flip-down w-full text-xl font-semibold text-primary xs:text-3xl md:text-5xl'>
-              I'm a Front-end Developer
+              I'm a Full-stack Developer
             </p>
             <span className='slide-right w-full rounded-xl border-b-8 border-primary border-opacity-90 pb-4 sm:w-full' />
           </div>
@@ -27,4 +27,3 @@ function Home() {
     </main>
   )
 }
-export default Home

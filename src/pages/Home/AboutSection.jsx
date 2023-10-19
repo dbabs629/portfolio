@@ -3,7 +3,7 @@ import SkillList from '../../components/SkillList'
 import Heading from '../../components/Heading'
 import useObserver from '../../components/useObserver'
 
-function AboutSection() {
+export default function AboutSection() {
   const aboutRef = useRef()
   useObserver(aboutRef)
 
@@ -36,11 +36,24 @@ function AboutSection() {
         <div
           id='aboutText'
           className='hide hide-right w-full space-y-4 self-center text-justify text-primary lg:w-4/5 lg:text-lg'>
-          <p>About 1</p>
-          <p>About 2</p>
+          <p>
+            I am a Full-stack Developer, I create web apps using design,
+            front-end and back-end technologies. I went to Humber College for
+            web design and development where I was taught Design, User
+            Experience, Front-end and Back-end technologies. I designed, built &
+            deployed web & mobile apps that I connected to databases. I am
+            always expanding my knowledge of software development by using the
+            LinkedIn Learning and Udemy learning platforms. I attend Meetups
+            with other software developers to network and learn as much as I
+            can.
+          </p>
+          <p>
+            I'm currently looking to work with a team to learn more about
+            developing for production and to participate in all levels of
+            development.
+          </p>
         </div>
       </article>
     </section>
   )
 }
-export default AboutSection

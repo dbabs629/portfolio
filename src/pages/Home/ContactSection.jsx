@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from 'react'
 import Form from '../../components/Form'
 import Heading from '../../components/Heading'
 
-function ContactHome() {
+export default function ContactHome() {
   const contactRef = useRef()
   const letterOneRef = useRef()
   const letterTwoRef = useRef()
@@ -123,4 +123,3 @@ function ContactHome() {
     </section>
   )
 }
-export default ContactHome

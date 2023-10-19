@@ -4,7 +4,7 @@ import Button from '../../components/Button'
 import LoadImg from '../../components/LoadImg'
 import useObserver from '../../components/useObserver'
 
-function Project({
+export default function Project({
   title,
   text,
   projectLowResImg,
@@ -40,4 +40,3 @@ function Project({
     </article>
   )
 }
-export default Project

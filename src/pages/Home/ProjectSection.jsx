@@ -7,7 +7,7 @@ import projectPorfolioLowResImg from '../../assets/images/portfolio-01.PNG'
 import projectPorfolioHighResImg from '../../assets/images/portfolio-01.PNG'
 import Heading from '../../components/Heading'
 
-function ProjectSection() {
+export default function ProjectSection() {
   return (
     <section
       id='projects'
@@ -45,4 +45,3 @@ function ProjectSection() {
     </section>
   )
 }
-export default ProjectSection
