@@ -30,7 +30,7 @@ export default function ProjectSection() {
           projectHighResImg={projectPorfolioHighResImg}
           alt='project alt txt'
           title='Portfolio Website'
-          text='My portfolio site showcases my current projects, you can download or view my resume and email me directly by filling out the contact form below. This project help me to practice using React, Tailwindcss, responsive design and it is deployed to & hosted by Netlify. I am currently working on a Family Tree app with React, Node.js, Typescript and Firebase. Click the project image to see the live demo or click the project details button to learn more.'
+          text='My portfolio website showcases my current projects, my resume and a contact form you can fill out to email me directly. This project help me to practice using React, Tailwindcss, responsive design and it is deployed to & hosted by Netlify. Click the project image to see the live demo or click the project details button to learn more.'
         />
         <Project
           link='https://daniel-babin-mock-landing-page.netlify.app/'

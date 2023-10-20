@@ -69,14 +69,8 @@ export default function WebDevPage() {
     'Git',
   ]
   let textList = [
-    'text 1',
-    'text 2',
-    'text 3',
-    'text 4',
-    'text 5',
-    'text 6',
-    'text 7',
-    'text 8',
+    'This project is a one page website I designed and built myself to show that I can build custom responsive layouts with reusable React components and Tailwindcss. Each section imports the contents from a JSON file and I prop drill the content data into each component which is then displayed by different elements inside the component. I chose this method because it is a small application that does not have much data to pass and I made the components abstract so that I am able to plug in the data from the JSON files and resuse components.',
+    '',
   ]
 
   return (

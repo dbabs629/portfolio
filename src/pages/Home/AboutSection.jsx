@@ -46,7 +46,7 @@ export default function AboutSection() {
             web & mobile apps were connected to a database. I continue to expand
             my knowledge of software development by using the LinkedIn Learning
             and Udemy learning platforms. My main focus has been in Front-end
-            tech using JavaScript, React and Tailwindcss
+            tech using JavaScript, React and Tailwindcss.
           </p>
           <p>
             I attend Meetups with other software developers to make connections

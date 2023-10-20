@@ -51,7 +51,10 @@ export default function PortfolioPage() {
     'NPM',
     'Git',
   ]
-  let textList = ['Text 1', 'Text 2', 'Text 3', 'Text 4', 'Text 5', 'Text 6']
+  let textList = [
+    'I made my portfolio website to showcase my work and knowledge in software development. I graduated from Humber College with a diploma in Web Design and Interactive Media. I learned  about Web Design, User Experience, Front-end & Back-end Development. I chose Tailwindcss and React because it’s fast to develop a project from scratch by creating reusable React components and using Tailwindcss’ utility classes. ',
+    'I chose to host my projects with Netlify because of the continuous deployment feature, each time I make changes to my code and push to Github, Netlify will update the production build and redeploy the project. The other benefit to Netlify is that it provides free hosting for small personal projects. I am working on I am currently working on a Family Tree app with React, Node.js, Typescript and Firebase.',
+  ]
 
   return (
     <ProjectPage
