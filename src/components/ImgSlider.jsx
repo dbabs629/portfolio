@@ -8,6 +8,41 @@ import {
 function ImgSlider({ imgHighResList, imgLowResList, alt, demoLink, codeLink }) {
   const [sliderIndex, setSliderIndex] = useState(0)
 
+  const [touchStart, setTouchStart] = useState(null)
+  const [touchEnd, setTouchEnd] = useState(null)
+
+  let delay = (time) => {
+    return new Promise((res) => {
+      setTimeout(res, time)
+    })
+  }
+
+  const handleTouchStart = (e) => {
+    setTouchEnd(null)
+    setTouchStart(e.targetTouches[0].clientX)
+  }
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX)
+  }
+
+  const handleTouchEnd = async (e) => {
+    if (touchEnd > touchStart) {
+      sliderIndex <= 0
+        ? setSliderIndex(imgLowResList.length - 1)
+        : setSliderIndex(sliderIndex - 1)
+    } else if (touchEnd < touchStart) {
+      sliderIndex >= imgLowResList.length - 1
+        ? setSliderIndex(0)
+        : setSliderIndex(sliderIndex + 1)
+    } else {
+      console.log(e.targetTouches[0].clientX)
+    }
+    e.target.disabled = true
+    await delay(600)
+    e.target.disabled = false
+  }
+
   function nextImg() {
     setSliderIndex((index) => {
       if (index === imgLowResList.length - 1) return 0
@@ -38,7 +73,11 @@ function ImgSlider({ imgHighResList, imgLowResList, alt, demoLink, codeLink }) {
             className='text-2xl text-primary'
           />
         </button>
-        <div className='flex h-full w-full overflow-hidden border border-primary border-opacity-30 md:max-w-[75%]'>
+        <div
+          className='flex h-full w-full overflow-hidden border border-primary border-opacity-30 md:max-w-[75%]'
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}>
           {imgLowResList.map((img, i) => {
             return (
               <a
