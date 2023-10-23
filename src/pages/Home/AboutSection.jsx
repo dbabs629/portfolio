@@ -11,6 +11,7 @@ export default function AboutSection() {
     'HTML',
     'CSS',
     'TailwindCSS',
+    'Bootstrap',
     'Sass',
     'JavaScript',
     'TypeScript',
@@ -19,6 +20,7 @@ export default function AboutSection() {
     'Node.JS',
     'Express',
     'Firebase',
+    'MySQL',
     'Git',
     'NPM',
     'Figma',
@@ -39,20 +41,22 @@ export default function AboutSection() {
           id='aboutText'
           className='hide hide-right w-full space-y-4 self-center text-justify text-primary lg:w-4/5 lg:text-lg'>
           <p>
-            I am a Full-stack Developer, I create web apps using design,
+            I am a Full-stack Developer, I can create web apps using design,
             front-end and back-end technologies. I went to Humber College for
             web design and development. I was taught Design, User Experience,
-            Front-end and Back-end technologies. I designed, built & deployed
-            web & mobile apps were connected to a database. I continue to expand
-            my knowledge of software development by using the LinkedIn Learning
-            and Udemy learning platforms. My main focus has been in Front-end
-            tech using JavaScript, React and Tailwindcss.
+            Front-end and Back-end technologies. I designed, built, deployed web
+            & mobile apps. I've learned how to make API calls and connect my
+            apps to a database. I continue to expand my knowledge of software
+            development by using the LinkedIn Learning and Udemy learning
+            platforms. I normally use NPM, Webpack, Git and Create React App or
+            Vite.
           </p>
           <p>
-            I attend Meetups with other software developers to make connections
-            and gain a better insight into the industry. I'm currently looking
-            to work with a team to learn more about developing for production
-            and to participate in all levels of development.
+            I attend Meetups with other software developers to make connections,
+            to gain a better insight into the industry and to learn how others
+            solve problems with code. I'm currently looking to work with a team
+            to learn more about developing for production and to participate in
+            all levels of development.
           </p>
         </div>
       </article>
