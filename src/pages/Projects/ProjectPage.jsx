@@ -47,7 +47,7 @@ export default function ProjectPage({
         <button
           className='mt-4 w-24 cursor-pointer self-start rounded-lg border border-tertiary py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker md:w-32'
           onClick={handleClick}>
-          Read more
+          {!showText ? 'Read More' : 'Read Less'}
         </button>
       </div>
     </article>

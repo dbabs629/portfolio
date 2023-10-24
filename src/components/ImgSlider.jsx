@@ -134,15 +134,12 @@ function ImgSlider({ imgHighResList, imgLowResList, alt, demoLink, codeLink }) {
           )
         })}
       </div>
-      <div className='mx-auto mt-6 flex w-full items-center justify-between text-center text-sm text-primary md:w-3/4 lg:w-3/4'>
+      <div className='mx-auto mt-6 flex w-full items-center gap-5 text-center text-sm text-primary md:w-3/4 lg:w-3/4'>
         <a href={demoLink} rel='noreferrer' target='_blank' className='z-10'>
           <button className='w-24 cursor-pointer self-start rounded-lg border border-tertiary py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker md:w-32'>
             View Demo
           </button>
         </a>
-        <p>
-          {sliderIndex + 1} / {imgHighResList.length}
-        </p>
         <a href={codeLink} rel='noreferrer' target='_blank' className='z-10'>
           <button className='w-24 cursor-pointer self-start rounded-lg border border-tertiary py-2 font-semibold text-tertiary hover:bg-tertiary hover:text-darker active:bg-tertiary active:text-darker md:w-32'>
             View Code
