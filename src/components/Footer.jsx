@@ -7,7 +7,7 @@ export default function Footer() {
           <div className='flex w-full flex-col justify-center space-y-8 text-center'>
             <span className='w-full max-w-[500px] self-center border-t-2'></span>
             <p className='font-thin'>
-              @ 2023 Created by <br /> Daniel Babin
+              @2023 Created by <br /> Daniel Babin
             </p>
           </div>
         </div>
