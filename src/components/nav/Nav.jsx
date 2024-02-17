@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import MobileMenu from './MobileMenu'
 import Button from '../Button'
-import resume from '../../assets/daniel-babin-resume-2023.pdf'
+import resume from '../../assets/daniel-babin-resume-fullstack-developer.pdf'
 
 function Nav() {
   const navRef = useRef()
@@ -27,9 +27,7 @@ function Nav() {
 
   return (
     <>
-      <nav
-        ref={navRef}
-        className='navbar slide-down fixed z-20 w-full max-w-full border-b-2 border-b-dark bg-darkest'>
+      <nav ref={navRef} className='navbar slide-down fixed z-20 w-full max-w-full border-b-2 border-b-dark bg-darkest'>
         <div className='relative mx-auto flex w-full items-center justify-between p-4 xs:px-16'>
           <h2 className='w-full text-2xl font-bold text-red'>Daniel Babin</h2>
           {pathname === '/' ? (

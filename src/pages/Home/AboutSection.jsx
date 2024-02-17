@@ -21,6 +21,8 @@ export default function AboutSection() {
     'Express',
     'Firebase',
     'MySQL',
+    'Webpack',
+    'Vite',
     'Git',
     'NPM',
     'Figma',
