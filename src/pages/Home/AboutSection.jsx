@@ -43,7 +43,7 @@ export default function AboutSection() {
           id='aboutText'
           className='hide hide-right w-full space-y-4 self-center text-justify text-primary lg:w-4/5 lg:text-lg'>
           <p>
-            I am a Full-stack Developer, I can create web apps using design,
+            I am a Front-end Developer, I can create web apps using design,
             front-end and back-end technologies. I went to Humber College for
             web design and development. I was taught Design, User Experience,
             Front-end and Back-end technologies. I designed, built, deployed web
