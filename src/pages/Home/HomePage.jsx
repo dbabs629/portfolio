@@ -14,7 +14,7 @@ export default function Home() {
               DANIEL BABIN
             </h1>
             <p className='animate-flip-down w-full text-xl font-semibold text-primary xs:text-3xl md:text-5xl'>
-              I'm a Full-stack Developer
+              I'm a Front-end Developer
             </p>
             <span className='slide-right w-full rounded-xl border-b-8 border-primary border-opacity-90 pb-4 sm:w-full' />
           </div>
