@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import MobileMenu from './MobileMenu'
 import Button from '../Button'
-import resume from '../../assets/daniel-babin-resume.pdf'
+import resume from '../../assets/daniel-babin-frontend-developer-resume.pdf'
 
 function Nav() {
   const navRef = useRef()

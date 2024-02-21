@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons'
-import resume from '../../assets/daniel-babin-resume.pdf'
+import resume from '../../assets/daniel-babin-frontend-developer-resume.pdf'
 
 function DropDownMenu({ navBool, setnavBool }) {
   const [dropDown, setdropDown] = useState('hidden')

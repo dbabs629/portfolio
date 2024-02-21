@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons'
-import resume from '../assets/daniel-babin-resume.pdf'
+import resume from '../assets/daniel-babin-frontend-developer-resume.pdf'
 
 function IconsList() {
   return (
