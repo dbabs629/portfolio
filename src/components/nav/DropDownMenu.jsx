@@ -29,30 +29,35 @@ function DropDownMenu({ navBool, setnavBool }) {
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
 duration-300 hover:bg-secondary active:bg-secondary'
+          name='Home'
           href='#hero'>
           <li>Home</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
 duration-300 hover:bg-secondary active:bg-secondary'
+          name='About'
           href='#about'>
           <li>About</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
 duration-300 hover:bg-secondary active:bg-secondary'
+          name='Projects'
           href='#projects'>
           <li>Projects</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
 duration-300 hover:bg-secondary active:bg-secondary'
+          name='Contact'
           href='#contact'>
           <li>Contact</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
 duration-300 hover:bg-secondary active:bg-secondary'
+          name='Download Resume'
           href={resume}
           rel='noopener noreferrer'
           target='_blank'>
@@ -61,18 +66,21 @@ duration-300 hover:bg-secondary active:bg-secondary'
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
 duration-300 hover:bg-secondary active:bg-secondary'
+          name='Contact'
           href='#contact'>
           <li>Email Me</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
 duration-300 hover:bg-secondary active:bg-secondary'
+          name='GitHub Repository Link'
           href='https://github.com/dbabs629/'>
           <li>Github</li>
         </a>
         <a
           className='w-40 rounded-full bg-darker py-5 text-center text-sm font-semibold capitalize text-white
 duration-300 hover:bg-secondary active:bg-secondary'
+          name='LinkedIn Profile Link'
           href='https://www.linkedin.com/in/daniel-babin/'>
           <li>LinkedIn</li>
         </a>
